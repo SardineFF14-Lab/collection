@@ -340,19 +340,19 @@
     <button class="filter-btn" data-view="owned"   onclick="setView(this,'owned')">所持済み</button>
     <div class="filter-sep"></div>
     <span class="filter-label">入手方法：</span>
-    <button class="filter-btn" data-type="NPC"         onclick="toggleType(this,'NPC')">NPC対戦</button>
-    <button class="filter-btn" data-type="Trial"       onclick="toggleType(this,'Trial')">討滅戦</button>
-    <button class="filter-btn" data-type="Raid"        onclick="toggleType(this,'Raid')">レイド</button>
-    <button class="filter-btn" data-type="Dungeon"     onclick="toggleType(this,'Dungeon')">ダンジョン</button>
-    <button class="filter-btn" data-type="FATE"        onclick="toggleType(this,'FATE')">FATE</button>
-    <button class="filter-btn" data-type="Gold Saucer" onclick="toggleType(this,'Gold Saucer')">ゴールドソーサー</button>
-    <button class="filter-btn" data-type="Achievement" onclick="toggleType(this,'Achievement')">アチーブメント</button>
-    <button class="filter-btn" data-type="Quest"       onclick="toggleType(this,'Quest')">クエスト</button>
-    <button class="filter-btn" data-type="Hunts"       onclick="toggleType(this,'Hunts')">モブハント</button>
-    <button class="filter-btn" data-type="Deep Dungeon" onclick="toggleType(this,'Deep Dungeon')">ディープダンジョン</button>
-    <button class="filter-btn" data-type="Eureka"      onclick="toggleType(this,'Eureka')">エウレカ</button>
-    <button class="filter-btn" data-type="Bozja"       onclick="toggleType(this,'Bozja')">ボズヤ</button>
-    <button class="filter-btn" data-type="Skybuilders" onclick="toggleType(this,'Skybuilders')">蒼天街</button>
+    <button class="filter-btn" data-type="VS"         onclick="toggleType(this,'NPC')">NPC対戦</button>
+    <button class="filter-btn" data-type="DU"       onclick="toggleType(this,'Trial')">討滅戦</button>
+    <button class="filter-btn" data-type="DU"        onclick="toggleType(this,'Raid')">レイド</button>
+    <button class="filter-btn" data-type="DU"     onclick="toggleType(this,'Dungeon')">ダンジョン</button>
+    <button class="filter-btn" data-type="FA"        onclick="toggleType(this,'FATE')">FATE</button>
+    <button class="filter-btn" data-type="CP" onclick="toggleType(this,'Gold Saucer')">ゴールドソーサー</button>
+    <button class="filter-btn" data-type="AC" onclick="toggleType(this,'Achievement')">アチーブメント</button>
+    <button class="filter-btn" data-type="Questt"       onclick="toggleType(this,'Quest')">クエスト</button>
+    <button class="filter-btn" data-type="TR"       onclick="toggleType(this,'Hunts')">モブハント</button>
+    <button class="filter-btn" data-type="EX" onclick="toggleType(this,'Deep Dungeon')">ディープダンジョン</button>
+    <button class="filter-btn" data-type="DU"      onclick="toggleType(this,'Eureka')">エウレカ</button>
+    <button class="filter-btn" data-type="TR"       onclick="toggleType(this,'Bozja')">ボズヤ</button>
+    <button class="filter-btn" data-type="TR" onclick="toggleType(this,'Skybuilders')">蒼天街</button>
     <div class="filter-sep"></div>
     <input class="search-input" id="search" type="text" placeholder="カード名で検索..." oninput="renderCards()">
   </div>
@@ -575,7 +575,7 @@ function renderCards() {
 
     // typeフィルター（OR）
     if (activeTypes.size > 0) {
-      const cardTypes = card.sources.map(s => s.type);
+      const cardTypes = (card.tsv_sources || []).map(s => s.abbr);
       if (!cardTypes.some(t => activeTypes.has(t))) return false;
     }
 
