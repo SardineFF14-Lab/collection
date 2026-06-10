@@ -311,6 +311,36 @@
   @media (max-width: 600px) {
     .card-item { grid-template-columns: 26px 30px 40px 1fr; }
   }
+.help-btn {
+  margin-left: auto;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--border2);
+  background: var(--card);
+  color: var(--gold); font-size: 13px; font-weight: 700;
+  cursor: default;
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.help-btn .help-tip {
+  display: none;
+  position: absolute;
+  top: 28px; right: 0;
+  width: 280px;
+  background: #fffef5;
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 11px;
+  color: var(--text2);
+  line-height: 1.8;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  z-index: 200;
+  white-space: normal;
+}
+.help-btn:hover .help-tip { display: block; animation: pop-in 0.15s ease; }
+
 </style>
 </head>
 <body>
@@ -388,6 +418,20 @@
       <button class="filter-btn" data-type="AC"  onclick="toggleType(this,'AC')">アチーブメント</button>
       <button class="filter-btn" data-type="初"  onclick="toggleType(this,'初')">チュートリアル</button>
       <button class="filter-btn" data-type="EX"  onclick="toggleType(this,'EX')">その他</button>
+      <div class="help-btn">？
+        <div class="help-tip">
+          <strong>📖 使い方</strong><br>
+          ・アイコンクリック → カード詳細ポップアップ<br>
+          ・チェックボックス → 「所持」にステータス変更<br>
+          ・入手方法ボタン → 複数選択でOR絞り込み<br>
+          ・URLをコピー → 所持状態を共有・保存<br>
+          ・URLで復元 → 以前の状態を復元<br>
+          <br>
+          <strong>🔧 自分用</strong><br>
+          ・notes.jsonにメモを書くと📝で表示<br>
+          ・TIPSはnotes.jsonのtips1〜5に記入
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -461,8 +505,9 @@ const GROUPS = [
 ];
 
 function getGroupKey(card) {
-  const src = (card.tsv_sources || [])[0];
-  return src ? src.abbr : 'EX';
+  const src = (card.tsv_sources || []).find(s => activeTypes.has(s.abbr));
+  if (src) return src.abbr;
+  return (card.tsv_sources[0] || {}).abbr || 'EX';
 }
 
 // =====================
