@@ -9,7 +9,7 @@
     --bg:      #ede8d8;
     --bg2:     #e0d9c5;
     --bg3:     #d4ccb5;
-    --card:    #f5f1e6;
+    --card:    #ede8d8;
     --border:  #d6d0c2;
     --border2: #c0b89e;
     --gold:    #8a6a1a;
@@ -162,7 +162,7 @@
   .card-list { display: flex; flex-direction: column; gap: 1px; }
   .card-item {
     display: grid;
-    grid-template-columns: 26px 30px 46px 1fr 60px;
+    grid-template-columns: 26px 30px 70px 1fr 60px;
     align-items: start;
     gap: 8px;
     padding: 5px 8px;
@@ -313,7 +313,7 @@
   }
 .help-btn {
   margin-left: auto;
-  width: 22px; height: 22px;
+  width: auto; height: 22px; padding: 0 10px;
   border-radius: 50%;
   border: 1px solid var(--border2);
   background: var(--card);
@@ -343,7 +343,7 @@
   /* リストヘッダー */
 .list-header {
   display: grid;
-  grid-template-columns: 26px 30px 46px 1fr 60px;
+  grid-template-columns: 26px 30px 70px 1fr 60px;
   gap: 8px;
   padding: 4px 8px;
   border-bottom: 1.5px solid var(--border2);
@@ -431,7 +431,7 @@
       <button class="filter-btn" data-type="AC"  onclick="toggleType(this,'AC')">アチーブメント</button>
       <button class="filter-btn" data-type="初"  onclick="toggleType(this,'初')">チュートリアル</button>
       <button class="filter-btn" data-type="EX"  onclick="toggleType(this,'EX')">その他</button>
-      <div class="help-btn">？
+      <div class="help-btn">📖 マニュアル
         <div class="help-tip">
           <strong>📖 使い方</strong><br>
           ・アイコンクリック → カード詳細ポップアップ<br>
@@ -859,5 +859,11 @@ async function init() {
 
 init();
 </script>
+<footer style="text-align:center;padding:20px;font-size:11px;color:var(--text3);">
+  データ出典：
+  <a href="https://ffxivcollect.com" target="_blank" style="color:var(--gold)">ffxivcollect.com</a>
+  ／
+  <a href="http://ultima-spirits.jp/learning/06_gold_saucer/04_triple_triad/triple_triad_card.html" target="_blank" style="color:var(--gold)">ultima-spirits.jp</a>
+</footer>
 </body>
 </html>
