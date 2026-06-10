@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TT Card Tracker — Jack of All Cards</title>
+<style>
+  :root {
+    --bg: #0d0f14;
+    --bg2: #161920;
+    --bg3: #1e2230;
+    --card: #1a1d28;
+    --border: #2a2f42;
+    --border2: #363d56;
+    --gold: #c9a84c;
+    --gold2: #e8c96a;
+    --teal: #4ecdc4;
+    --text: #e8e4d8;
+    --text2: #9a96a0;
+    --text3: #5c5870;
+    --npc: #4ecdc4;
+    --npc-bg: rgba(78,205,196,0.12);
+    --instance: #7b8cde;
+    --instance-bg: rgba(123,140,222,0.12);
+    --gs: #e88a50;
+    --gs-bg: rgba(232,138,80,0.12);
+    --pack: #b87ed4;
+    --pack-bg: rgba(184,126,212,0.12);
+    --fate: #6bc16b;
+    --fate-bg: rgba(107,193,107,0.12);
+    --other: #9a96a0;
+    --other-bg: rgba(154,150,160,0.12);
+    --checked: #c9a84c22;
+    --checked-border: #c9a84c55;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ヘッダー */
+  header {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    gap: 16px;
+  }
+  .logo {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+  .logo span { color: var(--text2); font-weight: 400; font-size: 12px; margin-left: 8px; }
+
+  /* サマリーバー */
+  .summary {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 20px;
+  }
+  .summary-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .stat { display: flex; flex-direction: column; align-items: center; min-width: 56px; }
+  .stat-num { font-size: 22px; font-weight: 700; line-height: 1.1; }
+  .stat-label { font-size: 11px; color: var(--text2); margin-top: 1px; }
+  .stat-num.owned { color: var(--gold); }
+  .stat-num.missing { color: var(--text2); }
+  .stat-num.total { color: var(--text); }
+  .progress-wrap { flex: 1; min-width: 160px; }
+  .progress-bar {
+    height: 6px;
+    background: var(--bg3);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 4px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold), var(--gold2));
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+  .progress-label { font-size: 11px; color: var(--text2); }
+  .progress-label strong { color: var(--gold); }
+
+  /* URL共有エリア */
+  .share-area {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 20px;
+  }
+  .share-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .share-label { font-size: 12px; color: var(--text2); white-space: nowrap; }
+  .share-url {
+    flex: 1;
+    min-width: 200px;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 10px;
+    color: var(--text2);
+    font-size: 12px;
+    font-family: monospace;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: text;
+  }
+  .btn {
+    background: var(--bg3);
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 12px;
+    padding: 6px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .btn:hover { background: var(--border); border-color: var(--gold); }
+  .btn.gold { border-color: var(--gold); color: var(--gold); }
+  .btn.gold:hover { background: var(--checked); }
+  .restore-input {
+    flex: 1;
+    min-width: 200px;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 10px;
+    color: var(--text);
+    font-size: 12px;
+    font-family: monospace;
+  }
+  .restore-input:focus { outline: none; border-color: var(--gold); }
+
+  /* フィルター */
+  .filters {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 20px;
+    position: sticky;
+    top: 56px;
+    z-index: 90;
+  }
+  .filters-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text2);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .filter-btn:hover { border-color: var(--border2); color: var(--text); }
+  .filter-btn.active { border-color: var(--gold); color: var(--gold); background: var(--checked); }
+  .filter-sep { width: 1px; height: 20px; background: var(--border); margin: 0 4px; }
+  .search-input {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 10px;
+    color: var(--text);
+    font-size: 12px;
+    width: 160px;
+  }
+  .search-input:focus { outline: none; border-color: var(--gold); }
+
+  /* メインコンテンツ */
+  main { max-width: 1000px; margin: 0 auto; padding: 16px 20px 60px; }
+
+  /* グループヘッダー */
+  .group { margin-bottom: 24px; }
+  .group-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0 8px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 10px;
+    position: sticky;
+    top: 102px;
+    background: var(--bg);
+    z-index: 80;
+  }
+  .group-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .group-name { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; }
+  .group-count { font-size: 12px; color: var(--text3); margin-left: auto; }
+  .group-owned { font-size: 12px; }
+
+  /* カードリスト */
+  .card-list { display: flex; flex-direction: column; gap: 2px; }
+  .card-item {
+    display: grid;
+    grid-template-columns: 28px 36px 44px 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: var(--card);
+    transition: background 0.1s, border-color 0.1s;
+    cursor: pointer;
+  }
+
+  /* カードアイコン画像 */
+  .card-icon-wrap {
+    width: 36px; height: 36px;
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .card-icon-wrap img {
+    width: 36px; height: 36px;
+    border-radius: 4px;
+    display: block;
+    border: 1px solid var(--border);
+    transition: border-color 0.1s;
+  }
+  .card-item.checked .card-icon-wrap img {
+    border-color: var(--gold);
+  }
+  .card-icon-wrap a {
+    display: block;
+    line-height: 0;
+  }
+  /* 複数バッジ対応 */
+  .card-sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: flex-end;
+  }
+  .card-item:hover { background: var(--bg3); border-color: var(--border); }
+  .card-item.checked {
+    background: var(--checked);
+    border-color: var(--checked-border);
+  }
+  .card-item.checked .card-name { color: var(--gold); }
+  .card-item.checked .card-no { color: var(--gold2); }
+
+  .card-check {
+    width: 18px; height: 18px;
+    border: 1.5px solid var(--border2);
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.1s;
+    pointer-events: none;
+  }
+  .card-item.checked .card-check {
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+  .card-item.checked .card-check::after {
+    content: '';
+    display: block;
+    width: 5px; height: 9px;
+    border: 2px solid #0d0f14;
+    border-top: none; border-left: none;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+
+  .card-no { font-size: 11px; color: var(--text3); font-family: monospace; }
+  .card-name { font-size: 13px; color: var(--text); }
+  .card-stars { font-size: 11px; color: var(--gold); letter-spacing: 1px; }
+  .card-source-badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  /* メモ欄 */
+  .card-memo-wrap {
+    grid-column: 1 / -1;
+    padding-top: 4px;
+    display: none;
+  }
+  .card-item.checked .card-memo-wrap,
+  .card-item.memo-open .card-memo-wrap { display: block; }
+  .card-memo {
+    width: 100%;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 5px 8px;
+    color: var(--text2);
+    font-size: 12px;
+    resize: none;
+    height: 32px;
+    line-height: 1.4;
+  }
+  .card-memo:focus { outline: none; border-color: var(--gold); color: var(--text); }
+  .card-memo::placeholder { color: var(--text3); }
+
+  /* ローディング */
+  #loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 16px;
+    color: var(--text2);
+  }
+  .spinner {
+    width: 40px; height: 40px;
+    border: 2px solid var(--border);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  #error { display: none; text-align: center; padding: 40px; color: var(--text2); }
+  #app { display: none; }
+
+  /* コピー成功トースト */
+  #toast {
+    position: fixed;
+    bottom: 24px; left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--gold);
+    color: #0d0f14;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none;
+    z-index: 999;
+  }
+  #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* レスポンシブ */
+  @media (max-width: 600px) {
+    .card-item { grid-template-columns: 24px 32px 36px 1fr auto; }
+    .card-sources { display: none; }
+    .share-inner { gap: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">
+      ♠ TT Card Tracker
+      <span>Jack of All Cards 達成サポート</span>
+    </div>
+  </div>
+</header>
+
+<div class="summary">
+  <div class="summary-inner">
+    <div class="stat">
+      <div class="stat-num owned" id="stat-owned">0</div>
+      <div class="stat-label">所持</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num missing" id="stat-missing">312</div>
+      <div class="stat-label">未所持</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num total">312</div>
+      <div class="stat-label">目標</div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+      </div>
+      <div class="progress-label">達成率 <strong id="progress-pct">0%</strong> — あと <strong id="progress-left">312</strong> 枚</div>
+    </div>
+  </div>
+</div>
+
+<div class="share-area">
+  <div class="share-inner">
+    <span class="share-label">📋 現在のURL</span>
+    <div class="share-url" id="share-url">チェックするとURLが更新されます</div>
+    <button class="btn gold" onclick="copyUrl()">URLをコピー</button>
+    <div class="filter-sep"></div>
+    <span class="share-label">🔗 URLを貼って復元</span>
+    <input class="restore-input" id="restore-input" type="text" placeholder="以前のURLを貼り付け...">
+    <button class="btn" onclick="restoreFromInput()">復元</button>
+  </div>
+</div>
+
+<div class="filters">
+  <div class="filters-inner">
+    <button class="filter-btn active" data-filter="all" onclick="setFilter(this,'all')">すべて</button>
+    <button class="filter-btn" data-filter="missing" onclick="setFilter(this,'missing')">未所持のみ</button>
+    <button class="filter-btn" data-filter="owned" onclick="setFilter(this,'owned')">所持済み</button>
+    <div class="filter-sep"></div>
+    <button class="filter-btn" data-filter="NPC" onclick="setFilter(this,'NPC')">NPC</button>
+    <button class="filter-btn" data-filter="Duty" onclick="setFilter(this,'Duty')">ID/討滅戦</button>
+    <button class="filter-btn" data-filter="Gold Saucer" onclick="setFilter(this,'Gold Saucer')">GS</button>
+    <button class="filter-btn" data-filter="Pack" onclick="setFilter(this,'Pack')">パック</button>
+    <div class="filter-sep"></div>
+    <input class="search-input" id="search" type="text" placeholder="カード名で検索..." oninput="renderCards()">
+  </div>
+</div>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <div>カードデータを読み込み中...</div>
+</div>
+<div id="error">
+  <p>データの読み込みに失敗しました。</p>
+  <p style="margin-top:8px;font-size:12px;">FFXIV Collect API に接続できませんでした。<br>しばらく待ってから再読み込みしてください。</p>
+  <button class="btn" style="margin-top:16px;" onclick="location.reload()">再読み込み</button>
+</div>
+
+<main id="app"></main>
+
+<div id="toast">URLをコピーしました</div>
+
+<script>
+// =====================
+// 状態管理
+// =====================
+let allCards = [];
+let owned = new Array(313).fill(false); // index = card number (1-312)
+let currentFilter = 'all';
+const MEMO_KEY = 'tt_memos';
+let memos = {};
+
+// =====================
+// メモ保存・読み込み
+// =====================
+function loadMemos() {
+  try { memos = JSON.parse(localStorage.getItem(MEMO_KEY) || '{}'); } catch(e) { memos = {}; }
+}
+function saveMemo(num, val) {
+  memos[num] = val;
+  try { localStorage.setItem(MEMO_KEY, JSON.stringify(memos)); } catch(e) {}
+}
+
+// =====================
+// URLハッシュ
+// =====================
+function hashFromOwned() {
+  let bits = '';
+  for (let i = 1; i <= 312; i++) bits += owned[i] ? '1' : '0';
+  return bits;
+}
+function ownedFromHash(hash) {
+  owned = new Array(313).fill(false);
+  for (let i = 0; i < Math.min(hash.length, 312); i++) {
+    if (hash[i] === '1') owned[i + 1] = true;
+  }
+}
+function updateUrl() {
+  const hash = hashFromOwned();
+  history.replaceState(null, '', '#' + hash);
+  document.getElementById('share-url').textContent = location.href;
+}
+function restoreFromInput() {
+  const input = document.getElementById('restore-input').value.trim();
+  let hash = '';
+  if (input.includes('#')) {
+    hash = input.split('#')[1];
+  } else if (/^[01]{312}$/.test(input)) {
+    hash = input;
+  } else {
+    showToast('URLが正しくありません');
+    return;
+  }
+  if (hash.length !== 312 || !/^[01]+$/.test(hash)) {
+    showToast('URLが正しくありません');
+    return;
+  }
+  ownedFromHash(hash);
+  updateUrl();
+  renderCards();
+  updateStats();
+  showToast('所持状態を復元しました');
+}
+
+// =====================
+// API取得
+// =====================
+async function fetchCards() {
+  // No.1〜312のカードを取得 (number_lteq=312)
+  const url = 'https://ffxivcollect.com/api/cards?number_lteq=312&limit=400&language=ja';
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('API error');
+  const data = await res.json();
+  return data.results || [];
+}
+
+// =====================
+// 取得方法の分類
+// =====================
+function classifySource(card) {
+  if (!card.sources || card.sources.length === 0) return 'Other';
+  const types = card.sources.map(s => s.type);
+  if (types.includes('NPC')) return 'NPC';
+  if (types.some(t => t === 'Duty' || t === 'Trial' || t === 'Raid')) return 'Duty';
+  if (types.includes('Gold Saucer')) return 'Gold Saucer';
+  if (types.includes('Pack')) return 'Pack';
+  if (types.includes('Achievement')) return 'Achievement';
+  if (types.includes('Vendor')) return 'Vendor';
+  return 'Other';
+}
+
+const SOURCE_META = {
+  'NPC':         { label: 'NPC', color: '#4ecdc4', bgColor: 'rgba(78,205,196,0.12)' },
+  'Duty':        { label: 'ID / 討滅戦', color: '#7b8cde', bgColor: 'rgba(123,140,222,0.12)' },
+  'Gold Saucer': { label: 'ゴールドソーサー', color: '#e88a50', bgColor: 'rgba(232,138,80,0.12)' },
+  'Pack':        { label: 'パック / 交換', color: '#b87ed4', bgColor: 'rgba(184,126,212,0.12)' },
+  'Achievement': { label: 'アチーブメント', color: '#6bc16b', bgColor: 'rgba(107,193,107,0.12)' },
+  'Vendor':      { label: 'ベンダー', color: '#e8c96a', bgColor: 'rgba(232,201,106,0.12)' },
+  'Other':       { label: 'その他', color: '#9a96a0', bgColor: 'rgba(154,150,160,0.12)' },
+};
+const SOURCE_ORDER = ['NPC','Duty','Gold Saucer','Pack','Achievement','Vendor','Other'];
+
+// =====================
+// 星表示
+// =====================
+function stars(n) { return '★'.repeat(n) + '☆'.repeat(Math.max(0, 5-n)); }
+
+// =====================
+// フィルター
+// =====================
+function setFilter(btn, val) {
+  currentFilter = val;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCards();
+}
+
+// =====================
+// 統計更新
+// =====================
+function updateStats() {
+  let cnt = 0;
+  for (let i = 1; i <= 312; i++) if (owned[i]) cnt++;
+  document.getElementById('stat-owned').textContent = cnt;
+  document.getElementById('stat-missing').textContent = 312 - cnt;
+  const pct = Math.floor(cnt / 312 * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-pct').textContent = pct + '%';
+  document.getElementById('progress-left').textContent = 312 - cnt;
+}
+
+// =====================
+// カードレンダリング
+// =====================
+function renderCards() {
+  const app = document.getElementById('app');
+  const search = document.getElementById('search').value.trim().toLowerCase();
+
+  // フィルター処理
+  let filtered = allCards.filter(card => {
+    const num = card.number;
+    if (!num || num < 1 || num > 312) return false;
+    const isOwned = owned[num];
+    if (currentFilter === 'owned' && !isOwned) return false;
+    if (currentFilter === 'missing' && isOwned) return false;
+    const src = classifySource(card);
+    if (['NPC','Duty','Gold Saucer','Pack'].includes(currentFilter) && src !== currentFilter) return false;
+    if (search && !card.name.toLowerCase().includes(search) && !String(num).includes(search)) return false;
+    return true;
+  });
+
+  // グループ化
+  const groups = {};
+  SOURCE_ORDER.forEach(k => groups[k] = []);
+  filtered.forEach(card => {
+    const src = classifySource(card);
+    groups[src].push(card);
+  });
+
+  let html = '';
+  SOURCE_ORDER.forEach(src => {
+    const cards = groups[src];
+    if (cards.length === 0) return;
+    const meta = SOURCE_META[src];
+    const ownedCount = cards.filter(c => owned[c.number]).length;
+
+    html += `<div class="group">
+      <div class="group-header">
+        <div class="group-dot" style="background:${meta.color}"></div>
+        <div class="group-name" style="color:${meta.color}">${meta.label}</div>
+        <div class="group-owned" style="color:${meta.color}">${ownedCount}/${cards.length}</div>
+      </div>
+      <div class="card-list">`;
+
+    cards.forEach(card => {
+      const num = card.number;
+      const isOwned = owned[num];
+      const memo = memos[num] || '';
+
+      // アイコン画像HTML（Lodestoneツールチップ対応）
+      const iconUrl = card.icon || '';
+      const itemId = card.item_id || null;
+      let iconHtml = '';
+      if (iconUrl) {
+        const img = `<img src="${iconUrl}" alt="${escHtml(card.name)}" loading="lazy" onerror="this.style.opacity='0.3'">`;
+        if (itemId) {
+          const lodeUrl = `https://jp.finalfantasyxiv.com/lodestone/playguide/db/item/${itemId}/`;
+          iconHtml = `<div class="card-icon-wrap"><a href="${lodeUrl}" class="eorzeadb_link" target="_blank" rel="noopener" onclick="event.stopPropagation()">${img}</a></div>`;
+        } else {
+          iconHtml = `<div class="card-icon-wrap">${img}</div>`;
+        }
+      } else {
+        iconHtml = `<div class="card-icon-wrap"></div>`;
+      }
+
+      // 全sources バッジHTML
+      const sourcesHtml = (() => {
+        if (!card.sources || card.sources.length === 0) {
+          return `<div class="card-sources"><span class="card-source-badge" style="background:${meta.bgColor};color:${meta.color}">${meta.label}</span></div>`;
+        }
+        const badges = card.sources.map(s => {
+          const sm = SOURCE_META[
+            s.type === 'Trial' || s.type === 'Raid' ? 'Duty' : (SOURCE_META[s.type] ? s.type : 'Other')
+          ] || SOURCE_META['Other'];
+          const label = s.text ? s.text.slice(0, 18) : sm.label;
+          return `<span class="card-source-badge" style="background:${sm.bgColor};color:${sm.color}">${escHtml(label)}</span>`;
+        }).join('');
+        return `<div class="card-sources">${badges}</div>`;
+      })();
+
+      html += `<div class="card-item${isOwned ? ' checked' : ''}" data-num="${num}" onclick="toggleCard(event,${num})">
+        <div class="card-check"></div>
+        ${iconHtml}
+        <div class="card-no">No.${String(num).padStart(3,'0')}</div>
+        <div class="card-name">${escHtml(card.name)}</div>
+        <div class="card-stars">${stars(card.stars || 1)}</div>
+        ${sourcesHtml}
+        <div class="card-memo-wrap">
+          <textarea class="card-memo" maxlength="20" placeholder="メモ（20文字まで）" data-num="${num}" onclick="event.stopPropagation()" oninput="onMemoInput(event,${num})">${escHtml(memo)}</textarea>
+        </div>
+      </div>`;
+    });
+
+    html += `</div></div>`;
+  });
+
+  if (html === '') {
+    html = '<div style="text-align:center;padding:60px;color:var(--text3);">該当するカードがありません</div>';
+  }
+
+  app.innerHTML = html;
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// =====================
+// チェック操作
+// =====================
+function toggleCard(e, num) {
+  if (e.target.tagName === 'TEXTAREA') return;
+  owned[num] = !owned[num];
+  updateUrl();
+  updateStats();
+  // 該当行だけ更新（全再描画を避ける）
+  const el = document.querySelector(`.card-item[data-num="${num}"]`);
+  if (el) {
+    el.classList.toggle('checked', owned[num]);
+    el.querySelector('.card-name').style.color = owned[num] ? 'var(--gold)' : '';
+  }
+  // フィルター適用中なら消す
+  if (currentFilter === 'owned' && !owned[num]) el && (el.style.display = 'none');
+  if (currentFilter === 'missing' && owned[num]) el && (el.style.display = 'none');
+}
+
+function onMemoInput(e, num) {
+  saveMemo(num, e.target.value);
+}
+
+// =====================
+// URLコピー
+// =====================
+function copyUrl() {
+  const url = location.href;
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(() => showToast('URLをコピーしました'));
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = url;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    showToast('URLをコピーしました');
+  }
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+// =====================
+// 初期化
+// =====================
+async function init() {
+  loadMemos();
+
+  // URLハッシュから所持状態復元
+  const hash = location.hash.slice(1);
+  if (hash.length === 312 && /^[01]+$/.test(hash)) {
+    ownedFromHash(hash);
+  }
+
+  try {
+    const cards = await fetchCards();
+    // number順でソート、312以下のみ
+    allCards = cards
+      .filter(c => c.number >= 1 && c.number <= 312)
+      .sort((a, b) => a.number - b.number);
+
+    if (allCards.length === 0) throw new Error('no cards');
+
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+
+    updateStats();
+    renderCards();
+
+    if (hash.length === 312) {
+      document.getElementById('share-url').textContent = location.href;
+    }
+
+  } catch(e) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'block';
+    console.error(e);
+  }
+}
+
+init();
+</script>
+<!-- 公式 Lodestone ツールチップ -->
+<script src="https://lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader.js?v3"></script>
+</body>
+</html>
