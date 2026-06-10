@@ -161,7 +161,7 @@
   .card-list { display: flex; flex-direction: column; gap: 1px; }
   .card-item {
     display: grid;
-    grid-template-columns: 26px 30px 46px auto auto;
+    grid-template-columns: 26px 30px 46px 1fr;
     align-items: center;
     gap: 8px;
     padding: 4px 8px;
@@ -265,9 +265,9 @@
   .card-name-wrap { min-width: 0; }
   .card-name-wrap .card-sources { margin-top: 2px; justify-content: flex-start; }
   /* パッチ */
-  .card-patch { font-size: 10px; color: var(--text3); white-space: nowrap; align-self: center; }
+
   @media (max-width: 600px) {
-    .card-item { grid-template-columns: 26px 30px 40px auto; }
+    .card-item { grid-template-columns: 26px 30px 40px 1fr; }
     .card-sources { display: none; }
   }
 </style>
@@ -635,8 +635,7 @@ function renderCards() {
           <div class="card-name">${escHtml(card.name)}${ctHtml}</div>
           <div class="card-sources">${tsvHtml}</div>
         </div>
-        <div class="card-patch">p${escHtml(card.patch||'')}</div>
-      </div>`;
+       </div>`;
     });
 
     html += `</div></div>`;
