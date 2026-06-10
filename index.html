@@ -526,44 +526,51 @@ function getGroupKey(card) {
 // =====================
 // Base64 URLハッシュ
 // =====================
-function ownedToBase64() {
-  // 312ビット → 39バイト → Base64
+// 常に最短のハッシュを生成
+// o=所持リスト / m=未所持リスト / b=Base64 のうち最短を選ぶ
+function ownedToHash() {
+  const ownedNums = [], missingNums = [];
+  for (let i = 1; i <= TOTAL; i++) {
+    if (owned[i]) ownedNums.push(i); else missingNums.push(i);
+  }
+  const oStr = 'o' + ownedNums.join(',');
+  const mStr = 'm' + missingNums.join(',');
+  // Base64
   const bytes = new Uint8Array(Math.ceil(TOTAL / 8));
   for (let i = 1; i <= TOTAL; i++) {
     if (owned[i]) bytes[Math.floor((i-1)/8)] |= (1 << ((i-1) % 8));
   }
   let bin = '';
   bytes.forEach(b => bin += String.fromCharCode(b));
-  return btoa(bin).replace(/=/g, '');
+  const bStr = 'b' + btoa(bin).replace(/=/g, '');
+  return [oStr, mStr, bStr].sort((a, b) => a.length - b.length)[0];
 }
 
-function base64ToOwned(b64) {
+function loadHash(hash) {
   owned = new Array(TOTAL + 1).fill(false);
+  if (!hash) return;
   try {
-    const bin = atob(b64.replace(/-/g,'+').replace(/_/g,'/'));
-    for (let i = 1; i <= TOTAL; i++) {
-      const byte = bin.charCodeAt(Math.floor((i-1)/8));
-      if (byte & (1 << ((i-1) % 8))) owned[i] = true;
+    if (hash[0] === 'o') {
+      if (hash.length > 1)
+        hash.slice(1).split(',').forEach(n => { const i = parseInt(n); if (i >= 1 && i <= TOTAL) owned[i] = true; });
+    } else if (hash[0] === 'm') {
+      owned.fill(true); owned[0] = false;
+      if (hash.length > 1)
+        hash.slice(1).split(',').forEach(n => { const i = parseInt(n); if (i >= 1 && i <= TOTAL) owned[i] = false; });
+    } else if (hash[0] === 'b') {
+      const bin = atob(hash.slice(1).replace(/-/g,'+').replace(/_/g,'/'));
+      for (let i = 1; i <= TOTAL; i++) {
+        if (bin.charCodeAt(Math.floor((i-1)/8)) & (1 << ((i-1) % 8))) owned[i] = true;
+      }
+    } else if (/^[01]{312}$/.test(hash)) {
+      for (let i = 0; i < 312; i++) if (hash[i] === '1') owned[i + 1] = true;
     }
   } catch(e) {}
 }
 
-// 旧形式(312文字0/1)との互換
-function loadHash(hash) {
-  if (/^[01]{312}$/.test(hash)) {
-    // 旧形式
-    owned = new Array(TOTAL + 1).fill(false);
-    for (let i = 0; i < 312; i++) {
-      if (hash[i] === '1') owned[i + 1] = true;
-    }
-  } else if (hash.length > 0) {
-    base64ToOwned(hash);
-  }
-}
-
 function updateUrl() {
-  const b64 = ownedToBase64();
-  history.replaceState(null, '', '#' + b64);
+  const hash = ownedToHash();
+  history.replaceState(null, '', '#' + hash);
   document.getElementById('share-url').textContent = location.href;
 }
 
@@ -860,6 +867,12 @@ async function init() {
 init();
 </script>
 <footer style="text-align:center;padding:20px;font-size:11px;color:var(--text3);">
+  データ出典：
+  <a href="https://ffxivcollect.com" target="_blank" style="color:var(--gold)">ffxivcollect.com</a>
+  ／
+  <a href="http://ultima-spirits.jp/learning/06_gold_saucer/04_triple_triad/triple_triad_card.html" target="_blank" style="color:var(--gold)">ultima-spirits.jp</a>
+</footer>
+<footer style="text-align:center;padding:20px;font-size:12px;color:var(--text3);border-top:1px solid var(--border);margin-top:20px;">
   データ出典：
   <a href="https://ffxivcollect.com" target="_blank" style="color:var(--gold)">ffxivcollect.com</a>
   ／
