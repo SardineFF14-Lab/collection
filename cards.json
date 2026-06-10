@@ -17,7 +17,15 @@
       "bottom": 3,
       "left": 4
     },
-    "image_id": 1
+    "image_id": 1,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "初",
+        "label": "チュートリアル",
+        "text": "チュートリアル"
+      }
+    ]
   },
   {
     "number": 2,
@@ -41,7 +49,25 @@
       "bottom": 7,
       "left": 2
     },
-    "image_id": 2
+    "image_id": 2,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "高地ラノシア(14:24):メメルン"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "旅神聖域　ワンダラーパレス"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "武装聖域　ワンダラーパレス(Hard)"
+      }
+    ]
   },
   {
     "number": 3,
@@ -61,7 +87,15 @@
       "bottom": 3,
       "left": 3
     },
-    "image_id": 3
+    "image_id": 3,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "初",
+        "label": "チュートリアル",
+        "text": "チュートリアル"
+      }
+    ]
   },
   {
     "number": 4,
@@ -85,7 +119,15 @@
       "bottom": 4,
       "left": 4
     },
-    "image_id": 4
+    "image_id": 4,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(04:07):トライアドマスター"
+      }
+    ]
   },
   {
     "number": 5,
@@ -109,7 +151,20 @@
       "bottom": 3,
       "left": 5
     },
-    "image_id": 5
+    "image_id": 5,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "中央ザナラーン(19:20):ロジャー"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ブロンズ"
+      }
+    ]
   },
   {
     "number": 6,
@@ -129,7 +184,15 @@
       "bottom": 3,
       "left": 3
     },
-    "image_id": 6
+    "image_id": 6,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "初",
+        "label": "チュートリアル",
+        "text": "チュートリアル"
+      }
+    ]
   },
   {
     "number": 7,
@@ -149,7 +212,15 @@
       "bottom": 5,
       "left": 3
     },
-    "image_id": 7
+    "image_id": 7,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "初",
+        "label": "チュートリアル",
+        "text": "チュートリアル"
+      }
+    ]
   },
   {
     "number": 8,
@@ -173,7 +244,25 @@
       "bottom": 3,
       "left": 4
     },
-    "image_id": 8
+    "image_id": 8,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "グリダニア:新市街(11:11):黒兎堂 マイセンタ"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ナル回廊(09:08):ワイモンド"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ブロンズ"
+      }
+    ]
   },
   {
     "number": 9,
@@ -197,7 +286,20 @@
       "bottom": 5,
       "left": 2
     },
-    "image_id": 9
+    "image_id": 9,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "中央ザナラーン(19:20):ロジャー"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "霧中行軍　オーラムヴェイル"
+      }
+    ]
   },
   {
     "number": 10,
@@ -217,7 +319,15 @@
       "bottom": 2,
       "left": 5
     },
-    "image_id": 10
+    "image_id": 10,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "初",
+        "label": "チュートリアル",
+        "text": "チュートリアル"
+      }
+    ]
   },
   {
     "number": 11,
@@ -241,7 +351,20 @@
       "bottom": 2,
       "left": 2
     },
-    "image_id": 11
+    "image_id": 11,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クルザス中央高地(06:22):オルディリク"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "掃討作戦　ゼーメル要塞"
+      }
+    ]
   },
   {
     "number": 12,
@@ -265,7 +388,25 @@
       "bottom": 5,
       "left": 2
     },
-    "image_id": 12
+    "image_id": 12,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "グリダニア:新市街(11:13):ミューヌ"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(04:07):クラブのオリフェル"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ブロンズ"
+      }
+    ]
   },
   {
     "number": 13,
@@ -289,7 +430,20 @@
       "bottom": 2,
       "left": 1
     },
-    "image_id": 13
+    "image_id": 13,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(04:07):ダイヤのグートウィント"
+      },
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・600MGP"
+      }
+    ]
   },
   {
     "number": 14,
@@ -313,7 +467,20 @@
       "bottom": 7,
       "left": 1
     },
-    "image_id": 14
+    "image_id": 14,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "高地ラノシア(14:24):メメルン"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・シルバー"
+      }
+    ]
   },
   {
     "number": 15,
@@ -337,7 +504,20 @@
       "bottom": 3,
       "left": 4
     },
-    "image_id": 15
+    "image_id": 15,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クルザス中央高地(13:15):ジョエロー"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(04:07):スペードのジョナス"
+      }
+    ]
   },
   {
     "number": 16,
@@ -361,7 +541,20 @@
       "bottom": 5,
       "left": 4
     },
-    "image_id": 16
+    "image_id": 16,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "グリダニア:新市街(11:11):黒兎堂 マイセンタ"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・シルバー"
+      }
+    ]
   },
   {
     "number": 17,
@@ -381,7 +574,15 @@
       "bottom": 4,
       "left": 6
     },
-    "image_id": 17
+    "image_id": 17,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・シルバー"
+      }
+    ]
   },
   {
     "number": 18,
@@ -405,7 +606,20 @@
       "bottom": 3,
       "left": 3
     },
-    "image_id": 18
+    "image_id": 18,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "リムサ・ロミンサ:上甲板層(11:11):バデロン"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "天然要害　サスタシャ浸食洞"
+      }
+    ]
   },
   {
     "number": 19,
@@ -425,7 +639,15 @@
       "bottom": 3,
       "left": 2
     },
-    "image_id": 19
+    "image_id": 19,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・シルバー"
+      }
+    ]
   },
   {
     "number": 20,
@@ -449,7 +671,25 @@
       "bottom": 3,
       "left": 7
     },
-    "image_id": 20
+    "image_id": 20,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "低地ラノシア(35:15):トラッハトゥーム"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(04:07):スペードのジョナス"
+      },
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・840MGP"
+      }
+    ]
   },
   {
     "number": 21,
@@ -473,7 +713,20 @@
       "bottom": 7,
       "left": 2
     },
-    "image_id": 21
+    "image_id": 21,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "低地ラノシア(25:35):ミミドア"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "怪鳥巨塔　シリウス大灯台"
+      }
+    ]
   },
   {
     "number": 22,
@@ -497,7 +750,20 @@
       "bottom": 6,
       "left": 7
     },
-    "image_id": 22
+    "image_id": 22,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "東ザナラーン(20:21):ヘルムハート"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "アマジナ杯闘技会決勝戦"
+      }
+    ]
   },
   {
     "number": 23,
@@ -521,7 +787,25 @@
       "bottom": 2,
       "left": 3
     },
-    "image_id": 23
+    "image_id": 23,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "南部森林(18:19):バスカロン"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "邪教排撃　古城アムダプール"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "邪念排撃　古城アムダプール(Hard)"
+      }
+    ]
   },
   {
     "number": 24,
@@ -545,7 +829,25 @@
       "bottom": 2,
       "left": 6
     },
-    "image_id": 24
+    "image_id": 24,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "東部森林(17:26):ピラルノー"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "名門屋敷　ハウケタ御用邸"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "妖異屋敷　ハウケタ御用邸(Hard)"
+      }
+    ]
   },
   {
     "number": 25,
@@ -569,7 +871,25 @@
       "bottom": 2,
       "left": 2
     },
-    "image_id": 25
+    "image_id": 25,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "西ザナラーン(22:17):フフルパ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "流砂迷宮　カッターズクライ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "城塞奪回　ストーンヴィジル(Hard)"
+      }
+    ]
   },
   {
     "number": 26,
@@ -593,7 +913,20 @@
       "bottom": 7,
       "left": 7
     },
-    "image_id": 26
+    "image_id": 26,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クルザス中央高地(06:22):オルディリク"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "城塞攻略　ストーンヴィジル"
+      }
+    ]
   },
   {
     "number": 27,
@@ -617,7 +950,20 @@
       "bottom": 2,
       "left": 6
     },
-    "image_id": 27
+    "image_id": 27,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(04:07):ダイヤのグートウィント"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(04:07):クラブのオリフェル"
+      }
+    ]
   },
   {
     "number": 28,
@@ -641,7 +987,20 @@
       "bottom": 5,
       "left": 3
     },
-    "image_id": 28
+    "image_id": 28,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ナル回廊(11:09):モモディ"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ゴールド"
+      }
+    ]
   },
   {
     "number": 29,
@@ -665,7 +1024,20 @@
       "bottom": 5,
       "left": 5
     },
-    "image_id": 29
+    "image_id": 29,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "リムサ・ロミンサ:上甲板層(11:11):バデロン"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ゴールド"
+      }
+    ]
   },
   {
     "number": 30,
@@ -689,7 +1061,20 @@
       "bottom": 3,
       "left": 7
     },
-    "image_id": 30
+    "image_id": 30,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "グリダニア:新市街(11:13):ミューヌ"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ゴールド"
+      }
+    ]
   },
   {
     "number": 31,
@@ -713,7 +1098,20 @@
       "bottom": 7,
       "left": 1
     },
-    "image_id": 31
+    "image_id": 31,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(11:17):気だるそうな帝国兵"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "外郭攻略　カストルム・メリディアヌム"
+      }
+    ]
   },
   {
     "number": 32,
@@ -733,7 +1131,20 @@
       "bottom": 3,
       "left": 7
     },
-    "image_id": 32
+    "image_id": 32,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(11:17):気だるそうな帝国兵"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "リットアティン強襲戦"
+      }
+    ]
   },
   {
     "number": 33,
@@ -757,7 +1168,20 @@
       "bottom": 7,
       "left": 5
     },
-    "image_id": 33
+    "image_id": 33,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "低地ラノシア(25:35):ミミドア"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "北部森林(24:23):セズル・トトロック"
+      }
+    ]
   },
   {
     "number": 34,
@@ -781,7 +1205,25 @@
       "bottom": 3,
       "left": 7
     },
-    "image_id": 34
+    "image_id": 34,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "東ザナラーン(20:21):ヘルムハート"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(21:05):ロウェナ"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ゴールド"
+      }
+    ]
   },
   {
     "number": 35,
@@ -805,7 +1247,20 @@
       "bottom": 6,
       "left": 6
     },
-    "image_id": 35
+    "image_id": 35,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "中央森林(16:18):マルセット"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "東部森林(17:26):ピラルノー"
+      }
+    ]
   },
   {
     "number": 36,
@@ -825,7 +1280,15 @@
       "bottom": 6,
       "left": 6
     },
-    "image_id": 36
+    "image_id": 36,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "中央ザナラーン(23:13):フ・ホバス"
+      }
+    ]
   },
   {
     "number": 37,
@@ -845,7 +1308,15 @@
       "bottom": 6,
       "left": 2
     },
-    "image_id": 37
+    "image_id": 37,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "高地ラノシア(14:24):メメルン"
+      }
+    ]
   },
   {
     "number": 38,
@@ -869,7 +1340,25 @@
       "bottom": 4,
       "left": 2
     },
-    "image_id": 38
+    "image_id": 38,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "北部森林(24:23):セズル・トトロック"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クルザス中央高地(06:22):オルディリク"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ブロンズ"
+      }
+    ]
   },
   {
     "number": 39,
@@ -893,7 +1382,20 @@
       "bottom": 7,
       "left": 3
     },
-    "image_id": 39
+    "image_id": 39,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "ギルガメッシュ討伐戦"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ミスライト"
+      }
+    ]
   },
   {
     "number": 40,
@@ -917,7 +1419,25 @@
       "bottom": 6,
       "left": 7
     },
-    "image_id": 40
+    "image_id": 40,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ナル回廊(08:09):スウィフト大闘佐"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "真イフリート討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極イフリート討滅戦"
+      }
+    ]
   },
   {
     "number": 41,
@@ -941,7 +1461,25 @@
       "bottom": 7,
       "left": 6
     },
-    "image_id": 41
+    "image_id": 41,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "低地ラノシア(35:15):トラッハトゥーム"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "南部森林(16:28):ランドゥネル"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "真タイタン討滅戦"
+      }
+    ]
   },
   {
     "number": 42,
@@ -969,7 +1507,25 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 42
+    "image_id": 42,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "中央森林(16:18):マルセット"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "真ガルーダ討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ガルーダ討滅戦"
+      }
+    ]
   },
   {
     "number": 43,
@@ -993,7 +1549,25 @@
       "bottom": 7,
       "left": 1
     },
-    "image_id": 43
+    "image_id": 43,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "グリダニア:新市街(09:11):ボルセル大牙佐"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ドラヴァニア雲海(15:28):団長のモグジン"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "善王モグル・モグXII世討滅戦"
+      }
+    ]
   },
   {
     "number": 44,
@@ -1017,7 +1591,20 @@
       "bottom": 6,
       "left": 6
     },
-    "image_id": 44
+    "image_id": 44,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "南部森林(18:19):バスカロン"
+      },
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・4,800MGP"
+      }
+    ]
   },
   {
     "number": 45,
@@ -1041,7 +1628,25 @@
       "bottom": 5,
       "left": 6
     },
-    "image_id": 45
+    "image_id": 45,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "南ザナラーン(24:40):ハブ"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(03:07):ハートのルヒトウィダ"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(03:07):キングのエルマー"
+      }
+    ]
   },
   {
     "number": 46,
@@ -1065,7 +1670,20 @@
       "bottom": 8,
       "left": 7
     },
-    "image_id": 46
+    "image_id": 46,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "西ザナラーン(22:17):フフルパ"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "南ザナラーン(24:40):ハブ"
+      }
+    ]
   },
   {
     "number": 47,
@@ -1085,7 +1703,15 @@
       "bottom": 8,
       "left": 7
     },
-    "image_id": 47
+    "image_id": 47,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(11:17):気だるそうな帝国兵"
+      }
+    ]
   },
   {
     "number": 48,
@@ -1109,7 +1735,20 @@
       "bottom": 8,
       "left": 2
     },
-    "image_id": 48
+    "image_id": 48,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "グリダニア:新市街(09:11):ボルセル大牙佐"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "南部森林(18:19):バスカロン"
+      }
+    ]
   },
   {
     "number": 49,
@@ -1133,7 +1772,20 @@
       "bottom": 1,
       "left": 4
     },
-    "image_id": 49
+    "image_id": 49,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "リムサ・ロミンサ:上甲板層(13:12):ル・アシャ大甲佐"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "東ラノシア(33:30):ゲゲルジュ"
+      }
+    ]
   },
   {
     "number": 50,
@@ -1157,7 +1809,20 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 50
+    "image_id": 50,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(03:07):ハートのルヒトウィダ"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・シルバー"
+      }
+    ]
   },
   {
     "number": 51,
@@ -1181,7 +1846,20 @@
       "bottom": 9,
       "left": 1
     },
-    "image_id": 51
+    "image_id": 51,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ゴールド"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・プラチナ"
+      }
+    ]
   },
   {
     "number": 52,
@@ -1209,7 +1887,25 @@
       "bottom": 1,
       "left": 8
     },
-    "image_id": 52
+    "image_id": 52,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "南部森林(16:28):ランドゥネル"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "闘神オーディン討滅戦"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ミスライト"
+      }
+    ]
   },
   {
     "number": 53,
@@ -1237,7 +1933,25 @@
       "bottom": 8,
       "left": 8
     },
-    "image_id": 53
+    "image_id": 53,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "グリダニア:新市街(09:11):ボルセル大牙佐"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "真ラムウ討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ラムウ討滅戦"
+      }
+    ]
   },
   {
     "number": 54,
@@ -1265,7 +1979,25 @@
       "bottom": 8,
       "left": 1
     },
-    "image_id": 54
+    "image_id": 54,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・プラチナ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "真リヴァイアサン討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極リヴァイアサン討滅戦"
+      }
+    ]
   },
   {
     "number": 55,
@@ -1293,7 +2025,20 @@
       "bottom": 8,
       "left": 8
     },
-    "image_id": 55
+    "image_id": 55,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "真シヴァ討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極シヴァ討滅戦"
+      }
+    ]
   },
   {
     "number": 56,
@@ -1317,7 +2062,20 @@
       "bottom": 3,
       "left": 5
     },
-    "image_id": 56
+    "image_id": 56,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "東ラノシア(33:30):ゲゲルジュ"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・シルバー"
+      }
+    ]
   },
   {
     "number": 57,
@@ -1341,7 +2099,20 @@
       "bottom": 4,
       "left": 8
     },
-    "image_id": 57
+    "image_id": 57,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・シルバー"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・プラチナ"
+      }
+    ]
   },
   {
     "number": 58,
@@ -1365,7 +2136,20 @@
       "bottom": 9,
       "left": 2
     },
-    "image_id": 58
+    "image_id": 58,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "北部森林(24:23):セズル・トトロック"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ゴールド"
+      }
+    ]
   },
   {
     "number": 59,
@@ -1393,7 +2177,20 @@
       "bottom": 3,
       "left": 9
     },
-    "image_id": 59
+    "image_id": 59,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ナル回廊(08:09):スウィフト大闘佐"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クルザス中央高地(13:15):ジョエロー"
+      }
+    ]
   },
   {
     "number": 60,
@@ -1417,7 +2214,15 @@
       "bottom": 9,
       "left": 3
     },
-    "image_id": 60
+    "image_id": 60,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(21:05):ロウェナ"
+      }
+    ]
   },
   {
     "number": 61,
@@ -1437,7 +2242,15 @@
       "bottom": 9,
       "left": 6
     },
-    "image_id": 61
+    "image_id": 61,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ゴールドソーサー(03:07):キングのエルマー"
+      }
+    ]
   },
   {
     "number": 62,
@@ -1457,7 +2270,15 @@
       "bottom": 10,
       "left": 8
     },
-    "image_id": 62
+    "image_id": 62,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "南ザナラーン(24:40):ハブ"
+      }
+    ]
   },
   {
     "number": 63,
@@ -1481,7 +2302,15 @@
       "bottom": 4,
       "left": 8
     },
-    "image_id": 63
+    "image_id": 63,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・400,000MGP"
+      }
+    ]
   },
   {
     "number": 64,
@@ -1505,7 +2334,20 @@
       "bottom": 5,
       "left": 9
     },
-    "image_id": 64
+    "image_id": 64,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(11:17):気だるそうな帝国兵"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "最終決戦　魔導城プラエトリウム"
+      }
+    ]
   },
   {
     "number": 65,
@@ -1529,7 +2371,25 @@
       "bottom": 10,
       "left": 3
     },
-    "image_id": 65
+    "image_id": 65,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "リムサ・ロミンサ:上甲板層(13:12):ル・アシャ大甲佐"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "リムサ・ロミンサ:上甲板層(12:13):オ・カルカヤ"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "リムサ・ロミンサ:上甲板層(11:07):モーディン"
+      }
+    ]
   },
   {
     "number": 66,
@@ -1553,7 +2413,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 66
+    "image_id": 66,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "グリダニア:新市街(09:11):ボルセル大牙佐"
+      }
+    ]
   },
   {
     "number": 67,
@@ -1577,7 +2445,15 @@
       "bottom": 9,
       "left": 10
     },
-    "image_id": 67
+    "image_id": 67,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ナル回廊(08:09):スウィフト大闘佐"
+      }
+    ]
   },
   {
     "number": 68,
@@ -1597,7 +2473,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 81
+    "image_id": 81,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "グリダニア:旧市街(10:05):ノエス"
+      }
+    ]
   },
   {
     "number": 69,
@@ -1617,7 +2501,15 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 82
+    "image_id": 82,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ドラヴァニア雲海(28:35):モグミル"
+      }
+    ]
   },
   {
     "number": 70,
@@ -1637,7 +2529,15 @@
       "bottom": 7,
       "left": 3
     },
-    "image_id": 83
+    "image_id": 83,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ドラヴァニア雲海(28:35):モグミル"
+      }
+    ]
   },
   {
     "number": 71,
@@ -1657,7 +2557,15 @@
       "bottom": 1,
       "left": 3
     },
-    "image_id": 84
+    "image_id": 84,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ザル回廊(14:13):イエロー・ムーン"
+      }
+    ]
   },
   {
     "number": 72,
@@ -1677,7 +2585,20 @@
       "bottom": 5,
       "left": 5
     },
-    "image_id": 85
+    "image_id": 85,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "高地ドラヴァニア(23:19):ウデキキ"
+      },
+      {
+        "abbr": "FA",
+        "label": "FATE",
+        "text": "F.A.T.E.「爆着の甲竜「タラスク」」"
+      }
+    ]
   },
   {
     "number": 73,
@@ -1701,7 +2622,15 @@
       "bottom": 7,
       "left": 8
     },
-    "image_id": 86
+    "image_id": 86,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "廃砦探索　ダスクヴィジル"
+      }
+    ]
   },
   {
     "number": 74,
@@ -1721,7 +2650,15 @@
       "bottom": 8,
       "left": 7
     },
-    "image_id": 87
+    "image_id": 87,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "霊峰踏破　ソーム・アル"
+      }
+    ]
   },
   {
     "number": 75,
@@ -1741,7 +2678,15 @@
       "bottom": 2,
       "left": 3
     },
-    "image_id": 88
+    "image_id": 88,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イシュガルド:下層(13:11):ジブリオン"
+      }
+    ]
   },
   {
     "number": 76,
@@ -1761,7 +2706,15 @@
       "bottom": 3,
       "left": 8
     },
-    "image_id": 89
+    "image_id": 89,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "リムサ・ロミンサ:下甲板層(08:15):ワワラゴ"
+      }
+    ]
   },
   {
     "number": 77,
@@ -1781,7 +2734,15 @@
       "bottom": 8,
       "left": 1
     },
-    "image_id": 90
+    "image_id": 90,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "高地ドラヴァニア(31:23):マルスシャン"
+      }
+    ]
   },
   {
     "number": 78,
@@ -1801,7 +2762,15 @@
       "bottom": 8,
       "left": 8
     },
-    "image_id": 91
+    "image_id": 91,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アジス・ラー(28:31):退屈そうな帝国兵"
+      }
+    ]
   },
   {
     "number": 79,
@@ -1821,7 +2790,15 @@
       "bottom": 8,
       "left": 1
     },
-    "image_id": 92
+    "image_id": 92,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イディルシャイア(05:06):ミッドナイト・デュー"
+      }
+    ]
   },
   {
     "number": 80,
@@ -1841,7 +2818,15 @@
       "bottom": 3,
       "left": 8
     },
-    "image_id": 93
+    "image_id": 93,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アバラシア雲海(15:37):マリエル"
+      }
+    ]
   },
   {
     "number": 81,
@@ -1865,7 +2850,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 94
+    "image_id": 94,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "禁書回収　グブラ幻想図書館"
+      }
+    ]
   },
   {
     "number": 82,
@@ -1885,7 +2878,15 @@
       "bottom": 5,
       "left": 8
     },
-    "image_id": 95
+    "image_id": 95,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "街角のデュエリスト:ランク3"
+      }
+    ]
   },
   {
     "number": 83,
@@ -1905,7 +2906,15 @@
       "bottom": 9,
       "left": 9
     },
-    "image_id": 96
+    "image_id": 96,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ナル回廊(07:12):呪術士ギルド受付 ヤヤケ"
+      }
+    ]
   },
   {
     "number": 84,
@@ -1933,7 +2942,25 @@
       "bottom": 8,
       "left": 1
     },
-    "image_id": 97
+    "image_id": 97,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "高地ドラヴァニア(23:19):ウデキキ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "真ラーヴァナ討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ラーヴァナ討滅戦"
+      }
+    ]
   },
   {
     "number": 85,
@@ -1961,7 +2988,25 @@
       "bottom": 7,
       "left": 8
     },
-    "image_id": 98
+    "image_id": 98,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アバラシア雲海(06:14):リヌバリ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "真ビスマルク討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ビスマルク討滅戦"
+      }
+    ]
   },
   {
     "number": 86,
@@ -1989,7 +3034,25 @@
       "bottom": 3,
       "left": 8
     },
-    "image_id": 99
+    "image_id": 99,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "邪竜血戦　ドラゴンズエアリー"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "ニーズヘッグ征竜戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ニーズヘッグ征竜戦"
+      }
+    ]
   },
   {
     "number": 87,
@@ -2009,7 +3072,15 @@
       "bottom": 10,
       "left": 7
     },
-    "image_id": 100
+    "image_id": 100,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "カードコレクター:ランク4"
+      }
+    ]
   },
   {
     "number": 88,
@@ -2029,7 +3100,15 @@
       "bottom": 7,
       "left": 2
     },
-    "image_id": 101
+    "image_id": 101,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クルザス西部高地(16:22):ドミニアク"
+      }
+    ]
   },
   {
     "number": 89,
@@ -2049,7 +3128,15 @@
       "bottom": 6,
       "left": 5
     },
-    "image_id": 102
+    "image_id": 102,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イシュガルド:上層(07:10):エレイズ"
+      }
+    ]
   },
   {
     "number": 90,
@@ -2069,7 +3156,15 @@
       "bottom": 3,
       "left": 6
     },
-    "image_id": 103
+    "image_id": 103,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アバラシア雲海(16:37):ラニエット"
+      }
+    ]
   },
   {
     "number": 91,
@@ -2089,7 +3184,15 @@
       "bottom": 3,
       "left": 5
     },
-    "image_id": 104
+    "image_id": 104,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アバラシア雲海(16:37):ラニエット"
+      }
+    ]
   },
   {
     "number": 92,
@@ -2109,7 +3212,15 @@
       "bottom": 3,
       "left": 4
     },
-    "image_id": 105
+    "image_id": 105,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "高地ドラヴァニア(23:19):ナンカイーター"
+      }
+    ]
   },
   {
     "number": 93,
@@ -2129,7 +3240,15 @@
       "bottom": 3,
       "left": 2
     },
-    "image_id": 106
+    "image_id": 106,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イディルシャイア(06:07):セイカ"
+      }
+    ]
   },
   {
     "number": 94,
@@ -2149,7 +3268,15 @@
       "bottom": 7,
       "left": 3
     },
-    "image_id": 107
+    "image_id": 107,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イディルシャイア(06:07):セイカ"
+      }
+    ]
   },
   {
     "number": 95,
@@ -2173,7 +3300,20 @@
       "bottom": 7,
       "left": 4
     },
-    "image_id": 108
+    "image_id": 108,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ドラヴァニア雲海(28:35):モグミル"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ミスライト"
+      }
+    ]
   },
   {
     "number": 96,
@@ -2197,7 +3337,25 @@
       "bottom": 5,
       "left": 8
     },
-    "image_id": 109
+    "image_id": 109,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "高地ドラヴァニア(23:19):ナンカイーター"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "高地ドラヴァニア(23:19):ウデキキ"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ミスライト"
+      }
+    ]
   },
   {
     "number": 97,
@@ -2217,7 +3375,15 @@
       "bottom": 3,
       "left": 6
     },
-    "image_id": 110
+    "image_id": 110,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "制圧巨塔　シリウス大灯台(Hard)"
+      }
+    ]
   },
   {
     "number": 98,
@@ -2241,7 +3407,15 @@
       "bottom": 3,
       "left": 7
     },
-    "image_id": 111
+    "image_id": 111,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "草木庭園　聖モシャーヌ植物園"
+      }
+    ]
   },
   {
     "number": 99,
@@ -2265,7 +3439,15 @@
       "bottom": 7,
       "left": 4
     },
-    "image_id": 112
+    "image_id": 112,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "魔航船ヴォイドアーク"
+      }
+    ]
   },
   {
     "number": 100,
@@ -2289,7 +3471,20 @@
       "bottom": 6,
       "left": 6
     },
-    "image_id": 113
+    "image_id": 113,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ナル回廊(08:09):スウィフト大闘佐"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ミスライト"
+      }
+    ]
   },
   {
     "number": 101,
@@ -2309,7 +3504,15 @@
       "bottom": 5,
       "left": 7
     },
-    "image_id": 114
+    "image_id": 114,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・14,400MGP"
+      }
+    ]
   },
   {
     "number": 102,
@@ -2329,7 +3532,15 @@
       "bottom": 4,
       "left": 5
     },
-    "image_id": 115
+    "image_id": 115,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ドラヴァニア雲海(28:35):モグミル"
+      }
+    ]
   },
   {
     "number": 103,
@@ -2349,7 +3560,15 @@
       "bottom": 4,
       "left": 3
     },
-    "image_id": 116
+    "image_id": 116,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "強硬突入　イシュガルド教皇庁"
+      }
+    ]
   },
   {
     "number": 104,
@@ -2373,7 +3592,20 @@
       "bottom": 8,
       "left": 8
     },
-    "image_id": 117
+    "image_id": 117,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イディルシャイア(06:07):セイカ"
+      },
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "低地ドラヴァニア(21:18):タップクリクス"
+      }
+    ]
   },
   {
     "number": 105,
@@ -2393,7 +3625,15 @@
       "bottom": 7,
       "left": 6
     },
-    "image_id": 118
+    "image_id": 118,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・200,000MGP"
+      }
+    ]
   },
   {
     "number": 106,
@@ -2417,7 +3657,15 @@
       "bottom": 6,
       "left": 8
     },
-    "image_id": 119
+    "image_id": 119,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アジス・ラー(28:31):退屈そうな帝国兵"
+      }
+    ]
   },
   {
     "number": 107,
@@ -2437,7 +3685,15 @@
       "bottom": 10,
       "left": 9
     },
-    "image_id": 120
+    "image_id": 120,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "蒼天幻想ナイツ・オブ・ラウンド討滅戦"
+      }
+    ]
   },
   {
     "number": 108,
@@ -2457,7 +3713,15 @@
       "bottom": 7,
       "left": 2
     },
-    "image_id": 121
+    "image_id": 121,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "フォルタン伯爵邸(06:06):フォルタン家の執事"
+      }
+    ]
   },
   {
     "number": 109,
@@ -2477,7 +3741,15 @@
       "bottom": 2,
       "left": 7
     },
-    "image_id": 122
+    "image_id": 122,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ゴールド"
+      }
+    ]
   },
   {
     "number": 110,
@@ -2501,7 +3773,20 @@
       "bottom": 5,
       "left": 4
     },
-    "image_id": 123
+    "image_id": 123,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アバラシア雲海(06:14):リヌバリ"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ミスライト"
+      }
+    ]
   },
   {
     "number": 111,
@@ -2525,7 +3810,25 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 124
+    "image_id": 124,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "FA",
+        "label": "FATE",
+        "text": "F.A.T.E.「白亜の宮殿防衛線：モーグリ救援」"
+      },
+      {
+        "abbr": "FA",
+        "label": "FATE",
+        "text": "F.A.T.E.「白亜の宮殿防衛線：子竜救援」"
+      },
+      {
+        "abbr": "FA",
+        "label": "FATE",
+        "text": "F.A.T.E.「白亜の宮殿防衛線：猛竜討伐」"
+      }
+    ]
   },
   {
     "number": 112,
@@ -2549,7 +3852,20 @@
       "bottom": 6,
       "left": 4
     },
-    "image_id": 125
+    "image_id": 125,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "氷結洞窟　スノークローク大氷壁"
+      },
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・72,000MGP"
+      }
+    ]
   },
   {
     "number": 113,
@@ -2573,7 +3889,15 @@
       "bottom": 6,
       "left": 6
     },
-    "image_id": 126
+    "image_id": 126,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "逆襲要害　サスタシャ浸食洞(Hard)"
+      }
+    ]
   },
   {
     "number": 114,
@@ -2597,7 +3921,15 @@
       "bottom": 7,
       "left": 5
     },
-    "image_id": 127
+    "image_id": 127,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "遺跡救済　カルン埋没寺院(Hard)"
+      }
+    ]
   },
   {
     "number": 115,
@@ -2621,7 +3953,15 @@
       "bottom": 2,
       "left": 8
     },
-    "image_id": 128
+    "image_id": 128,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "武装聖域　ワンダラーパレス(Hard)"
+      }
+    ]
   },
   {
     "number": 116,
@@ -2645,7 +3985,15 @@
       "bottom": 8,
       "left": 4
     },
-    "image_id": 129
+    "image_id": 129,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "邪念排撃　古城アムダプール(Hard)"
+      }
+    ]
   },
   {
     "number": 117,
@@ -2669,7 +4017,15 @@
       "bottom": 6,
       "left": 3
     },
-    "image_id": 130
+    "image_id": 130,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "星海観測　逆さの塔"
+      }
+    ]
   },
   {
     "number": 118,
@@ -2693,7 +4049,15 @@
       "bottom": 2,
       "left": 7
     },
-    "image_id": 131
+    "image_id": 131,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "神聖遺跡　古アムダプール市街(Hard)"
+      }
+    ]
   },
   {
     "number": 119,
@@ -2717,7 +4081,15 @@
       "bottom": 6,
       "left": 7
     },
-    "image_id": 132
+    "image_id": 132,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(30:13):クリントータ"
+      }
+    ]
   },
   {
     "number": 120,
@@ -2737,7 +4109,15 @@
       "bottom": 3,
       "left": 7
     },
-    "image_id": 133
+    "image_id": 133,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "フォルタン伯爵邸(06:06):フォルタン家の執事"
+      }
+    ]
   },
   {
     "number": 121,
@@ -2757,7 +4137,15 @@
       "bottom": 7,
       "left": 3
     },
-    "image_id": 134
+    "image_id": 134,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "フォルタン伯爵邸(06:06):フォルタン家の執事"
+      }
+    ]
   },
   {
     "number": 122,
@@ -2781,7 +4169,20 @@
       "bottom": 6,
       "left": 7
     },
-    "image_id": 135
+    "image_id": 135,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(30:13):クリントータ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "クリスタルタワー:シルクスの塔"
+      }
+    ]
   },
   {
     "number": 123,
@@ -2805,7 +4206,20 @@
       "bottom": 7,
       "left": 7
     },
-    "image_id": 136
+    "image_id": 136,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "低地ドラヴァニア(21:18):タップクリクス"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "機工城アレキサンダー:律動編4"
+      }
+    ]
   },
   {
     "number": 124,
@@ -2829,7 +4243,20 @@
       "bottom": 8,
       "left": 6
     },
-    "image_id": 137
+    "image_id": 137,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "魔神セフィロト討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極魔神セフィロト討滅戦"
+      }
+    ]
   },
   {
     "number": 125,
@@ -2853,7 +4280,15 @@
       "bottom": 3,
       "left": 7
     },
-    "image_id": 138
+    "image_id": 138,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・20,000MGP"
+      }
+    ]
   },
   {
     "number": 126,
@@ -2873,7 +4308,15 @@
       "bottom": 8,
       "left": 6
     },
-    "image_id": 139
+    "image_id": 139,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "カードコレクター:ランク5"
+      }
+    ]
   },
   {
     "number": 127,
@@ -2897,7 +4340,20 @@
       "bottom": 7,
       "left": 6
     },
-    "image_id": 140
+    "image_id": 140,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(30:13):クリントータ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "クリスタルタワー:闇の世界"
+      }
+    ]
   },
   {
     "number": 128,
@@ -2917,7 +4373,15 @@
       "bottom": 7,
       "left": 3
     },
-    "image_id": 141
+    "image_id": 141,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ナル回廊(09:08):ワイモンド"
+      }
+    ]
   },
   {
     "number": 129,
@@ -2937,7 +4401,15 @@
       "bottom": 3,
       "left": 6
     },
-    "image_id": 142
+    "image_id": 142,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イシュガルド:上層(07:10):エレイズ"
+      }
+    ]
   },
   {
     "number": 130,
@@ -2957,7 +4429,15 @@
       "bottom": 3,
       "left": 3
     },
-    "image_id": 143
+    "image_id": 143,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アバラシア雲海(15:37):マリエル"
+      }
+    ]
   },
   {
     "number": 131,
@@ -2977,7 +4457,15 @@
       "bottom": 4,
       "left": 6
     },
-    "image_id": 144
+    "image_id": 144,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "リムサ・ロミンサ:上甲板層(12:13):オ・カルカヤ"
+      }
+    ]
   },
   {
     "number": 132,
@@ -2997,7 +4485,15 @@
       "bottom": 7,
       "left": 2
     },
-    "image_id": 145
+    "image_id": 145,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "リムサ・ロミンサ:上甲板層(11:07):モーディン"
+      }
+    ]
   },
   {
     "number": 133,
@@ -3017,7 +4513,15 @@
       "bottom": 4,
       "left": 8
     },
-    "image_id": 146
+    "image_id": 146,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ドラヴァニア雲海(15:28):団長のモグジン"
+      }
+    ]
   },
   {
     "number": 134,
@@ -3041,7 +4545,15 @@
       "bottom": 7,
       "left": 7
     },
-    "image_id": 147
+    "image_id": 147,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "神域浮島　ネバーリープ"
+      }
+    ]
   },
   {
     "number": 135,
@@ -3065,7 +4577,15 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 148
+    "image_id": 148,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "博物戦艦　フラクタル・コンティニアム"
+      }
+    ]
   },
   {
     "number": 136,
@@ -3089,7 +4609,15 @@
       "bottom": 7,
       "left": 6
     },
-    "image_id": 149
+    "image_id": 149,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "黒渦伝説　ハルブレイカー・アイル(Hard)"
+      }
+    ]
   },
   {
     "number": 137,
@@ -3109,7 +4637,15 @@
       "bottom": 6,
       "left": 8
     },
-    "image_id": 150
+    "image_id": 150,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "モードゥナ(30:13):クリントータ"
+      }
+    ]
   },
   {
     "number": 138,
@@ -3129,7 +4665,15 @@
       "bottom": 5,
       "left": 6
     },
-    "image_id": 151
+    "image_id": 151,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アジス・ラー(28:31):退屈そうな帝国兵"
+      }
+    ]
   },
   {
     "number": 139,
@@ -3153,7 +4697,15 @@
       "bottom": 7,
       "left": 8
     },
-    "image_id": 152
+    "image_id": 152,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "禁忌都市マハ"
+      }
+    ]
   },
   {
     "number": 140,
@@ -3177,7 +4729,20 @@
       "bottom": 10,
       "left": 6
     },
-    "image_id": 153
+    "image_id": 153,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ドラヴァニア雲海(15:28):団長のモグジン"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "天竜宮殿　ソール・カイ"
+      }
+    ]
   },
   {
     "number": 141,
@@ -3197,7 +4762,15 @@
       "bottom": 4,
       "left": 1
     },
-    "image_id": 154
+    "image_id": 154,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "カードバトルルーム(03:03):緑の手のウィラ・リエーガ"
+      }
+    ]
   },
   {
     "number": 142,
@@ -3217,7 +4790,15 @@
       "bottom": 4,
       "left": 1
     },
-    "image_id": 155
+    "image_id": 155,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "カードバトルルーム(03:03):高貴なるフリショワレル"
+      }
+    ]
   },
   {
     "number": 143,
@@ -3237,7 +4818,15 @@
       "bottom": 2,
       "left": 3
     },
-    "image_id": 156
+    "image_id": 156,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ブロンズ"
+      }
+    ]
   },
   {
     "number": 144,
@@ -3257,7 +4846,15 @@
       "bottom": 6,
       "left": 6
     },
-    "image_id": 157
+    "image_id": 157,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ブロンズ"
+      }
+    ]
   },
   {
     "number": 145,
@@ -3277,7 +4874,15 @@
       "bottom": 4,
       "left": 5
     },
-    "image_id": 158
+    "image_id": 158,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "カードバトルルーム(03:03):成金のプライド・フルスタグ"
+      }
+    ]
   },
   {
     "number": 146,
@@ -3297,7 +4902,15 @@
       "bottom": 6,
       "left": 3
     },
-    "image_id": 159
+    "image_id": 159,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ブロンズ"
+      }
+    ]
   },
   {
     "number": 147,
@@ -3317,7 +4930,15 @@
       "bottom": 6,
       "left": 3
     },
-    "image_id": 160
+    "image_id": 160,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "カードバトルルーム(03:03):ルームマスター"
+      }
+    ]
   },
   {
     "number": 148,
@@ -3341,7 +4962,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 161
+    "image_id": 161,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "稀書回収　グブラ幻想図書館(Hard)"
+      }
+    ]
   },
   {
     "number": 149,
@@ -3365,7 +4994,15 @@
       "bottom": 6,
       "left": 2
     },
-    "image_id": 162
+    "image_id": 162,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "峻厳渓谷　ゼルファトル"
+      }
+    ]
   },
   {
     "number": 150,
@@ -3389,7 +5026,15 @@
       "bottom": 2,
       "left": 8
     },
-    "image_id": 163
+    "image_id": 163,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "機工城アレキサンダー:天動編4"
+      }
+    ]
   },
   {
     "number": 151,
@@ -3409,7 +5054,15 @@
       "bottom": 6,
       "left": 5
     },
-    "image_id": 164
+    "image_id": 164,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "カードバトルルーム(03:03):酔いどれのネル"
+      }
+    ]
   },
   {
     "number": 152,
@@ -3429,7 +5082,15 @@
       "bottom": 7,
       "left": 9
     },
-    "image_id": 165
+    "image_id": 165,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "カードコレクター:ランク6"
+      }
+    ]
   },
   {
     "number": 153,
@@ -3449,7 +5110,20 @@
       "bottom": 2,
       "left": 5
     },
-    "image_id": 166
+    "image_id": 166,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "街角のデュエリスト:ランク4"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "大迷宮バハムート:侵攻編4"
+      }
+    ]
   },
   {
     "number": 154,
@@ -3469,7 +5143,15 @@
       "bottom": 3,
       "left": 9
     },
-    "image_id": 167
+    "image_id": 167,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "カードバトルルーム(03:03):高貴なるフリショワレル"
+      }
+    ]
   },
   {
     "number": 155,
@@ -3493,7 +5175,20 @@
       "bottom": 5,
       "left": 6
     },
-    "image_id": 168
+    "image_id": 168,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "女神ソフィア討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極女神ソフィア討滅戦"
+      }
+    ]
   },
   {
     "number": 156,
@@ -3513,7 +5208,15 @@
       "bottom": 2,
       "left": 6
     },
-    "image_id": 169
+    "image_id": 169,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・600MGP"
+      }
+    ]
   },
   {
     "number": 157,
@@ -3533,7 +5236,15 @@
       "bottom": 4,
       "left": 4
     },
-    "image_id": 170
+    "image_id": 170,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・840MGP"
+      }
+    ]
   },
   {
     "number": 158,
@@ -3553,7 +5264,15 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 171
+    "image_id": 171,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "インペリアルトライアドパック"
+      }
+    ]
   },
   {
     "number": 159,
@@ -3573,7 +5292,15 @@
       "bottom": 5,
       "left": 5
     },
-    "image_id": 172
+    "image_id": 172,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "インペリアルトライアドパック"
+      }
+    ]
   },
   {
     "number": 160,
@@ -3593,7 +5320,15 @@
       "bottom": 5,
       "left": 5
     },
-    "image_id": 174
+    "image_id": 174,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "霊峰浄化　ソーム・アル(Hard)"
+      }
+    ]
   },
   {
     "number": 161,
@@ -3613,7 +5348,15 @@
       "bottom": 4,
       "left": 5
     },
-    "image_id": 175
+    "image_id": 175,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "インペリアルトライアドパック"
+      }
+    ]
   },
   {
     "number": 162,
@@ -3633,7 +5376,15 @@
       "bottom": 6,
       "left": 7
     },
-    "image_id": 176
+    "image_id": 176,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "インペリアルトライアドパック"
+      }
+    ]
   },
   {
     "number": 163,
@@ -3653,7 +5404,15 @@
       "bottom": 4,
       "left": 1
     },
-    "image_id": 177
+    "image_id": 177,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "巨大防壁　バエサルの長城"
+      }
+    ]
   },
   {
     "number": 164,
@@ -3677,7 +5436,15 @@
       "bottom": 8,
       "left": 9
     },
-    "image_id": 179
+    "image_id": 179,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "影の国ダン・スカー"
+      }
+    ]
   },
   {
     "number": 165,
@@ -3697,7 +5464,15 @@
       "bottom": 9,
       "left": 7
     },
-    "image_id": 180
+    "image_id": 180,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "インペリアルトライアドパック"
+      }
+    ]
   },
   {
     "number": 166,
@@ -3721,7 +5496,20 @@
       "bottom": 8,
       "left": 10
     },
-    "image_id": 182
+    "image_id": 182,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "鬼神ズルワーン討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極鬼神ズルワーン討滅戦"
+      }
+    ]
   },
   {
     "number": 167,
@@ -3741,7 +5529,15 @@
       "bottom": 1,
       "left": 6
     },
-    "image_id": 173
+    "image_id": 173,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・5,000MGP"
+      }
+    ]
   },
   {
     "number": 168,
@@ -3761,7 +5557,15 @@
       "bottom": 8,
       "left": 3
     },
-    "image_id": 178
+    "image_id": 178,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・10,000MGP"
+      }
+    ]
   },
   {
     "number": 169,
@@ -3781,7 +5585,15 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 181
+    "image_id": 181,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・90,000MGP"
+      }
+    ]
   },
   {
     "number": 170,
@@ -3801,7 +5613,15 @@
       "bottom": 1,
       "left": 5
     },
-    "image_id": 183
+    "image_id": 183,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ヤンサ(15:31):ギョエイ"
+      }
+    ]
   },
   {
     "number": 171,
@@ -3821,7 +5641,15 @@
       "bottom": 5,
       "left": 4
     },
-    "image_id": 184
+    "image_id": 184,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "紅玉海(28:16):ツヅラ"
+      }
+    ]
   },
   {
     "number": 172,
@@ -3841,7 +5669,15 @@
       "bottom": 5,
       "left": 2
     },
-    "image_id": 185
+    "image_id": 185,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ギラバニア辺境地帯(28:19):ガリマ"
+      }
+    ]
   },
   {
     "number": 173,
@@ -3861,7 +5697,15 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 186
+    "image_id": 186,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ラールガーズリーチ(09:09):アーカンバルト"
+      }
+    ]
   },
   {
     "number": 174,
@@ -3881,7 +5725,15 @@
       "bottom": 2,
       "left": 6
     },
-    "image_id": 187
+    "image_id": 187,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(10:10):コトカゼ"
+      }
+    ]
   },
   {
     "number": 175,
@@ -3909,7 +5761,15 @@
       "bottom": 8,
       "left": 3
     },
-    "image_id": 188
+    "image_id": 188,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "FA",
+        "label": "FATE",
+        "text": "F.A.T.E.「長牙の圧殺者「マヒシャスラ」」"
+      }
+    ]
   },
   {
     "number": 176,
@@ -3929,7 +5789,15 @@
       "bottom": 3,
       "left": 1
     },
-    "image_id": 189
+    "image_id": 189,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "FA",
+        "label": "FATE",
+        "text": "F.A.T.E.「白色大顔面「トール・マウンテン」」"
+      }
+    ]
   },
   {
     "number": 177,
@@ -3953,7 +5821,20 @@
       "bottom": 3,
       "left": 8
     },
-    "image_id": 190
+    "image_id": 190,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "スサノオ討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極スサノオ討滅戦"
+      }
+    ]
   },
   {
     "number": 178,
@@ -3977,7 +5858,20 @@
       "bottom": 7,
       "left": 5
     },
-    "image_id": 191
+    "image_id": 191,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "ラクシュミ討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ラクシュミ討滅戦"
+      }
+    ]
   },
   {
     "number": 179,
@@ -4001,7 +5895,15 @@
       "bottom": 7,
       "left": 4
     },
-    "image_id": 192
+    "image_id": 192,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "解放決戦　ドマ城"
+      }
+    ]
   },
   {
     "number": 180,
@@ -4021,7 +5923,15 @@
       "bottom": 8,
       "left": 2
     },
-    "image_id": 193
+    "image_id": 193,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "紅玉海(22:08):カイザン"
+      }
+    ]
   },
   {
     "number": 181,
@@ -4041,7 +5951,15 @@
       "bottom": 6,
       "left": 8
     },
-    "image_id": 194
+    "image_id": 194,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アジムステップ(31:11):ニゲン"
+      }
+    ]
   },
   {
     "number": 182,
@@ -4061,7 +5979,15 @@
       "bottom": 4,
       "left": 4
     },
-    "image_id": 195
+    "image_id": 195,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アジムステップ(22:20):オゴデイ"
+      }
+    ]
   },
   {
     "number": 183,
@@ -4081,7 +6007,15 @@
       "bottom": 7,
       "left": 4
     },
-    "image_id": 196
+    "image_id": 196,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アジムステップ(12:33):ムングリグ"
+      }
+    ]
   },
   {
     "number": 184,
@@ -4105,7 +6039,20 @@
       "bottom": 8,
       "left": 2
     },
-    "image_id": 197
+    "image_id": 197,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "神龍討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極神龍討滅戦"
+      }
+    ]
   },
   {
     "number": 185,
@@ -4125,7 +6072,15 @@
       "bottom": 8,
       "left": 6
     },
-    "image_id": 198
+    "image_id": 198,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ギラバニア湖畔地帯(32:30):帝国軍の脱走兵"
+      }
+    ]
   },
   {
     "number": 186,
@@ -4145,7 +6100,15 @@
       "bottom": 8,
       "left": 7
     },
-    "image_id": 199
+    "image_id": 199,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "カードコレクター:ランク7"
+      }
+    ]
   },
   {
     "number": 187,
@@ -4165,7 +6128,15 @@
       "bottom": 1,
       "left": 8
     },
-    "image_id": 200
+    "image_id": 200,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "街角のデュエリスト:ランク5"
+      }
+    ]
   },
   {
     "number": 188,
@@ -4189,7 +6160,15 @@
       "bottom": 7,
       "left": 10
     },
-    "image_id": 201
+    "image_id": 201,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "紅蓮決戦　アラミゴ"
+      }
+    ]
   },
   {
     "number": 189,
@@ -4209,7 +6188,15 @@
       "bottom": 5,
       "left": 10
     },
-    "image_id": 202
+    "image_id": 202,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ドマ町人地(05:04):キウカ"
+      }
+    ]
   },
   {
     "number": 190,
@@ -4229,7 +6216,15 @@
       "bottom": 5,
       "left": 1
     },
-    "image_id": 203
+    "image_id": 203,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・840MGP"
+      }
+    ]
   },
   {
     "number": 191,
@@ -4249,7 +6244,15 @@
       "bottom": 2,
       "left": 6
     },
-    "image_id": 204
+    "image_id": 204,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・1,200MGP"
+      }
+    ]
   },
   {
     "number": 192,
@@ -4269,7 +6272,15 @@
       "bottom": 7,
       "left": 5
     },
-    "image_id": 205
+    "image_id": 205,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ギラバニア辺境地帯(28:19):ガリマ"
+      }
+    ]
   },
   {
     "number": 193,
@@ -4289,7 +6300,15 @@
       "bottom": 6,
       "left": 7
     },
-    "image_id": 206
+    "image_id": 206,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "水没遺構　スカラ"
+      }
+    ]
   },
   {
     "number": 194,
@@ -4309,7 +6328,15 @@
       "bottom": 6,
       "left": 3
     },
-    "image_id": 207
+    "image_id": 207,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ギラバニア湖畔地帯(32:30):帝国軍の脱走兵"
+      }
+    ]
   },
   {
     "number": 195,
@@ -4333,7 +6360,20 @@
       "bottom": 1,
       "left": 8
     },
-    "image_id": 208
+    "image_id": 208,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(10:11):ハナガサ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "失われた都　ラバナスタ"
+      }
+    ]
   },
   {
     "number": 196,
@@ -4357,7 +6397,20 @@
       "bottom": 5,
       "left": 8
     },
-    "image_id": 209
+    "image_id": 209,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(10:11):ハナガサ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "失われた都　ラバナスタ"
+      }
+    ]
   },
   {
     "number": 197,
@@ -4377,7 +6430,15 @@
       "bottom": 10,
       "left": 6
     },
-    "image_id": 210
+    "image_id": 210,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・400,000MGP"
+      }
+    ]
   },
   {
     "number": 198,
@@ -4397,7 +6458,15 @@
       "bottom": 1,
       "left": 6
     },
-    "image_id": 211
+    "image_id": 211,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ヤンサ(29:20):マサツチ"
+      }
+    ]
   },
   {
     "number": 199,
@@ -4417,7 +6486,15 @@
       "bottom": 7,
       "left": 4
     },
-    "image_id": 212
+    "image_id": 212,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "紅玉海(21:19):イソベ"
+      }
+    ]
   },
   {
     "number": 200,
@@ -4437,7 +6514,15 @@
       "bottom": 4,
       "left": 4
     },
-    "image_id": 213
+    "image_id": 213,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "暴走戦艦　フラクタル・コンティニアム(Hard)"
+      }
+    ]
   },
   {
     "number": 201,
@@ -4457,7 +6542,15 @@
       "bottom": 3,
       "left": 7
     },
-    "image_id": 214
+    "image_id": 214,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "紅玉海(31:37):ユウスイ"
+      }
+    ]
   },
   {
     "number": 202,
@@ -4477,7 +6570,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 215
+    "image_id": 215,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "紅玉火山　獄之蓋"
+      }
+    ]
   },
   {
     "number": 203,
@@ -4501,7 +6602,20 @@
       "bottom": 7,
       "left": 7
     },
-    "image_id": 216
+    "image_id": 216,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "白虎征魂戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極白虎征魂戦"
+      }
+    ]
   },
   {
     "number": 204,
@@ -4521,7 +6635,15 @@
       "bottom": 8,
       "left": 2
     },
-    "image_id": 217
+    "image_id": 217,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ギラバニア湖畔地帯(16:24):アンバー・トレント"
+      }
+    ]
   },
   {
     "number": 205,
@@ -4541,7 +6663,15 @@
       "bottom": 8,
       "left": 7
     },
-    "image_id": 218
+    "image_id": 218,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ヤンサ(29:20):マサツチ"
+      }
+    ]
   },
   {
     "number": 206,
@@ -4561,7 +6691,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 219
+    "image_id": 219,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(08:11):キキモ"
+      }
+    ]
   },
   {
     "number": 207,
@@ -4581,7 +6719,15 @@
       "bottom": 7,
       "left": 9
     },
-    "image_id": 220
+    "image_id": 220,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "紅玉海(21:19):イソベ"
+      }
+    ]
   },
   {
     "number": 208,
@@ -4601,7 +6747,15 @@
       "bottom": 4,
       "left": 8
     },
-    "image_id": 224
+    "image_id": 224,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "風水霊殿　ガンエン廟"
+      }
+    ]
   },
   {
     "number": 209,
@@ -4625,7 +6779,20 @@
       "bottom": 7,
       "left": 8
     },
-    "image_id": 228
+    "image_id": 228,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "ツクヨミ討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ツクヨミ討滅戦"
+      }
+    ]
   },
   {
     "number": 210,
@@ -4649,7 +6816,20 @@
       "bottom": 10,
       "left": 7
     },
-    "image_id": 229
+    "image_id": 229,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(10:11):ハナガサ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "封じられた聖塔　リドルアナ"
+      }
+    ]
   },
   {
     "number": 211,
@@ -4669,7 +6849,15 @@
       "bottom": 10,
       "left": 2
     },
-    "image_id": 230
+    "image_id": 230,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "カードコレクター:ランク8"
+      }
+    ]
   },
   {
     "number": 212,
@@ -4693,7 +6881,15 @@
       "bottom": 1,
       "left": 5
     },
-    "image_id": 221
+    "image_id": 221,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "EX",
+        "label": "その他",
+        "text": "アメノミハシラ:埋もれた財宝【壱】"
+      }
+    ]
   },
   {
     "number": 213,
@@ -4717,7 +6913,15 @@
       "bottom": 5,
       "left": 6
     },
-    "image_id": 222
+    "image_id": 222,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "EX",
+        "label": "その他",
+        "text": "アメノミハシラ:埋もれた財宝【壱】"
+      }
+    ]
   },
   {
     "number": 214,
@@ -4741,7 +6945,15 @@
       "bottom": 5,
       "left": 7
     },
-    "image_id": 225
+    "image_id": 225,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "EX",
+        "label": "その他",
+        "text": "アメノミハシラ:埋もれた財宝【弐】"
+      }
+    ]
   },
   {
     "number": 215,
@@ -4765,7 +6977,15 @@
       "bottom": 3,
       "left": 5
     },
-    "image_id": 223
+    "image_id": 223,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "禁断の地エウレカ:パゴス編:NM「雪の女王」"
+      }
+    ]
   },
   {
     "number": 216,
@@ -4789,7 +7009,15 @@
       "bottom": 7,
       "left": 3
     },
-    "image_id": 226
+    "image_id": 226,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "禁断の地エウレカ:パゴス編:しあわせうさぎの財宝探索"
+      }
+    ]
   },
   {
     "number": 217,
@@ -4813,7 +7041,20 @@
       "bottom": 2,
       "left": 7
     },
-    "image_id": 227
+    "image_id": 227,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(07:14):ボタン"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "禁断の地エウレカ:パゴス編:NM「ロウヒ」"
+      }
+    ]
   },
   {
     "number": 218,
@@ -4833,7 +7074,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 232
+    "image_id": 232,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・1,500MGP"
+      }
+    ]
   },
   {
     "number": 219,
@@ -4853,7 +7102,15 @@
       "bottom": 6,
       "left": 7
     },
-    "image_id": 233
+    "image_id": 233,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "草木汚染　聖モシャーヌ植物園(Hard)"
+      }
+    ]
   },
   {
     "number": 220,
@@ -4873,7 +7130,15 @@
       "bottom": 5,
       "left": 5
     },
-    "image_id": 234
+    "image_id": 234,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "永久焦土　ザ・バーン"
+      }
+    ]
   },
   {
     "number": 221,
@@ -4897,7 +7162,20 @@
       "bottom": 7,
       "left": 7
     },
-    "image_id": 235
+    "image_id": 235,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "朱雀征魂戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極朱雀征魂戦"
+      }
+    ]
   },
   {
     "number": 222,
@@ -4917,7 +7195,15 @@
       "bottom": 1,
       "left": 8
     },
-    "image_id": 238
+    "image_id": 238,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ヤンサ(26:12):ハチナン"
+      }
+    ]
   },
   {
     "number": 223,
@@ -4941,7 +7227,15 @@
       "bottom": 3,
       "left": 10
     },
-    "image_id": 240
+    "image_id": 240,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "次元の狭間オメガ:アルファ編4"
+      }
+    ]
   },
   {
     "number": 224,
@@ -4961,7 +7255,15 @@
       "bottom": 1,
       "left": 4
     },
-    "image_id": 231
+    "image_id": 231,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(14:11):ホクシン"
+      }
+    ]
   },
   {
     "number": 225,
@@ -4985,7 +7287,15 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 236
+    "image_id": 236,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(07:14):ボタン"
+      }
+    ]
   },
   {
     "number": 226,
@@ -5009,7 +7319,15 @@
       "bottom": 8,
       "left": 5
     },
-    "image_id": 237
+    "image_id": 237,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "禁断の地エウレカ:パゴス編:NM「ペンテシレイア」"
+      }
+    ]
   },
   {
     "number": 227,
@@ -5029,7 +7347,15 @@
       "bottom": 1,
       "left": 8
     },
-    "image_id": 239
+    "image_id": 239,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(14:11):ホクシン"
+      }
+    ]
   },
   {
     "number": 228,
@@ -5049,7 +7375,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 241
+    "image_id": 241,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・96,000MGP"
+      }
+    ]
   },
   {
     "number": 229,
@@ -5069,7 +7403,15 @@
       "bottom": 8,
       "left": 3
     },
-    "image_id": 242
+    "image_id": 242,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "境界線戦　ギムリトダーク"
+      }
+    ]
   },
   {
     "number": 230,
@@ -5093,7 +7435,20 @@
       "bottom": 7,
       "left": 1
     },
-    "image_id": 243
+    "image_id": 243,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "青龍征魂戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極青龍征魂戦"
+      }
+    ]
   },
   {
     "number": 231,
@@ -5113,7 +7468,15 @@
       "bottom": 6,
       "left": 6
     },
-    "image_id": 244
+    "image_id": 244,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ラールガーズリーチ(13:11):ガーロンド社の調査員"
+      }
+    ]
   },
   {
     "number": 232,
@@ -5133,7 +7496,15 @@
       "bottom": 6,
       "left": 7
     },
-    "image_id": 245
+    "image_id": 245,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ヤンサ(15:31):ギョエイ"
+      }
+    ]
   },
   {
     "number": 233,
@@ -5157,7 +7528,20 @@
       "bottom": 7,
       "left": 7
     },
-    "image_id": 246
+    "image_id": 246,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(10:11):ハナガサ"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "楽欲の僧院　オーボンヌ"
+      }
+    ]
   },
   {
     "number": 234,
@@ -5177,7 +7561,15 @@
       "bottom": 8,
       "left": 8
     },
-    "image_id": 247
+    "image_id": 247,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "低地ドラヴァニア(12:36):メロ・ロッゴ"
+      }
+    ]
   },
   {
     "number": 235,
@@ -5201,7 +7593,15 @@
       "bottom": 3,
       "left": 7
     },
-    "image_id": 248
+    "image_id": 248,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "禁断の地エウレカ:ヒュダトス編:NM「プロヴェナンス・ウォッチャー」"
+      }
+    ]
   },
   {
     "number": 236,
@@ -5221,7 +7621,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 249
+    "image_id": 249,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クガネ(08:13):ヘツカゼ"
+      }
+    ]
   },
   {
     "number": 237,
@@ -5245,7 +7653,15 @@
       "bottom": 4,
       "left": 8
     },
-    "image_id": 250
+    "image_id": 250,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "禁断の地エウレカ:ヒュダトス編:NM「キング・ゴルデマール」"
+      }
+    ]
   },
   {
     "number": 238,
@@ -5265,7 +7681,15 @@
       "bottom": 8,
       "left": 4
     },
-    "image_id": 251
+    "image_id": 251,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "真ヨウジンボウ討滅戦"
+      }
+    ]
   },
   {
     "number": 239,
@@ -5285,7 +7709,15 @@
       "bottom": 2,
       "left": 3
     },
-    "image_id": 253
+    "image_id": 253,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "クリスタリウム(10:15):グリナード"
+      }
+    ]
   },
   {
     "number": 240,
@@ -5305,7 +7737,15 @@
       "bottom": 2,
       "left": 2
     },
-    "image_id": 254
+    "image_id": 254,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アム・アレーン(11:16):ドレーリー"
+      }
+    ]
   },
   {
     "number": 241,
@@ -5325,7 +7765,15 @@
       "bottom": 6,
       "left": 1
     },
-    "image_id": 255
+    "image_id": 255,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "コルシア島(19:17):イベナート"
+      }
+    ]
   },
   {
     "number": 242,
@@ -5345,7 +7793,15 @@
       "bottom": 4,
       "left": 4
     },
-    "image_id": 256
+    "image_id": 256,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アム・アレーン(11:16):ドレーリー"
+      }
+    ]
   },
   {
     "number": 243,
@@ -5365,7 +7821,15 @@
       "bottom": 5,
       "left": 1
     },
-    "image_id": 257
+    "image_id": 257,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イル・メグ(15:31):ギュフ＝ウィン"
+      }
+    ]
   },
   {
     "number": 244,
@@ -5385,7 +7849,15 @@
       "bottom": 7,
       "left": 1
     },
-    "image_id": 258
+    "image_id": 258,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ラケティカ大森林(19:27):ハルグラ"
+      }
+    ]
   },
   {
     "number": 245,
@@ -5405,7 +7877,15 @@
       "bottom": 7,
       "left": 7
     },
-    "image_id": 259
+    "image_id": 259,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "テンペスト(33:17):サウスィー・コール"
+      }
+    ]
   },
   {
     "number": 246,
@@ -5429,7 +7909,20 @@
       "bottom": 8,
       "left": 6
     },
-    "image_id": 260
+    "image_id": 260,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "殺戮郷村　ホルミンスター"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 247,
@@ -5453,7 +7946,25 @@
       "bottom": 6,
       "left": 2
     },
-    "image_id": 261
+    "image_id": 261,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "ティターニア討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ティターニア討滅戦"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 248,
@@ -5477,7 +7988,20 @@
       "bottom": 6,
       "left": 8
     },
-    "image_id": 262
+    "image_id": 262,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "古跡探索　キタンナ神影洞"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 249,
@@ -5501,7 +8025,20 @@
       "bottom": 2,
       "left": 6
     },
-    "image_id": 263
+    "image_id": 263,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "爽涼離宮　マリカの大井戸"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 250,
@@ -5521,7 +8058,15 @@
       "bottom": 5,
       "left": 5
     },
-    "image_id": 264
+    "image_id": 264,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "コルシア島(11:08):広域交易商:バイカラージェム・200個"
+      }
+    ]
   },
   {
     "number": 251,
@@ -5541,7 +8086,15 @@
       "bottom": 8,
       "left": 3
     },
-    "image_id": 265
+    "image_id": 265,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "レイクランド(35:19):ラムリン"
+      }
+    ]
   },
   {
     "number": 252,
@@ -5561,7 +8114,15 @@
       "bottom": 7,
       "left": 6
     },
-    "image_id": 266
+    "image_id": 266,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ユールモア(12:10):グレウェン"
+      }
+    ]
   },
   {
     "number": 253,
@@ -5585,7 +8146,25 @@
       "bottom": 8,
       "left": 8
     },
-    "image_id": 267
+    "image_id": 267,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "イノセンス討滅戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極イノセンス討滅戦"
+      },
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 254,
@@ -5605,7 +8184,15 @@
       "bottom": 5,
       "left": 9
     },
-    "image_id": 268
+    "image_id": 268,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ラケティカ大森林(19:27):ハルグラ"
+      }
+    ]
   },
   {
     "number": 255,
@@ -5625,7 +8212,15 @@
       "bottom": 5,
       "left": 9
     },
-    "image_id": 269
+    "image_id": 269,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "カードコレクター:ランク9"
+      }
+    ]
   },
   {
     "number": 256,
@@ -5645,7 +8240,15 @@
       "bottom": 9,
       "left": 5
     },
-    "image_id": 270
+    "image_id": 270,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ユールモア(12:10):グレウェン"
+      }
+    ]
   },
   {
     "number": 257,
@@ -5669,7 +8272,15 @@
       "bottom": 6,
       "left": 10
     },
-    "image_id": 271
+    "image_id": 271,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "ハーデス討滅戦"
+      }
+    ]
   },
   {
     "number": 258,
@@ -5689,7 +8300,15 @@
       "bottom": 9,
       "left": 9
     },
-    "image_id": 272
+    "image_id": 272,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "街角のデュエリスト:ランク7"
+      }
+    ]
   },
   {
     "number": 259,
@@ -5709,7 +8328,15 @@
       "bottom": 2,
       "left": 2
     },
-    "image_id": 273
+    "image_id": 273,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 260,
@@ -5729,7 +8356,15 @@
       "bottom": 6,
       "left": 4
     },
-    "image_id": 274
+    "image_id": 274,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イル・メグ(22:03):エオ＝シグン"
+      }
+    ]
   },
   {
     "number": 261,
@@ -5749,7 +8384,15 @@
       "bottom": 6,
       "left": 5
     },
-    "image_id": 275
+    "image_id": 275,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 262,
@@ -5769,7 +8412,15 @@
       "bottom": 2,
       "left": 4
     },
-    "image_id": 276
+    "image_id": 276,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "イル・メグ(22:03):エオ＝シグン"
+      }
+    ]
   },
   {
     "number": 263,
@@ -5789,7 +8440,15 @@
       "bottom": 6,
       "left": 2
     },
-    "image_id": 277
+    "image_id": 277,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 264,
@@ -5809,7 +8468,15 @@
       "bottom": 2,
       "left": 4
     },
-    "image_id": 278
+    "image_id": 278,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 265,
@@ -5829,7 +8496,15 @@
       "bottom": 6,
       "left": 8
     },
-    "image_id": 279
+    "image_id": 279,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "魔法宮殿　グラン・コスモス"
+      }
+    ]
   },
   {
     "number": 266,
@@ -5849,7 +8524,15 @@
       "bottom": 9,
       "left": 4
     },
-    "image_id": 280
+    "image_id": 280,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 267,
@@ -5869,7 +8552,15 @@
       "bottom": 7,
       "left": 1
     },
-    "image_id": 281
+    "image_id": 281,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "CP",
+        "label": "カードパック",
+        "text": "トライアドパック・ドリーム"
+      }
+    ]
   },
   {
     "number": 268,
@@ -5889,7 +8580,15 @@
       "bottom": 6,
       "left": 10
     },
-    "image_id": 282
+    "image_id": 282,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "複製サレタ工場廃墟"
+      }
+    ]
   },
   {
     "number": 269,
@@ -5909,7 +8608,15 @@
       "bottom": 2,
       "left": 7
     },
-    "image_id": 283
+    "image_id": 283,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "イル・メグ(16:30):広域交易商:バイカラージェム・40個"
+      }
+    ]
   },
   {
     "number": 270,
@@ -5929,7 +8636,15 @@
       "bottom": 2,
       "left": 2
     },
-    "image_id": 284
+    "image_id": 284,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ラケティカ大森林(20:27):レダート"
+      }
+    ]
   },
   {
     "number": 271,
@@ -5949,7 +8664,15 @@
       "bottom": 7,
       "left": 6
     },
-    "image_id": 285
+    "image_id": 285,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "レイクランド(35:20):広域交易商:バイカラージェム・60個"
+      }
+    ]
   },
   {
     "number": 272,
@@ -5969,7 +8692,15 @@
       "bottom": 8,
       "left": 6
     },
-    "image_id": 287
+    "image_id": 287,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ラケティカ大森林(20:27):レダート"
+      }
+    ]
   },
   {
     "number": 273,
@@ -5989,7 +8720,15 @@
       "bottom": 1,
       "left": 6
     },
-    "image_id": 288
+    "image_id": 288,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "コルシア島(11:08):広域交易商:バイカラージェム・100個"
+      }
+    ]
   },
   {
     "number": 274,
@@ -6009,7 +8748,15 @@
       "bottom": 8,
       "left": 2
     },
-    "image_id": 289
+    "image_id": 289,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ラケティカ大森林(27:18):広域交易商:バイカラージェム・100個"
+      }
+    ]
   },
   {
     "number": 275,
@@ -6029,7 +8776,15 @@
       "bottom": 3,
       "left": 8
     },
-    "image_id": 290
+    "image_id": 290,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "黒風海底　アニドラス・アナムネーシス"
+      }
+    ]
   },
   {
     "number": 276,
@@ -6053,7 +8808,20 @@
       "bottom": 1,
       "left": 9
     },
-    "image_id": 291
+    "image_id": 291,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "ルビーウェポン破壊作戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ルビーウェポン破壊作戦"
+      }
+    ]
   },
   {
     "number": 277,
@@ -6073,7 +8841,15 @@
       "bottom": 2,
       "left": 9
     },
-    "image_id": 292
+    "image_id": 292,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "テンペスト(33:17):広域交易商:バイカラージェム・250個"
+      }
+    ]
   },
   {
     "number": 278,
@@ -6093,7 +8869,15 @@
       "bottom": 6,
       "left": 4
     },
-    "image_id": 286
+    "image_id": 286,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "蒼天街(12:14):蒼天街振興券×500"
+      }
+    ]
   },
   {
     "number": 279,
@@ -6113,7 +8897,15 @@
       "bottom": 4,
       "left": 1
     },
-    "image_id": 293
+    "image_id": 293,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極シタデル・ボズヤ追憶戦"
+      }
+    ]
   },
   {
     "number": 280,
@@ -6133,7 +8925,15 @@
       "bottom": 6,
       "left": 2
     },
-    "image_id": 294
+    "image_id": 294,
+    "card_type": "獣人",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "レイクランド(14:07):コブレヴァ"
+      }
+    ]
   },
   {
     "number": 281,
@@ -6153,7 +8953,15 @@
       "bottom": 2,
       "left": 6
     },
-    "image_id": 296
+    "image_id": 296,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "レイクランド(14:07):コブレヴァ"
+      }
+    ]
   },
   {
     "number": 282,
@@ -6173,7 +8981,15 @@
       "bottom": 7,
       "left": 7
     },
-    "image_id": 297
+    "image_id": 297,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・21,000MGP"
+      }
+    ]
   },
   {
     "number": 283,
@@ -6193,7 +9009,15 @@
       "bottom": 9,
       "left": 4
     },
-    "image_id": 300
+    "image_id": 300,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・56,000MGP"
+      }
+    ]
   },
   {
     "number": 284,
@@ -6213,7 +9037,15 @@
       "bottom": 8,
       "left": 1
     },
-    "image_id": 301
+    "image_id": 301,
+    "card_type": "暁",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "カードコレクター:ランク10"
+      }
+    ]
   },
   {
     "number": 285,
@@ -6233,7 +9065,15 @@
       "bottom": 8,
       "left": 7
     },
-    "image_id": 302
+    "image_id": 302,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ターンクリフ(05:06):威勢のいい帝国兵"
+      }
+    ]
   },
   {
     "number": 286,
@@ -6253,7 +9093,15 @@
       "bottom": 10,
       "left": 6
     },
-    "image_id": 303
+    "image_id": 303,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "人形タチノ軍事基地"
+      }
+    ]
   },
   {
     "number": 287,
@@ -6277,7 +9125,15 @@
       "bottom": 10,
       "left": 5
     },
-    "image_id": 304
+    "image_id": 304,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "ウォーリアー・オブ・ライト討滅戦"
+      }
+    ]
   },
   {
     "number": 288,
@@ -6297,7 +9153,15 @@
       "bottom": 1,
       "left": 7
     },
-    "image_id": 295
+    "image_id": 295,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "蒼天街(12:14):蒼天街振興券×500"
+      }
+    ]
   },
   {
     "number": 289,
@@ -6317,7 +9181,15 @@
       "bottom": 6,
       "left": 6
     },
-    "image_id": 298
+    "image_id": 298,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ガンゴッシュ(05:06):アルシウ"
+      }
+    ]
   },
   {
     "number": 290,
@@ -6337,7 +9209,15 @@
       "bottom": 7,
       "left": 8
     },
-    "image_id": 299
+    "image_id": 299,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ガンゴッシュ(05:06):アルシウ"
+      }
+    ]
   },
   {
     "number": 291,
@@ -6357,7 +9237,15 @@
       "bottom": 7,
       "left": 6
     },
-    "image_id": 306
+    "image_id": 306,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "魔術工房　マトーヤのアトリエ"
+      }
+    ]
   },
   {
     "number": 292,
@@ -6381,7 +9269,20 @@
       "bottom": 9,
       "left": 8
     },
-    "image_id": 312
+    "image_id": 312,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "エメラルドウェポン破壊作戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極エメラルドウェポン破壊作戦"
+      }
+    ]
   },
   {
     "number": 293,
@@ -6401,7 +9302,15 @@
       "bottom": 7,
       "left": 1
     },
-    "image_id": 313
+    "image_id": 313,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アム・アレーン(26:16):リュート・スー"
+      }
+    ]
   },
   {
     "number": 294,
@@ -6421,7 +9330,15 @@
       "bottom": 1,
       "left": 9
     },
-    "image_id": 314
+    "image_id": 314,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "アム・アレーン(26:16):リュート・スー"
+      }
+    ]
   },
   {
     "number": 295,
@@ -6445,7 +9362,15 @@
       "bottom": 8,
       "left": 6
     },
-    "image_id": 315
+    "image_id": 315,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "希望の園エデン:再生編4"
+      }
+    ]
   },
   {
     "number": 296,
@@ -6465,7 +9390,15 @@
       "bottom": 6,
       "left": 9
     },
-    "image_id": 316
+    "image_id": 316,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "AC",
+        "label": "アチーブメント",
+        "text": "オフィシャルレコード:ランク1"
+      }
+    ]
   },
   {
     "number": 297,
@@ -6485,7 +9418,15 @@
       "bottom": 1,
       "left": 1
     },
-    "image_id": 305
+    "image_id": 305,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ウルダハ:ザル回廊(12:13):泣男のラトージャ:同盟記章・100個"
+      }
+    ]
   },
   {
     "number": 298,
@@ -6505,7 +9446,15 @@
       "bottom": 8,
       "left": 7
     },
-    "image_id": 307
+    "image_id": 307,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "南方ボズヤ戦線:ボズヤクラスター×3"
+      }
+    ]
   },
   {
     "number": 299,
@@ -6525,7 +9474,15 @@
       "bottom": 6,
       "left": 1
     },
-    "image_id": 308
+    "image_id": 308,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "南方ボズヤ戦線:ボズヤクラスター×3"
+      }
+    ]
   },
   {
     "number": 300,
@@ -6545,7 +9502,15 @@
       "bottom": 6,
       "left": 6
     },
-    "image_id": 309
+    "image_id": 309,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ザル回廊(11:13):ドロイン"
+      }
+    ]
   },
   {
     "number": 301,
@@ -6565,7 +9530,15 @@
       "bottom": 4,
       "left": 8
     },
-    "image_id": 310
+    "image_id": 310,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ウルダハ:ザル回廊(11:13):ドロイン"
+      }
+    ]
   },
   {
     "number": 302,
@@ -6589,7 +9562,15 @@
       "bottom": 4,
       "left": 6
     },
-    "image_id": 311
+    "image_id": 311,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ウルダハ:ザル回廊(12:13):泣男のラトージャ:同盟記章・300個"
+      }
+    ]
   },
   {
     "number": 303,
@@ -6609,7 +9590,15 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 317
+    "image_id": 317,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "イル・メグ(16:30):広域交易商:バイカラージェム・60個"
+      }
+    ]
   },
   {
     "number": 304,
@@ -6629,7 +9618,15 @@
       "bottom": 8,
       "left": 4
     },
-    "image_id": 318
+    "image_id": 318,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "黄金平原　パガルザン"
+      }
+    ]
   },
   {
     "number": 305,
@@ -6649,7 +9646,15 @@
       "bottom": 8,
       "left": 3
     },
-    "image_id": 319
+    "image_id": 319,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・22,400MGP"
+      }
+    ]
   },
   {
     "number": 306,
@@ -6669,7 +9674,15 @@
       "bottom": 7,
       "left": 8
     },
-    "image_id": 323
+    "image_id": 323,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "モードゥナ(22:06):カ・インタナ:ルビー/エメラルド/ダイヤトーテム各1"
+      }
+    ]
   },
   {
     "number": 307,
@@ -6693,7 +9706,20 @@
       "bottom": 7,
       "left": 1
     },
-    "image_id": 324
+    "image_id": 324,
+    "card_type": "帝国",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "ダイヤウェポン捕獲作戦"
+      },
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "極ダイヤウェポン捕獲作戦"
+      }
+    ]
   },
   {
     "number": 308,
@@ -6713,7 +9739,15 @@
       "bottom": 4,
       "left": 8
     },
-    "image_id": 326
+    "image_id": 326,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "DU",
+        "label": "ダンジョン",
+        "text": "希望ノ砲台：「塔」"
+      }
+    ]
   },
   {
     "number": 309,
@@ -6733,7 +9767,15 @@
       "bottom": 4,
       "left": 7
     },
-    "image_id": 320
+    "image_id": 320,
+    "card_type": "蛮神",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ゴールドソーサー(04:07):カードトレーダー・22,400MGP"
+      }
+    ]
   },
   {
     "number": 310,
@@ -6753,7 +9795,15 @@
       "bottom": 7,
       "left": 8
     },
-    "image_id": 321
+    "image_id": 321,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ガンゴッシュ(05:06):スラッドキー"
+      }
+    ]
   },
   {
     "number": 311,
@@ -6773,7 +9823,15 @@
       "bottom": 7,
       "left": 6
     },
-    "image_id": 322
+    "image_id": 322,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "VS",
+        "label": "NPC対戦",
+        "text": "ガンゴッシュ(05:06):スラッドキー"
+      }
+    ]
   },
   {
     "number": 312,
@@ -6793,6 +9851,14 @@
       "bottom": 9,
       "left": 9
     },
-    "image_id": 325
+    "image_id": 325,
+    "card_type": "",
+    "tsv_sources": [
+      {
+        "abbr": "TR",
+        "label": "アイテム交換",
+        "text": "ザトゥノル高原:ボズヤクラスター×7"
+      }
+    ]
   }
 ]

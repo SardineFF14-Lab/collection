@@ -45,7 +45,7 @@
     position: sticky; top: 0; z-index: 100;
   }
   .header-inner {
-    max-width: 1100px; margin: 0 auto;
+    max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center;
     height: 52px; gap: 12px;
   }
@@ -55,7 +55,7 @@
   /* サマリー */
   .summary { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 10px 20px; }
   .summary-inner {
-    max-width: 1100px; margin: 0 auto;
+    max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
   }
   .stat { display: flex; flex-direction: column; align-items: center; min-width: 48px; }
@@ -85,7 +85,7 @@
   /* URL共有 */
   .share-area { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 8px 20px; }
   .share-inner {
-    max-width: 1100px; margin: 0 auto;
+    max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
   }
   .share-label { font-size: 12px; color: var(--text2); white-space: nowrap; }
@@ -120,7 +120,7 @@
     position: sticky; top: 52px; z-index: 90;
   }
   .filters-inner {
-    max-width: 1100px; margin: 0 auto;
+    max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
   }
   .filter-btn {
@@ -142,7 +142,7 @@
   .filter-label { font-size: 10px; color: var(--text3); white-space: nowrap; }
 
   /* メイン */
-  main { max-width: 1100px; margin: 0 auto; padding: 14px 20px 60px; }
+  main { max-width: 1400px; margin: 0 auto; padding: 14px 20px 60px; }
 
   /* グループヘッダー */
   .group { margin-bottom: 20px; }
@@ -161,7 +161,7 @@
   .card-list { display: flex; flex-direction: column; gap: 1px; }
   .card-item {
     display: grid;
-    grid-template-columns: 26px 30px 42px 1fr auto;
+    grid-template-columns: 26px 30px 46px auto auto;
     align-items: center;
     gap: 8px;
     padding: 4px 8px;
@@ -203,7 +203,7 @@
 
   /* テキスト */
   .card-no   { font-size: 10px; color: var(--text3); font-family: monospace; }
-  .card-name { font-size: 12px; color: var(--text); font-weight: 500; }
+  .card-name { font-size: 12px; color: var(--text); font-weight: 500; white-space: nowrap; }
 
   /* sourcesエリア */
   .card-sources {
@@ -258,8 +258,16 @@
   }
   #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
+
+  /* No列 */
+  .card-no-wrap { display: flex; flex-direction: column; justify-content: center; }
+  /* 名前+sources列 */
+  .card-name-wrap { min-width: 0; }
+  .card-name-wrap .card-sources { margin-top: 2px; justify-content: flex-start; }
+  /* パッチ */
+  .card-patch { font-size: 10px; color: var(--text3); white-space: nowrap; align-self: center; }
   @media (max-width: 600px) {
-    .card-item { grid-template-columns: 26px 30px 38px 1fr; }
+    .card-item { grid-template-columns: 26px 30px 40px auto; }
     .card-sources { display: none; }
   }
 </style>
@@ -433,11 +441,12 @@ const TYPE_JA = {
 
 // typeからバッジCSSクラス
 function typeCls(type) {
-  if (type === 'NPC') return 'src-npc';
-  if (type === 'Trial' || type === 'Raid' || type === 'Dungeon') return 'src-duty';
-  if (type === 'Gold Saucer') return 'src-gs';
-  if (type === 'Achievement') return 'src-ach';
-  if (type === 'FATE' || type === 'Eureka' || type === 'Bozja') return 'src-fate';
+  if (type === 'NPC' || type === 'VS') return 'src-npc';
+  if (type === 'Trial' || type === 'Raid' || type === 'Dungeon' || type === 'DU') return 'src-duty';
+  if (type === 'Gold Saucer' || type === 'CP' || type === 'TR') return 'src-gs';
+  if (type === 'Achievement' || type === 'AC') return 'src-ach';
+  if (type === 'FATE' || type === 'FA' || type === 'Eureka' || type === 'Bozja' || type === 'EX') return 'src-fate';
+  if (type === '初') return 'src-other';
   return 'src-other';
 }
 
@@ -506,8 +515,10 @@ async function fetchCards() {
     patch:    c.patch,
     icon:     c.icon,
     image:    `https://ffxivcollect.com/images/cards/large/${c.image_id || c.number}.png`,
-    sources:  c.sources || [],
-    stats:    c.stats || {},
+    sources:     c.sources || [],
+    stats:       c.stats || {},
+    tsv_sources: c.tsv_sources || [],
+    card_type:   c.card_type || '',
   }));
 }
 
@@ -602,24 +613,29 @@ function renderCards() {
       const starsHtml = '★'.repeat(card.stars || 1) + '☆'.repeat(Math.max(0, 5 - (card.stars || 1)));
 
       // sourcesバッジ（全件・日本語type）
-      const srcHtml = card.sources.map(s => {
-        const cls  = typeCls(s.type);
-        const ja   = TYPE_JA[s.type] || s.type;
-        const text = s.text ? escHtml(s.text) : '';
-        return `<span class="src-badge ${cls}"><span class="src-type-label">${ja}</span>${text ? '：' + text : ''}</span>`;
+      // TSVソースバッジ（座標付き詳細情報）
+      const tsvHtml = (card.tsv_sources || []).map(s => {
+        const cls = typeCls(s.abbr);
+        return `<span class="src-badge ${cls}"><span class="src-type-label">${escHtml(s.label)}</span>：${escHtml(s.text)}</span>`;
       }).join('');
+      const ctHtml = card.card_type
+        ? `<span class="src-badge src-other" style="font-size:9px;margin-left:4px">${escHtml(card.card_type)}</span>`
+        : '';
 
       html += `<div class="card-item${isOwned ? ' checked' : ''}" data-num="${num}">
         <div class="card-check" onclick="toggleCard(event,${num})"></div>
         <div class="card-icon-wrap">
           <img src="${escHtml(card.icon)}" alt="${escHtml(card.name)}" loading="lazy" onerror="this.style.opacity='0.3'">
         </div>
-        <div>
+        <div class="card-no-wrap">
           <div class="card-no">No.${String(num).padStart(3,'0')}</div>
-          <div class="card-meta"><span class="card-stars">${starsHtml}</span> <span>p${escHtml(card.patch||'')}</span></div>
+          <div class="card-meta card-stars">${starsHtml}</div>
         </div>
-        <div class="card-name">${escHtml(card.name)}</div>
-        <div class="card-sources">${srcHtml}</div>
+        <div class="card-name-wrap">
+          <div class="card-name">${escHtml(card.name)}${ctHtml}</div>
+          <div class="card-sources">${tsvHtml}</div>
+        </div>
+        <div class="card-patch">p${escHtml(card.patch||'')}</div>
       </div>`;
     });
 
