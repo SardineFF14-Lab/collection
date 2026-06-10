@@ -1,0 +1,6798 @@
+[
+  {
+    "number": 1,
+    "name": "ドードー",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088001_hr1.tex",
+    "sources": [
+      {
+        "type": "Quest",
+        "text": "「トリプルトライアド」の手引き"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 2,
+      "bottom": 3,
+      "left": 4
+    },
+    "image_id": 1
+  },
+  {
+    "number": 2,
+    "name": "トンベリ",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088002_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "メメルン"
+      },
+      {
+        "type": "Dungeon",
+        "text": "旅神聖域 ワンダラーパレス"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 2,
+      "bottom": 7,
+      "left": 2
+    },
+    "image_id": 2
+  },
+  {
+    "number": 3,
+    "name": "サボテンダー",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088003_hr1.tex",
+    "sources": [
+      {
+        "type": "Quest",
+        "text": "「トリプルトライアド」の手引き"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 3,
+      "bottom": 3,
+      "left": 3
+    },
+    "image_id": 3
+  },
+  {
+    "number": 4,
+    "name": "スプリガン",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088004_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "トリプルトライアドマスター"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 3,
+      "bottom": 4,
+      "left": 4
+    },
+    "image_id": 4
+  },
+  {
+    "number": 5,
+    "name": "プリン",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088005_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ロジャー"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 4,
+      "bottom": 3,
+      "left": 5
+    },
+    "image_id": 5
+  },
+  {
+    "number": 6,
+    "name": "ボム",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088006_hr1.tex",
+    "sources": [
+      {
+        "type": "Quest",
+        "text": "「トリプルトライアド」の手引き"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 4,
+      "bottom": 3,
+      "left": 3
+    },
+    "image_id": 6
+  },
+  {
+    "number": 7,
+    "name": "マンドラゴラ",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088007_hr1.tex",
+    "sources": [
+      {
+        "type": "Quest",
+        "text": "「トリプルトライアド」の手引き"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 2,
+      "bottom": 5,
+      "left": 3
+    },
+    "image_id": 7
+  },
+  {
+    "number": 8,
+    "name": "コブラン",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088008_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "マイセンタ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 3,
+      "bottom": 3,
+      "left": 4
+    },
+    "image_id": 8
+  },
+  {
+    "number": 9,
+    "name": "モルボル",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088009_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ロジャー"
+      },
+      {
+        "type": "Dungeon",
+        "text": "霧中行軍 オーラムヴェイル"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 2,
+      "bottom": 5,
+      "left": 2
+    },
+    "image_id": 9
+  },
+  {
+    "number": 10,
+    "name": "クァール",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088010_hr1.tex",
+    "sources": [
+      {
+        "type": "Quest",
+        "text": "「トリプルトライアド」の手引き"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 5,
+      "bottom": 2,
+      "left": 5
+    },
+    "image_id": 10
+  },
+  {
+    "number": 11,
+    "name": "アーリマン",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088011_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "オルディリク"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 5,
+      "bottom": 2,
+      "left": 2
+    },
+    "image_id": 11
+  },
+  {
+    "number": 12,
+    "name": "グゥーブー",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088012_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ミューヌ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 5,
+      "bottom": 5,
+      "left": 2
+    },
+    "image_id": 12
+  },
+  {
+    "number": 13,
+    "name": "チョコボ",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088013_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ダイヤのグートウィント"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "600 MGP"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 2,
+      "left": 1
+    },
+    "image_id": 13
+  },
+  {
+    "number": 14,
+    "name": "アマルジャ",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088014_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "メメルン"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Silver Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 4,
+      "bottom": 7,
+      "left": 1
+    },
+    "image_id": 14
+  },
+  {
+    "number": 15,
+    "name": "イクサル",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088015_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ジョエロー"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Silver Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 1,
+      "bottom": 3,
+      "left": 4
+    },
+    "image_id": 15
+  },
+  {
+    "number": 16,
+    "name": "悪い子シルフ",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088016_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "マイセンタ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Silver Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 4,
+      "bottom": 5,
+      "left": 4
+    },
+    "image_id": 16
+  },
+  {
+    "number": 17,
+    "name": "コボルド",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088017_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Silver Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 2,
+      "bottom": 4,
+      "left": 6
+    },
+    "image_id": 17
+  },
+  {
+    "number": 18,
+    "name": "サハギン",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088018_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "バデロン"
+      },
+      {
+        "type": "Dungeon",
+        "text": "天然要害 サスタシャ浸食洞"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 5,
+      "bottom": 3,
+      "left": 3
+    },
+    "image_id": 18
+  },
+  {
+    "number": 19,
+    "name": "タタル・タル",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088019_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Silver Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 2,
+      "bottom": 3,
+      "left": 2
+    },
+    "image_id": 19
+  },
+  {
+    "number": 20,
+    "name": "モーグリ",
+    "stars": 1,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088020_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "トラッハトゥーム"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "840 MGP"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 1,
+      "bottom": 3,
+      "left": 7
+    },
+    "image_id": 20
+  },
+  {
+    "number": 21,
+    "name": "セイレーン",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088021_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ミミドア"
+      },
+      {
+        "type": "Dungeon",
+        "text": "怪鳥巨塔 シリウス大灯台"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 6,
+      "bottom": 7,
+      "left": 2
+    },
+    "image_id": 21
+  },
+  {
+    "number": 22,
+    "name": "オルトロス＆テュポーン",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088022_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ヘルムハート"
+      },
+      {
+        "type": "Trial",
+        "text": "アマジナ杯闘技会決勝戦"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 3,
+      "bottom": 6,
+      "left": 7
+    },
+    "image_id": 22
+  },
+  {
+    "number": 23,
+    "name": "デモンズウォール",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088023_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "バスカロン"
+      },
+      {
+        "type": "Dungeon",
+        "text": "邪教排撃 古城アムダプール"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 7,
+      "bottom": 2,
+      "left": 3
+    },
+    "image_id": 23
+  },
+  {
+    "number": 24,
+    "name": "サキュバス",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088024_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ピラルノー"
+      },
+      {
+        "type": "Dungeon",
+        "text": "名門屋敷 ハウケタ御用邸"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 3,
+      "bottom": 2,
+      "left": 6
+    },
+    "image_id": 24
+  },
+  {
+    "number": 25,
+    "name": "キマイラ",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088025_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "フフルパ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 7,
+      "bottom": 2,
+      "left": 2
+    },
+    "image_id": 25
+  },
+  {
+    "number": 26,
+    "name": "ブルードラゴン",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088026_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "オルディリク"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 2,
+      "bottom": 7,
+      "left": 7
+    },
+    "image_id": 26
+  },
+  {
+    "number": 27,
+    "name": "美男のブガージャ",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088027_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "クラブのオリフォル"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 2,
+      "left": 6
+    },
+    "image_id": 27
+  },
+  {
+    "number": 28,
+    "name": "モモディ・モディ",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088028_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "モモディ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 5,
+      "bottom": 5,
+      "left": 3
+    },
+    "image_id": 28
+  },
+  {
+    "number": 29,
+    "name": "十指のバデロン",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088029_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "バデロン"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 5,
+      "left": 5
+    },
+    "image_id": 29
+  },
+  {
+    "number": 30,
+    "name": "ミューヌ",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088030_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ミューヌ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 5,
+      "bottom": 3,
+      "left": 7
+    },
+    "image_id": 30
+  },
+  {
+    "number": 31,
+    "name": "リウィア・サス・ユニウス",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088031_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "気だるそうな帝国兵"
+      },
+      {
+        "type": "Dungeon",
+        "text": "外郭攻略 カストルム・メリディアヌム"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 7,
+      "left": 1
+    },
+    "image_id": 31
+  },
+  {
+    "number": 32,
+    "name": "リットアティン・サス・アルヴィナ",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088032_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "気だるそうな帝国兵"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 1,
+      "bottom": 3,
+      "left": 7
+    },
+    "image_id": 32
+  },
+  {
+    "number": 33,
+    "name": "ビッグス＆ウェッジ",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088033_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ミミドア"
+      },
+      {
+        "type": "NPC",
+        "text": "セズル・トトロック"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 3,
+      "bottom": 7,
+      "left": 5
+    },
+    "image_id": 33
+  },
+  {
+    "number": 34,
+    "name": "ゲロルト・ブラックソーン",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088034_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ヘルムハート"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 7,
+      "bottom": 3,
+      "left": 7
+    },
+    "image_id": 34
+  },
+  {
+    "number": 35,
+    "name": "フリクシオ",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088035_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ピラルノー"
+      },
+      {
+        "type": "NPC",
+        "text": "マルセット"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 2,
+      "bottom": 6,
+      "left": 6
+    },
+    "image_id": 35
+  },
+  {
+    "number": 36,
+    "name": "ミュタミクス",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088036_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "フ・ホバス"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 6,
+      "bottom": 6,
+      "left": 6
+    },
+    "image_id": 36
+  },
+  {
+    "number": 37,
+    "name": "メメルン",
+    "stars": 2,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088037_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "メメルン"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 6,
+      "left": 2
+    },
+    "image_id": 37
+  },
+  {
+    "number": 38,
+    "name": "ベヒーモス",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088038_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "オルディリク"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 8,
+      "bottom": 4,
+      "left": 2
+    },
+    "image_id": 38
+  },
+  {
+    "number": 39,
+    "name": "ギルガメッシュ＆エンキドゥ",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088039_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Mythril Triad Card"
+      },
+      {
+        "type": "Trial",
+        "text": "ギルガメッシュ討伐戦"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 3,
+      "bottom": 7,
+      "left": 3
+    },
+    "image_id": 39
+  },
+  {
+    "number": 40,
+    "name": "イフリート",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088040_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "スウィフト大闘佐"
+      },
+      {
+        "type": "Trial",
+        "text": "真イフリート討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 1,
+      "bottom": 6,
+      "left": 7
+    },
+    "image_id": 40
+  },
+  {
+    "number": 41,
+    "name": "タイタン",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088041_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "トラッハトゥーム"
+      },
+      {
+        "type": "Trial",
+        "text": "真タイタン討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 7,
+      "bottom": 7,
+      "left": 6
+    },
+    "image_id": 41
+  },
+  {
+    "number": 42,
+    "name": "ガルーダ",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088042_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "マルセット"
+      },
+      {
+        "type": "Trial",
+        "text": "真ガルーダ討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ガルーダ討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 6,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 42
+  },
+  {
+    "number": 43,
+    "name": "善王モグル・モグXII世",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088043_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ボルセル大牙佐"
+      },
+      {
+        "type": "Trial",
+        "text": "善王モグル・モグXII世討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 6,
+      "bottom": 7,
+      "left": 1
+    },
+    "image_id": 43
+  },
+  {
+    "number": 44,
+    "name": "ラヤ・オ・センナ＆ア・ルン・センナ",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088044_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "バスカロン"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "4,800 MGP"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 6,
+      "bottom": 6,
+      "left": 6
+    },
+    "image_id": 44
+  },
+  {
+    "number": 45,
+    "name": "ゴッドベルト・マンダヴィル",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088045_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハブ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "9,600 MGP"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 5,
+      "left": 6
+    },
+    "image_id": 45
+  },
+  {
+    "number": 46,
+    "name": "サンクレッド",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088046_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "フフルパ"
+      },
+      {
+        "type": "NPC",
+        "text": "ハブ"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 3,
+      "bottom": 8,
+      "left": 7
+    },
+    "image_id": 46
+  },
+  {
+    "number": 47,
+    "name": "ネロ・トル・スカエウァ",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088047_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "気だるそうな帝国兵"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 1,
+      "bottom": 8,
+      "left": 7
+    },
+    "image_id": 47
+  },
+  {
+    "number": 48,
+    "name": "パパリモ＆イダ",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088048_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "バスカロン"
+      },
+      {
+        "type": "NPC",
+        "text": "ボルセル大牙佐"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 8,
+      "left": 2
+    },
+    "image_id": 48
+  },
+  {
+    "number": 49,
+    "name": "ヤ・シュトラ",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088049_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ル・アシャ大甲佐"
+      },
+      {
+        "type": "NPC",
+        "text": "ゲゲルジュ"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 8,
+      "bottom": 1,
+      "left": 4
+    },
+    "image_id": 49
+  },
+  {
+    "number": 50,
+    "name": "ウリエンジェ・オギュレ",
+    "stars": 3,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088050_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハートのルヒトウィダ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Silver Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 1,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 50
+  },
+  {
+    "number": 51,
+    "name": "アルテマウェポン",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088051_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "究極幻想 アルテマウェポン破壊作戦"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 8,
+      "bottom": 9,
+      "left": 1
+    },
+    "image_id": 51
+  },
+  {
+    "number": 52,
+    "name": "オーディン",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088052_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ランドゥネル"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Mythril Triad Card"
+      },
+      {
+        "type": "Trial",
+        "text": "闘神オーディン討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 8,
+      "bottom": 1,
+      "left": 8
+    },
+    "image_id": 52
+  },
+  {
+    "number": 53,
+    "name": "ラムウ",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088053_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ボルセル大牙佐"
+      },
+      {
+        "type": "Trial",
+        "text": "真ラムウ討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ラムウ討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 1,
+      "bottom": 8,
+      "left": 8
+    },
+    "image_id": 53
+  },
+  {
+    "number": 54,
+    "name": "リヴァイアサン",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088054_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ル・アシャ大甲佐"
+      },
+      {
+        "type": "Trial",
+        "text": "真リヴァイアサン討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極リヴァイアサン討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 8,
+      "bottom": 8,
+      "left": 1
+    },
+    "image_id": 54
+  },
+  {
+    "number": 55,
+    "name": "シヴァ",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088055_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      },
+      {
+        "type": "Trial",
+        "text": "真シヴァ討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極シヴァ討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 8,
+      "bottom": 8,
+      "left": 8
+    },
+    "image_id": 55
+  },
+  {
+    "number": 56,
+    "name": "ミンフィリア",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088056_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ゲゲルジュ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Silver Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 8,
+      "bottom": 3,
+      "left": 5
+    },
+    "image_id": 56
+  },
+  {
+    "number": 57,
+    "name": "アシエン・ラハブレア",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088057_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Silver Triad Card"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Platinum Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 9,
+      "bottom": 4,
+      "left": 8
+    },
+    "image_id": 57
+  },
+  {
+    "number": 58,
+    "name": "シド・ガーロンド",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088058_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "セズル・トトロック"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 9,
+      "bottom": 9,
+      "left": 2
+    },
+    "image_id": 58
+  },
+  {
+    "number": 59,
+    "name": "アルフィノ＆アリゼー",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088059_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "スウィフト大闘佐"
+      },
+      {
+        "type": "NPC",
+        "text": "ジョエロー"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Platinum Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 3,
+      "bottom": 3,
+      "left": 9
+    },
+    "image_id": 59
+  },
+  {
+    "number": 60,
+    "name": "ルイゾワ・ルヴェユール",
+    "stars": 4,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088060_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ロウェナ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Platinum Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 4,
+      "bottom": 9,
+      "left": 3
+    },
+    "image_id": 60
+  },
+  {
+    "number": 61,
+    "name": "バハムート",
+    "stars": 5,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088061_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "キングのエルマー"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 5,
+      "bottom": 9,
+      "left": 6
+    },
+    "image_id": 61
+  },
+  {
+    "number": 62,
+    "name": "ヒルディブランド＆ナシュ・マカラッカ",
+    "stars": 5,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088062_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハブ"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 8,
+      "bottom": 10,
+      "left": 8
+    },
+    "image_id": 62
+  },
+  {
+    "number": 63,
+    "name": "ナナモ・ウル・ナモ",
+    "stars": 5,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088063_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "400,000 MGP"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Platinum Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 10,
+      "right": 6,
+      "bottom": 4,
+      "left": 8
+    },
+    "image_id": 63
+  },
+  {
+    "number": 64,
+    "name": "ガイウス・ヴァン・バエサル",
+    "stars": 5,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088064_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "気だるそうな帝国兵"
+      },
+      {
+        "type": "Dungeon",
+        "text": "最終決戦 魔導城プラエトリウム"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 10,
+      "bottom": 5,
+      "left": 9
+    },
+    "image_id": 64
+  },
+  {
+    "number": 65,
+    "name": "メルウィブ・ブルーフィスウィン",
+    "stars": 5,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088065_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "モーディン"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 9,
+      "bottom": 10,
+      "left": 3
+    },
+    "image_id": 65
+  },
+  {
+    "number": 66,
+    "name": "カヌ・エ・センナ",
+    "stars": 5,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088066_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ボルセル大牙佐"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 10,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 66
+  },
+  {
+    "number": 67,
+    "name": "ラウバーン・アルディン",
+    "stars": 5,
+    "patch": "2.51",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088067_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "スウィフト大闘佐"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 2,
+      "bottom": 9,
+      "left": 10
+    },
+    "image_id": 67
+  },
+  {
+    "number": 68,
+    "name": "ゲイラキャット",
+    "stars": 1,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088081_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ノエス"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 1,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 81
+  },
+  {
+    "number": 69,
+    "name": "バヌバヌ",
+    "stars": 2,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088082_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "モグミル"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 6,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 82
+  },
+  {
+    "number": 70,
+    "name": "グナース",
+    "stars": 2,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088083_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "モグミル"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 3,
+      "bottom": 7,
+      "left": 3
+    },
+    "image_id": 83
+  },
+  {
+    "number": 71,
+    "name": "霧隠のユウギリ",
+    "stars": 2,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088084_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "イエロー・ムーン"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 7,
+      "bottom": 1,
+      "left": 3
+    },
+    "image_id": 84
+  },
+  {
+    "number": 72,
+    "name": "でぶチョコボ",
+    "stars": 2,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088085_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ウデキキ"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 5,
+      "bottom": 5,
+      "left": 5
+    },
+    "image_id": 85
+  },
+  {
+    "number": 73,
+    "name": "グリフィン",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088086_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ドミニアク"
+      },
+      {
+        "type": "Dungeon",
+        "text": "廃砦捜索 ダスクヴィジル"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 1,
+      "bottom": 7,
+      "left": 8
+    },
+    "image_id": 86
+  },
+  {
+    "number": 74,
+    "name": "ティオマン",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088087_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "霊峰踏破 ソーム・アル"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 5,
+      "bottom": 8,
+      "left": 7
+    },
+    "image_id": 87
+  },
+  {
+    "number": 75,
+    "name": "エスティニアン",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088088_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ジブリオン"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 8,
+      "bottom": 2,
+      "left": 3
+    },
+    "image_id": 88
+  },
+  {
+    "number": 76,
+    "name": "ルキア",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088089_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ワワラゴ"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 2,
+      "bottom": 3,
+      "left": 8
+    },
+    "image_id": 89
+  },
+  {
+    "number": 77,
+    "name": "イゼル",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088090_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "マルスシャン"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 8,
+      "bottom": 8,
+      "left": 1
+    },
+    "image_id": 90
+  },
+  {
+    "number": 78,
+    "name": "ヒルダ",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088091_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "退屈そうな帝国兵"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 4,
+      "bottom": 8,
+      "left": 8
+    },
+    "image_id": 91
+  },
+  {
+    "number": 79,
+    "name": "マトーヤ",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088092_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ミッドナイト・デュー"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 3,
+      "bottom": 8,
+      "left": 1
+    },
+    "image_id": 92
+  },
+  {
+    "number": 80,
+    "name": "エドモン・ド・フォルタン",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088093_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "マリエル"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 8,
+      "bottom": 3,
+      "left": 8
+    },
+    "image_id": 93
+  },
+  {
+    "number": 81,
+    "name": "ビブロス",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088094_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "メロ・ロッゴ"
+      },
+      {
+        "type": "Dungeon",
+        "text": "禁書回収 グブラ幻想図書館"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 4,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 94
+  },
+  {
+    "number": 82,
+    "name": "オルシュファン",
+    "stars": 3,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088095_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "街角のデュエリスト：ランク3"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 1,
+      "bottom": 5,
+      "left": 8
+    },
+    "image_id": 95
+  },
+  {
+    "number": 83,
+    "name": "アイメリク",
+    "stars": 4,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088096_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "呪術士ギルド受付 ヤヤケ"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 5,
+      "bottom": 9,
+      "left": 9
+    },
+    "image_id": 96
+  },
+  {
+    "number": 84,
+    "name": "ラーヴァナ",
+    "stars": 4,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088097_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ウデキキ"
+      },
+      {
+        "type": "Trial",
+        "text": "真ラーヴァナ討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ラーヴァナ討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 7,
+      "bottom": 8,
+      "left": 1
+    },
+    "image_id": 97
+  },
+  {
+    "number": 85,
+    "name": "ビスマルク",
+    "stars": 4,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088098_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "リヌバリ"
+      },
+      {
+        "type": "Trial",
+        "text": "真ビスマルク討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ビスマルク討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 9,
+      "bottom": 7,
+      "left": 8
+    },
+    "image_id": 98
+  },
+  {
+    "number": 86,
+    "name": "ニーズヘッグ",
+    "stars": 5,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088099_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "邪竜血戦 ドラゴンズエアリー"
+      },
+      {
+        "type": "Trial",
+        "text": "ニーズヘッグ征竜戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ニーズヘッグ征竜戦"
+      }
+    ],
+    "stats": {
+      "top": 10,
+      "right": 7,
+      "bottom": 3,
+      "left": 8
+    },
+    "image_id": 99
+  },
+  {
+    "number": 87,
+    "name": "ミドガルズオルム",
+    "stars": 5,
+    "patch": "3.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088100_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "カードコレクター：ランク4"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 8,
+      "bottom": 10,
+      "left": 7
+    },
+    "image_id": 100
+  },
+  {
+    "number": 88,
+    "name": "ディープアイ",
+    "stars": 1,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088101_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ドミニアク"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 3,
+      "bottom": 7,
+      "left": 2
+    },
+    "image_id": 101
+  },
+  {
+    "number": 89,
+    "name": "アルケオーニス",
+    "stars": 2,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088102_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "エレイズ"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 4,
+      "bottom": 6,
+      "left": 5
+    },
+    "image_id": 102
+  },
+  {
+    "number": 90,
+    "name": "パイッサ",
+    "stars": 2,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088103_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ラニエット"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 6,
+      "bottom": 3,
+      "left": 6
+    },
+    "image_id": 103
+  },
+  {
+    "number": 91,
+    "name": "ダルメル",
+    "stars": 2,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088104_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ラニエット"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 5,
+      "bottom": 3,
+      "left": 5
+    },
+    "image_id": 104
+  },
+  {
+    "number": 92,
+    "name": "バンダースナッチ",
+    "stars": 2,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088105_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ナンカイーター"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 3,
+      "left": 4
+    },
+    "image_id": 105
+  },
+  {
+    "number": 93,
+    "name": "クロウラー",
+    "stars": 2,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088106_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "セイカ"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 7,
+      "bottom": 3,
+      "left": 2
+    },
+    "image_id": 106
+  },
+  {
+    "number": 94,
+    "name": "ポロッゴ",
+    "stars": 2,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088107_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "セイカ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 3,
+      "bottom": 7,
+      "left": 3
+    },
+    "image_id": 107
+  },
+  {
+    "number": 95,
+    "name": "ヴェズルフェルニル",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088108_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "モグミル"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Mythril Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 2,
+      "bottom": 7,
+      "left": 4
+    },
+    "image_id": 108
+  },
+  {
+    "number": 96,
+    "name": "クァールレギナ",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088109_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ナンカイーター"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Mythril Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 5,
+      "bottom": 5,
+      "left": 8
+    },
+    "image_id": 109
+  },
+  {
+    "number": 97,
+    "name": "マザーボム",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088110_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "制圧巨塔 シリウス大灯台 (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 3,
+      "left": 6
+    },
+    "image_id": 110
+  },
+  {
+    "number": 98,
+    "name": "ベラドンナ",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088111_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ミッドナイト・デュー"
+      },
+      {
+        "type": "Dungeon",
+        "text": "草木庭園 聖モシャーヌ植物園"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 3,
+      "left": 7
+    },
+    "image_id": 111
+  },
+  {
+    "number": 99,
+    "name": "エキドナ",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088112_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "レッドビルの資材係"
+      },
+      {
+        "type": "Raid",
+        "text": "魔航船ヴォイドアーク"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 4,
+      "bottom": 7,
+      "left": 4
+    },
+    "image_id": 112
+  },
+  {
+    "number": 100,
+    "name": "ピピン・タルピン",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088113_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "スウィフト大闘佐"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Mythril Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 5,
+      "bottom": 6,
+      "left": 6
+    },
+    "image_id": 113
+  },
+  {
+    "number": 101,
+    "name": "ジュリアン・マンダヴィル",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088114_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "14,400 MGP"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 5,
+      "left": 7
+    },
+    "image_id": 114
+  },
+  {
+    "number": 102,
+    "name": "モグリン",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088115_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "モグミル"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 5,
+      "bottom": 4,
+      "left": 5
+    },
+    "image_id": 115
+  },
+  {
+    "number": 103,
+    "name": "シャリベル",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088116_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "強硬突入 イシュガルド教皇庁"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 8,
+      "bottom": 4,
+      "left": 3
+    },
+    "image_id": 116
+  },
+  {
+    "number": 104,
+    "name": "ラウンドロクス",
+    "stars": 3,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088117_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "タップクリクス"
+      },
+      {
+        "type": "NPC",
+        "text": "セイカ"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 2,
+      "bottom": 8,
+      "left": 8
+    },
+    "image_id": 117
+  },
+  {
+    "number": 105,
+    "name": "セニョール・サボテンダー",
+    "stars": 4,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088118_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "200,000 MGP"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 5,
+      "bottom": 7,
+      "left": 6
+    },
+    "image_id": 118
+  },
+  {
+    "number": 106,
+    "name": "レグラ・ヴァン・ヒュドルス",
+    "stars": 5,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088119_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "退屈そうな帝国兵"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Imperial Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 8,
+      "bottom": 6,
+      "left": 8
+    },
+    "image_id": 119
+  },
+  {
+    "number": 107,
+    "name": "トールダン7世",
+    "stars": 5,
+    "patch": "3.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088120_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "蒼天幻想 ナイツ・オブ・ラウンド討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 1,
+      "bottom": 10,
+      "left": 9
+    },
+    "image_id": 120
+  },
+  {
+    "number": 108,
+    "name": "オノロワ",
+    "stars": 2,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088121_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "フォルタン家の執事"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 2,
+      "bottom": 7,
+      "left": 2
+    },
+    "image_id": 121
+  },
+  {
+    "number": 109,
+    "name": "ホーリー・ボルダー＆クルトゥネ",
+    "stars": 2,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088122_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Gold Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 7,
+      "bottom": 2,
+      "left": 7
+    },
+    "image_id": 122
+  },
+  {
+    "number": 110,
+    "name": "ブラキオレイドス",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088123_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "リヌバリ"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Mythril Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 4,
+      "bottom": 5,
+      "left": 4
+    },
+    "image_id": 123
+  },
+  {
+    "number": 111,
+    "name": "ダークスケール",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088124_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "団長のモグジン"
+      },
+      {
+        "type": "FATE",
+        "text": "ドラヴァニア雲海FATE"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 8,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 124
+  },
+  {
+    "number": 112,
+    "name": "フェンリル",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088125_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "72,000 MGP"
+      },
+      {
+        "type": "Dungeon",
+        "text": "氷結潜窟 スノークローク大氷壁"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 3,
+      "bottom": 6,
+      "left": 4
+    },
+    "image_id": 125
+  },
+  {
+    "number": 113,
+    "name": "クラーケン",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088126_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "モーディン"
+      },
+      {
+        "type": "Dungeon",
+        "text": "逆襲要害 サスタシャ浸食洞 (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 6,
+      "bottom": 6,
+      "left": 6
+    },
+    "image_id": 126
+  },
+  {
+    "number": 114,
+    "name": "アーゼマヴァイスジェレント",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088127_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "呪術士ギルド受付 ヤヤケ"
+      },
+      {
+        "type": "Dungeon",
+        "text": "遺跡救援 カルン埋没寺院 (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 1,
+      "bottom": 7,
+      "left": 5
+    },
+    "image_id": 127
+  },
+  {
+    "number": 115,
+    "name": "光鱗のモラージャジャ",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088128_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "メメルン"
+      },
+      {
+        "type": "Dungeon",
+        "text": "武装聖域 ワンダラーパレス (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 2,
+      "left": 8
+    },
+    "image_id": 128
+  },
+  {
+    "number": 116,
+    "name": "フェルディア",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088129_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "レッドビルの資材係"
+      },
+      {
+        "type": "Dungeon",
+        "text": "邪念排撃 古城アムダプール (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 6,
+      "bottom": 8,
+      "left": 4
+    },
+    "image_id": 129
+  },
+  {
+    "number": 117,
+    "name": "カルコブリーナ",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088130_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "メロ・ロッゴ"
+      },
+      {
+        "type": "Dungeon",
+        "text": "星海観測 逆さの塔"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 6,
+      "left": 3
+    },
+    "image_id": 130
+  },
+  {
+    "number": 118,
+    "name": "クリブ",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088131_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ノエス"
+      },
+      {
+        "type": "Dungeon",
+        "text": "神聖遺跡 古アムダプール市街 (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 3,
+      "bottom": 2,
+      "left": 7
+    },
+    "image_id": 131
+  },
+  {
+    "number": 119,
+    "name": "ティターン",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088132_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "クリントータ"
+      },
+      {
+        "type": "Raid",
+        "text": "クリスタルタワー：古代の民の迷宮"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 7,
+      "bottom": 6,
+      "left": 7
+    },
+    "image_id": 132
+  },
+  {
+    "number": 120,
+    "name": "アルトアレール・ド・フォルタン",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088133_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "フォルタン家の執事"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 7,
+      "bottom": 3,
+      "left": 7
+    },
+    "image_id": 133
+  },
+  {
+    "number": 121,
+    "name": "エマネラン・ド・フォルタン",
+    "stars": 3,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088134_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "フォルタン家の執事"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 4,
+      "bottom": 7,
+      "left": 3
+    },
+    "image_id": 134
+  },
+  {
+    "number": 122,
+    "name": "ザンデ",
+    "stars": 4,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088135_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "クリントータ"
+      },
+      {
+        "type": "Raid",
+        "text": "クリスタルタワー：シルクスの塔"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 4,
+      "bottom": 6,
+      "left": 7
+    },
+    "image_id": 135
+  },
+  {
+    "number": 123,
+    "name": "ブルートジャスティス",
+    "stars": 4,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088136_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "タップクリクス"
+      },
+      {
+        "type": "Raid",
+        "text": "機工城アレキサンダー：律動編4"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 7,
+      "bottom": 7,
+      "left": 7
+    },
+    "image_id": 136
+  },
+  {
+    "number": 124,
+    "name": "セフィロト",
+    "stars": 4,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088137_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "魔神セフィロト討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極魔神セフィロト討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 8,
+      "bottom": 8,
+      "left": 6
+    },
+    "image_id": 137
+  },
+  {
+    "number": 125,
+    "name": "フ・ラミン",
+    "stars": 4,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088138_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "20,000 MGP"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Platinum Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 7,
+      "bottom": 3,
+      "left": 7
+    },
+    "image_id": 138
+  },
+  {
+    "number": 126,
+    "name": "ヴィゾーヴニル",
+    "stars": 4,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088139_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "カードコレクター：ランク5"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 6,
+      "bottom": 8,
+      "left": 6
+    },
+    "image_id": 139
+  },
+  {
+    "number": 127,
+    "name": "暗闇の雲",
+    "stars": 5,
+    "patch": "3.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088140_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "クリントータ"
+      },
+      {
+        "type": "Raid",
+        "text": "クリスタルタワー：闇の世界"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 10,
+      "bottom": 7,
+      "left": 6
+    },
+    "image_id": 140
+  },
+  {
+    "number": 128,
+    "name": "ロロリト・ナナリト",
+    "stars": 2,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088141_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ワイモンド"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 3,
+      "bottom": 7,
+      "left": 3
+    },
+    "image_id": 141
+  },
+  {
+    "number": 129,
+    "name": "ジブリオン",
+    "stars": 2,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088142_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "エレイズ"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 6,
+      "bottom": 3,
+      "left": 6
+    },
+    "image_id": 142
+  },
+  {
+    "number": 130,
+    "name": "ラニエット・ド・アインハルト",
+    "stars": 2,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088143_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "マリエル"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 6,
+      "bottom": 3,
+      "left": 3
+    },
+    "image_id": 143
+  },
+  {
+    "number": 131,
+    "name": "ローズウェン",
+    "stars": 2,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088144_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "オ・カルカヤ"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 6,
+      "bottom": 4,
+      "left": 6
+    },
+    "image_id": 144
+  },
+  {
+    "number": 132,
+    "name": "カルヴァラン・ド・ゴルガニュ",
+    "stars": 2,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088145_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "モーディン"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 7,
+      "bottom": 7,
+      "left": 2
+    },
+    "image_id": 145
+  },
+  {
+    "number": 133,
+    "name": "カル・ミーク",
+    "stars": 3,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088146_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "団長のモグジン"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 8,
+      "bottom": 4,
+      "left": 8
+    },
+    "image_id": 146
+  },
+  {
+    "number": 134,
+    "name": "ワウッケオン",
+    "stars": 3,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088147_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "リヌバリ"
+      },
+      {
+        "type": "Dungeon",
+        "text": "神域浮島 ネバーリープ"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 6,
+      "bottom": 7,
+      "left": 7
+    },
+    "image_id": 147
+  },
+  {
+    "number": 135,
+    "name": "キュレーター",
+    "stars": 3,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088148_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "退屈そうな帝国兵"
+      },
+      {
+        "type": "Dungeon",
+        "text": "博物戦艦 フラクタル・コンティニアム"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 6,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 148
+  },
+  {
+    "number": 136,
+    "name": "霧髭",
+    "stars": 3,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088149_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "オ・カルカヤ"
+      },
+      {
+        "type": "Dungeon",
+        "text": "黒渦伝説 ハルブレーカー・アイル (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 6,
+      "bottom": 7,
+      "left": 6
+    },
+    "image_id": 149
+  },
+  {
+    "number": 137,
+    "name": "ウネ＆ドーガ",
+    "stars": 4,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088150_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "クリントータ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 8,
+      "bottom": 6,
+      "left": 8
+    },
+    "image_id": 150
+  },
+  {
+    "number": 138,
+    "name": "ティアマット",
+    "stars": 4,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088151_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "退屈そうな帝国兵"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 6,
+      "bottom": 5,
+      "left": 6
+    },
+    "image_id": 151
+  },
+  {
+    "number": 139,
+    "name": "カロフィステリ",
+    "stars": 4,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088152_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "レッドビルの資材係"
+      },
+      {
+        "type": "Raid",
+        "text": "禁忌都市マハ"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 8,
+      "bottom": 7,
+      "left": 8
+    },
+    "image_id": 152
+  },
+  {
+    "number": 140,
+    "name": "フレースヴェルグ",
+    "stars": 5,
+    "patch": "3.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088153_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "団長のモグジン"
+      },
+      {
+        "type": "Dungeon",
+        "text": "天竜宮殿 ソール・カイ"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 7,
+      "bottom": 10,
+      "left": 6
+    },
+    "image_id": 153
+  },
+  {
+    "number": 141,
+    "name": "アプカル",
+    "stars": 1,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088154_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "緑の手のウィラ・リエーガ"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 4,
+      "bottom": 4,
+      "left": 1
+    },
+    "image_id": 154
+  },
+  {
+    "number": 142,
+    "name": "コリブリ",
+    "stars": 1,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088155_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "高貴なるフリショワレル"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 1,
+      "bottom": 4,
+      "left": 1
+    },
+    "image_id": 155
+  },
+  {
+    "number": 143,
+    "name": "魔導デスクロー",
+    "stars": 1,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088156_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 3,
+      "bottom": 2,
+      "left": 3
+    },
+    "image_id": 156
+  },
+  {
+    "number": 144,
+    "name": "リクイドフレイム",
+    "stars": 2,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088157_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 3,
+      "bottom": 6,
+      "left": 6
+    },
+    "image_id": 157
+  },
+  {
+    "number": 145,
+    "name": "シープ",
+    "stars": 2,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088158_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "成金のプライド・フルスタグ"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 3,
+      "bottom": 4,
+      "left": 5
+    },
+    "image_id": 158
+  },
+  {
+    "number": 146,
+    "name": "レターモーグリ",
+    "stars": 2,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088159_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Bronze Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 5,
+      "bottom": 6,
+      "left": 3
+    },
+    "image_id": 159
+  },
+  {
+    "number": 147,
+    "name": "魔導コロッサス",
+    "stars": 2,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088160_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ルームマスター"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 3,
+      "bottom": 6,
+      "left": 3
+    },
+    "image_id": 160
+  },
+  {
+    "number": 148,
+    "name": "ストリックス",
+    "stars": 3,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088161_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "メロ・ロッゴ"
+      },
+      {
+        "type": "Dungeon",
+        "text": "稀書回収 グブラ幻想図書館 (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 7,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 161
+  },
+  {
+    "number": 149,
+    "name": "晴嵐のトゾル・ファトトル",
+    "stars": 3,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088162_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "セズル・トトロック"
+      },
+      {
+        "type": "Dungeon",
+        "text": "峻厳渓谷 ゼルファトル"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 6,
+      "bottom": 6,
+      "left": 2
+    },
+    "image_id": 162
+  },
+  {
+    "number": 150,
+    "name": "アレキサンダー・プライム",
+    "stars": 3,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088163_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "タップクリクス"
+      },
+      {
+        "type": "Raid",
+        "text": "機工城アレキサンダー：天動編4"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 3,
+      "bottom": 2,
+      "left": 8
+    },
+    "image_id": 163
+  },
+  {
+    "number": 151,
+    "name": "気さくな三兄弟",
+    "stars": 3,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088164_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "酔いどれのネル"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 7,
+      "bottom": 6,
+      "left": 5
+    },
+    "image_id": 164
+  },
+  {
+    "number": 152,
+    "name": "サンクレッド（蒼天）",
+    "stars": 4,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088165_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "カードコレクター：ランク6"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 1,
+      "bottom": 7,
+      "left": 9
+    },
+    "image_id": 165
+  },
+  {
+    "number": 153,
+    "name": "ヤ・シュトラ（蒼天）",
+    "stars": 4,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088166_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "街角のデュエリスト：ランク5"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 9,
+      "bottom": 2,
+      "left": 5
+    },
+    "image_id": 166
+  },
+  {
+    "number": 154,
+    "name": "ネール・ヴァン・ダーナス",
+    "stars": 4,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088167_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "高貴なるフリショワレル"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 9,
+      "bottom": 3,
+      "left": 9
+    },
+    "image_id": 167
+  },
+  {
+    "number": 155,
+    "name": "ソフィア",
+    "stars": 5,
+    "patch": "3.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088168_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "女神ソフィア討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極女神ソフィア討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 10,
+      "right": 8,
+      "bottom": 5,
+      "left": 6
+    },
+    "image_id": 168
+  },
+  {
+    "number": 156,
+    "name": "オポオポ",
+    "stars": 1,
+    "patch": "3.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088169_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "600 MGP"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 4,
+      "bottom": 2,
+      "left": 6
+    },
+    "image_id": 169
+  },
+  {
+    "number": 157,
+    "name": "アダマンタス",
+    "stars": 2,
+    "patch": "3.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088170_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "840 MGP"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 7,
+      "bottom": 4,
+      "left": 4
+    },
+    "image_id": 170
+  },
+  {
+    "number": 158,
+    "name": "魔導ヴァンガード",
+    "stars": 2,
+    "patch": "3.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088171_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Imperial Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 5,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 171
+  },
+  {
+    "number": 159,
+    "name": "魔導ガンシップ",
+    "stars": 2,
+    "patch": "3.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088172_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Imperial Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 5,
+      "bottom": 5,
+      "left": 5
+    },
+    "image_id": 172
+  },
+  {
+    "number": 160,
+    "name": "ラーヴァスコーピオン",
+    "stars": 3,
+    "patch": "3.55a",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088174_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "霊峰浄化 ソーム・アル (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 8,
+      "bottom": 5,
+      "left": 5
+    },
+    "image_id": 174
+  },
+  {
+    "number": 161,
+    "name": "魔導プレデター",
+    "stars": 3,
+    "patch": "3.55a",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088175_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Imperial Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 7,
+      "bottom": 4,
+      "left": 5
+    },
+    "image_id": 175
+  },
+  {
+    "number": 162,
+    "name": "魔導スカイアーマー",
+    "stars": 3,
+    "patch": "3.55a",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088176_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Imperial Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 2,
+      "bottom": 6,
+      "left": 7
+    },
+    "image_id": 176
+  },
+  {
+    "number": 163,
+    "name": "鉄仮面",
+    "stars": 3,
+    "patch": "3.55a",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088177_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "巨大防壁 バエサルの長城"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 8,
+      "bottom": 4,
+      "left": 1
+    },
+    "image_id": 177
+  },
+  {
+    "number": 164,
+    "name": "ディアボロス・ホロー",
+    "stars": 4,
+    "patch": "3.55a",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088179_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "レッドビルの資材係"
+      },
+      {
+        "type": "Raid",
+        "text": "影の国ダン・スカー"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 4,
+      "bottom": 8,
+      "left": 9
+    },
+    "image_id": 179
+  },
+  {
+    "number": 165,
+    "name": "アームドウェポン",
+    "stars": 4,
+    "patch": "3.55a",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088180_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Imperial Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 5,
+      "bottom": 9,
+      "left": 7
+    },
+    "image_id": 180
+  },
+  {
+    "number": 166,
+    "name": "ズルワーン",
+    "stars": 5,
+    "patch": "3.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088182_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "鬼神ズルワーン討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極鬼神ズルワーン討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 8,
+      "left": 10
+    },
+    "image_id": 182
+  },
+  {
+    "number": 167,
+    "name": "バニー",
+    "stars": 2,
+    "patch": "3.55a",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088173_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "5,000 MGP"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 7,
+      "bottom": 1,
+      "left": 6
+    },
+    "image_id": 173
+  },
+  {
+    "number": 168,
+    "name": "ローランド",
+    "stars": 3,
+    "patch": "3.55a",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088178_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "10,000 MGP"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 7,
+      "bottom": 8,
+      "left": 3
+    },
+    "image_id": 178
+  },
+  {
+    "number": 169,
+    "name": "ギギ",
+    "stars": 4,
+    "patch": "3.55a",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088181_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "90,000 MGP"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 8,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 181
+  },
+  {
+    "number": 170,
+    "name": "ナマズオ",
+    "stars": 1,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088183_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ギョエイ"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 6,
+      "bottom": 1,
+      "left": 5
+    },
+    "image_id": 183
+  },
+  {
+    "number": 171,
+    "name": "コウジン",
+    "stars": 2,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088184_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ツヅラ"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 5,
+      "bottom": 5,
+      "left": 4
+    },
+    "image_id": 184
+  },
+  {
+    "number": 172,
+    "name": "アナンタ",
+    "stars": 2,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088185_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ガリマ"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 5,
+      "left": 2
+    },
+    "image_id": 185
+  },
+  {
+    "number": 173,
+    "name": "メ・ナーゴ",
+    "stars": 2,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088186_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "アーカンバルド"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 1,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 186
+  },
+  {
+    "number": 174,
+    "name": "コトカゼ",
+    "stars": 2,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088187_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "コトカゼ"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 6,
+      "bottom": 2,
+      "left": 6
+    },
+    "image_id": 187
+  },
+  {
+    "number": 175,
+    "name": "マンモス",
+    "stars": 3,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088188_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ムングリグ"
+      },
+      {
+        "type": "NPC",
+        "text": "ニゲン"
+      },
+      {
+        "type": "NPC",
+        "text": "オゴデイ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 3,
+      "bottom": 8,
+      "left": 3
+    },
+    "image_id": 188
+  },
+  {
+    "number": 176,
+    "name": "フォーバッド",
+    "stars": 3,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088189_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "アンバー・トレント"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 8,
+      "bottom": 3,
+      "left": 1
+    },
+    "image_id": 189
+  },
+  {
+    "number": 177,
+    "name": "スサノオ",
+    "stars": 3,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088190_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "スサノオ討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極スサノオ討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 8,
+      "bottom": 3,
+      "left": 8
+    },
+    "image_id": 190
+  },
+  {
+    "number": 178,
+    "name": "ラクシュミ",
+    "stars": 3,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088191_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "ラクシュミ討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ラクシュミ討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 7,
+      "left": 5
+    },
+    "image_id": 191
+  },
+  {
+    "number": 179,
+    "name": "グリーンワート",
+    "stars": 3,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088192_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "帝国軍の脱走兵"
+      },
+      {
+        "type": "Dungeon",
+        "text": "解放決戦 ドマ城"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 4,
+      "bottom": 7,
+      "left": 4
+    },
+    "image_id": 192
+  },
+  {
+    "number": 180,
+    "name": "ラショウ",
+    "stars": 3,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088193_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "カイザン"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 7,
+      "bottom": 8,
+      "left": 2
+    },
+    "image_id": 193
+  },
+  {
+    "number": 181,
+    "name": "シリナ",
+    "stars": 3,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088194_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ニゲン"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 5,
+      "bottom": 6,
+      "left": 8
+    },
+    "image_id": 194
+  },
+  {
+    "number": 182,
+    "name": "マグナイ",
+    "stars": 3,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088195_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "オゴデイ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 7,
+      "bottom": 4,
+      "left": 4
+    },
+    "image_id": 195
+  },
+  {
+    "number": 183,
+    "name": "サドゥ",
+    "stars": 3,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088196_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ムングリグ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 7,
+      "left": 4
+    },
+    "image_id": 196
+  },
+  {
+    "number": 184,
+    "name": "神龍",
+    "stars": 4,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088197_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "神龍討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極神龍討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 8,
+      "bottom": 8,
+      "left": 2
+    },
+    "image_id": 197
+  },
+  {
+    "number": 185,
+    "name": "ヨツユ",
+    "stars": 4,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088198_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "帝国軍の脱走兵"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 2,
+      "bottom": 8,
+      "left": 6
+    },
+    "image_id": 198
+  },
+  {
+    "number": 186,
+    "name": "クルル・バルデシオン",
+    "stars": 4,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088199_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "カードコレクター：ランク7"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 8,
+      "bottom": 8,
+      "left": 7
+    },
+    "image_id": 199
+  },
+  {
+    "number": 187,
+    "name": "リセ",
+    "stars": 4,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088200_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "街角のデュエリスト：ランク6"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 9,
+      "bottom": 1,
+      "left": 8
+    },
+    "image_id": 200
+  },
+  {
+    "number": 188,
+    "name": "ゼノス・イェー・ガルヴァス",
+    "stars": 5,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088201_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハチナン"
+      },
+      {
+        "type": "Dungeon",
+        "text": "紅蓮決戦 アラミゴ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 7,
+      "left": 10
+    },
+    "image_id": 201
+  },
+  {
+    "number": 189,
+    "name": "ヒエン",
+    "stars": 5,
+    "patch": "4.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088202_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "キウカ"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 10,
+      "bottom": 5,
+      "left": 10
+    },
+    "image_id": 202
+  },
+  {
+    "number": 190,
+    "name": "モスモス",
+    "stars": 1,
+    "patch": "4.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088203_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "840 MGP"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 2,
+      "bottom": 5,
+      "left": 1
+    },
+    "image_id": 203
+  },
+  {
+    "number": 191,
+    "name": "チャプリ",
+    "stars": 2,
+    "patch": "4.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088204_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "1,200 MGP"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 2,
+      "bottom": 2,
+      "left": 6
+    },
+    "image_id": 204
+  },
+  {
+    "number": 192,
+    "name": "キキルン・ミートイーター",
+    "stars": 2,
+    "patch": "4.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088205_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ガリマ"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 5,
+      "bottom": 7,
+      "left": 5
+    },
+    "image_id": 205
+  },
+  {
+    "number": 193,
+    "name": "直言のフロドリック",
+    "stars": 3,
+    "patch": "4.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088206_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "水没遺構 スカラ"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 7,
+      "bottom": 6,
+      "left": 7
+    },
+    "image_id": 206
+  },
+  {
+    "number": 194,
+    "name": "フォルドラ・レム・ルプス",
+    "stars": 3,
+    "patch": "4.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088207_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "帝国軍の脱走兵"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 8,
+      "bottom": 6,
+      "left": 3
+    },
+    "image_id": 207
+  },
+  {
+    "number": 195,
+    "name": "人馬王ロフォカレ",
+    "stars": 3,
+    "patch": "4.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088208_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハナガサ"
+      },
+      {
+        "type": "Raid",
+        "text": "失われた都 ラバナスタ"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 7,
+      "bottom": 1,
+      "left": 8
+    },
+    "image_id": 208
+  },
+  {
+    "number": 196,
+    "name": "冷血剣アルガス",
+    "stars": 4,
+    "patch": "4.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088209_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハナガサ"
+      },
+      {
+        "type": "Raid",
+        "text": "失われた都 ラバナスタ"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 2,
+      "bottom": 5,
+      "left": 8
+    },
+    "image_id": 209
+  },
+  {
+    "number": 197,
+    "name": "ラウバーン＆ピピン",
+    "stars": 5,
+    "patch": "4.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088210_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "400,000 MGP"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 10,
+      "bottom": 10,
+      "left": 6
+    },
+    "image_id": 210
+  },
+  {
+    "number": 198,
+    "name": "コジャ",
+    "stars": 1,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088211_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "マサツチ"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 2,
+      "bottom": 1,
+      "left": 6
+    },
+    "image_id": 211
+  },
+  {
+    "number": 199,
+    "name": "アンゴ",
+    "stars": 2,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088212_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "イソベ"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 2,
+      "bottom": 7,
+      "left": 4
+    },
+    "image_id": 212
+  },
+  {
+    "number": 200,
+    "name": "誘導システム",
+    "stars": 2,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088213_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "暴走戦艦 フラクタル・コンティニアム (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 4,
+      "bottom": 4,
+      "left": 4
+    },
+    "image_id": 213
+  },
+  {
+    "number": 201,
+    "name": "タンスイ",
+    "stars": 2,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088214_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ユウスイ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 2,
+      "bottom": 3,
+      "left": 7
+    },
+    "image_id": 214
+  },
+  {
+    "number": 202,
+    "name": "玄武",
+    "stars": 3,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088215_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "紅玉火山 獄之蓋"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 7,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 215
+  },
+  {
+    "number": 203,
+    "name": "白虎",
+    "stars": 3,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088216_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "白虎征魂戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極白虎征魂戦"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 1,
+      "bottom": 7,
+      "left": 7
+    },
+    "image_id": 216
+  },
+  {
+    "number": 204,
+    "name": "アレンヴァルド・レンティヌス",
+    "stars": 3,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088217_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "アンバー・トレント"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 4,
+      "bottom": 8,
+      "left": 2
+    },
+    "image_id": 217
+  },
+  {
+    "number": 205,
+    "name": "人狼族",
+    "stars": 3,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088218_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "マサツチ"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 3,
+      "bottom": 8,
+      "left": 7
+    },
+    "image_id": 218
+  },
+  {
+    "number": 206,
+    "name": "ハンコック",
+    "stars": 4,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088219_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "キキモ"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 9,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 219
+  },
+  {
+    "number": 207,
+    "name": "ヒスイ＆クレナイ",
+    "stars": 5,
+    "patch": "4.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088220_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "イソベ"
+      }
+    ],
+    "stats": {
+      "top": 10,
+      "right": 2,
+      "bottom": 7,
+      "left": 9
+    },
+    "image_id": 220
+  },
+  {
+    "number": 208,
+    "name": "セイテンタイセイ",
+    "stars": 3,
+    "patch": "4.36",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088224_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "風水霊殿 ガンエン廟"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 8,
+      "bottom": 4,
+      "left": 8
+    },
+    "image_id": 224
+  },
+  {
+    "number": 209,
+    "name": "ツクヨミ",
+    "stars": 4,
+    "patch": "4.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088228_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "ツクヨミ討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ツクヨミ討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 7,
+      "bottom": 7,
+      "left": 8
+    },
+    "image_id": 228
+  },
+  {
+    "number": 210,
+    "name": "鬼龍ヤズマット",
+    "stars": 5,
+    "patch": "4.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088229_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハナガサ"
+      },
+      {
+        "type": "Raid",
+        "text": "封じられた聖塔 リドルアナ"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 6,
+      "bottom": 10,
+      "left": 7
+    },
+    "image_id": 229
+  },
+  {
+    "number": 211,
+    "name": "ゴウセツ",
+    "stars": 5,
+    "patch": "4.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088230_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "カードコレクター：ランク8"
+      }
+    ],
+    "stats": {
+      "top": 10,
+      "right": 5,
+      "bottom": 10,
+      "left": 2
+    },
+    "image_id": 230
+  },
+  {
+    "number": 212,
+    "name": "ワニュウドウ＆カタシャリン",
+    "stars": 1,
+    "patch": "4.35",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088221_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ウシオギ"
+      },
+      {
+        "type": "Deep Dungeon",
+        "text": "Heaven-on-High - Silver/Gold Sack"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 1,
+      "bottom": 1,
+      "left": 5
+    },
+    "image_id": 221
+  },
+  {
+    "number": 213,
+    "name": "ハタモト",
+    "stars": 2,
+    "patch": "4.35",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088222_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ウシオギ"
+      },
+      {
+        "type": "Deep Dungeon",
+        "text": "Heaven-on-High - Silver/Gold Sack"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 7,
+      "bottom": 5,
+      "left": 6
+    },
+    "image_id": 222
+  },
+  {
+    "number": 214,
+    "name": "ヒルコ",
+    "stars": 3,
+    "patch": "4.36",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088225_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ウシオギ"
+      },
+      {
+        "type": "Deep Dungeon",
+        "text": "Heaven-on-High - Gold Sack"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 7,
+      "bottom": 5,
+      "left": 7
+    },
+    "image_id": 225
+  },
+  {
+    "number": 215,
+    "name": "ユキンコ",
+    "stars": 2,
+    "patch": "4.36",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088223_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ボタン"
+      },
+      {
+        "type": "Eureka",
+        "text": "FATE \"Eternity\" - Eureka Pagos"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 3,
+      "left": 5
+    },
+    "image_id": 223
+  },
+  {
+    "number": 216,
+    "name": "しあわせうさぎ",
+    "stars": 3,
+    "patch": "4.36",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088226_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ボタン"
+      },
+      {
+        "type": "Eureka",
+        "text": "Eureka Pagos/Pyros/Hydatos: Bunny Silver Coffer"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 8,
+      "bottom": 7,
+      "left": 3
+    },
+    "image_id": 226
+  },
+  {
+    "number": 217,
+    "name": "ロウヒ",
+    "stars": 3,
+    "patch": "4.36",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088227_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ボタン"
+      },
+      {
+        "type": "Eureka",
+        "text": "FATE \"Louhi on Ice\" - Eureka Pagos"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 8,
+      "bottom": 2,
+      "left": 7
+    },
+    "image_id": 227
+  },
+  {
+    "number": 218,
+    "name": "ムードスード",
+    "stars": 2,
+    "patch": "4.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088232_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "1,500 MGP"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 7,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 232
+  },
+  {
+    "number": 219,
+    "name": "トカップチ",
+    "stars": 3,
+    "patch": "4.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088233_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "草木汚染 聖モシャーヌ植物園 (Hard)"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 6,
+      "bottom": 6,
+      "left": 7
+    },
+    "image_id": 233
+  },
+  {
+    "number": 220,
+    "name": "ミストドラゴン",
+    "stars": 3,
+    "patch": "4.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088234_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "永久焦土 ザ・バーン"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 8,
+      "bottom": 5,
+      "left": 5
+    },
+    "image_id": 234
+  },
+  {
+    "number": 221,
+    "name": "朱雀",
+    "stars": 3,
+    "patch": "4.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088235_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "朱雀征魂戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極朱雀征魂戦"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 7,
+      "bottom": 7,
+      "left": 7
+    },
+    "image_id": 235
+  },
+  {
+    "number": 222,
+    "name": "アサヒ・サス・ブルトゥス",
+    "stars": 3,
+    "patch": "4.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088238_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハチナン"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 4,
+      "bottom": 1,
+      "left": 8
+    },
+    "image_id": 238
+  },
+  {
+    "number": 223,
+    "name": "オメガ",
+    "stars": 5,
+    "patch": "4.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088240_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ガーロンド社の調査員"
+      },
+      {
+        "type": "Raid",
+        "text": "次元の狭間オメガ：アルファ編4"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 9,
+      "bottom": 3,
+      "left": 10
+    },
+    "image_id": 240
+  },
+  {
+    "number": 224,
+    "name": "カラクリ・ハンニャ",
+    "stars": 1,
+    "patch": "4.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088231_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ホクシン"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 1,
+      "bottom": 1,
+      "left": 4
+    },
+    "image_id": 231
+  },
+  {
+    "number": 225,
+    "name": "パズズ",
+    "stars": 3,
+    "patch": "4.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088236_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ボタン"
+      },
+      {
+        "type": "Eureka",
+        "text": "FATE \"Wail in the Willows\" - Eureka Anemos"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 8,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 236
+  },
+  {
+    "number": 226,
+    "name": "ペンテシレイア",
+    "stars": 3,
+    "patch": "4.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088237_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ヘツカゼ"
+      },
+      {
+        "type": "Eureka",
+        "text": "FATE \"Lost Epic\" - Eureka Pyros"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 2,
+      "bottom": 8,
+      "left": 5
+    },
+    "image_id": 237
+  },
+  {
+    "number": 227,
+    "name": "ヨウジンボウ&ダイゴロウ",
+    "stars": 5,
+    "patch": "4.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088239_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ホクシン"
+      }
+    ],
+    "stats": {
+      "top": 10,
+      "right": 8,
+      "bottom": 1,
+      "left": 8
+    },
+    "image_id": 239
+  },
+  {
+    "number": 228,
+    "name": "タタル・タル（紅蓮）",
+    "stars": 1,
+    "patch": "4.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088241_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "96,000 MGP"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 4,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 241
+  },
+  {
+    "number": 229,
+    "name": "プロメテウス",
+    "stars": 3,
+    "patch": "4.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088244_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "境界戦線 ギムリトダーク"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 5,
+      "bottom": 8,
+      "left": 3
+    },
+    "image_id": 242
+  },
+  {
+    "number": 230,
+    "name": "青龍",
+    "stars": 3,
+    "patch": "4.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088246_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "青龍征魂戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極青龍征魂戦"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 7,
+      "bottom": 7,
+      "left": 1
+    },
+    "image_id": 243
+  },
+  {
+    "number": 231,
+    "name": "アルファ",
+    "stars": 3,
+    "patch": "4.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088247_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ガーロンド社の調査員"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 6,
+      "left": 6
+    },
+    "image_id": 244
+  },
+  {
+    "number": 232,
+    "name": "ナマキン大王",
+    "stars": 4,
+    "patch": "4.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088248_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ギョエイ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 9,
+      "bottom": 6,
+      "left": 7
+    },
+    "image_id": 245
+  },
+  {
+    "number": 233,
+    "name": "聖天使アルテマ",
+    "stars": 5,
+    "patch": "4.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088250_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハナガサ"
+      },
+      {
+        "type": "Raid",
+        "text": "楽欲の僧院 オーボンヌ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 10,
+      "bottom": 7,
+      "left": 7
+    },
+    "image_id": 246
+  },
+  {
+    "number": 234,
+    "name": "アルフィノ＆アリゼー（紅蓮）",
+    "stars": 5,
+    "patch": "4.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088251_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "メロ・ロッゴ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 8,
+      "bottom": 8,
+      "left": 8
+    },
+    "image_id": 247
+  },
+  {
+    "number": 235,
+    "name": "ドゥエルグ",
+    "stars": 2,
+    "patch": "4.55",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088242_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ヘツカゼ"
+      },
+      {
+        "type": "Eureka",
+        "text": "FATE \"Duty-free\" - Eureka Hydatos"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 5,
+      "bottom": 3,
+      "left": 7
+    },
+    "image_id": 248
+  },
+  {
+    "number": 236,
+    "name": "エジカ・ツンジカ",
+    "stars": 2,
+    "patch": "4.55",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088243_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ヘツカゼ"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 1,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 249
+  },
+  {
+    "number": 237,
+    "name": "プロヴェナンス・ウォッチャー",
+    "stars": 3,
+    "patch": "4.55",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088245_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ヘツカゼ"
+      },
+      {
+        "type": "Eureka",
+        "text": "FATE \"Crystalline Provenance\" - Eureka Hydatos"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 4,
+      "bottom": 4,
+      "left": 8
+    },
+    "image_id": 250
+  },
+  {
+    "number": 238,
+    "name": "ギルガメッシュ（紅蓮）",
+    "stars": 4,
+    "patch": "4.56",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088249_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "真ヨウジンボウ討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 4,
+      "bottom": 8,
+      "left": 4
+    },
+    "image_id": 251
+  },
+  {
+    "number": 239,
+    "name": "アマロ",
+    "stars": 1,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088253_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "グリナード"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 7,
+      "bottom": 2,
+      "left": 3
+    },
+    "image_id": 253
+  },
+  {
+    "number": 240,
+    "name": "イビルウェポン",
+    "stars": 1,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088254_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ドレーリー"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 2,
+      "bottom": 2,
+      "left": 2
+    },
+    "image_id": 254
+  },
+  {
+    "number": 241,
+    "name": "チャイ夫妻",
+    "stars": 1,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088255_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "イベナート"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 1,
+      "bottom": 6,
+      "left": 1
+    },
+    "image_id": 255
+  },
+  {
+    "number": 242,
+    "name": "ギガテンダー",
+    "stars": 2,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088256_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ドレーリー"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 4,
+      "bottom": 4,
+      "left": 4
+    },
+    "image_id": 256
+  },
+  {
+    "number": 243,
+    "name": "フェオ＝ウル",
+    "stars": 2,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088257_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ギュフ＝ウィン"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 5,
+      "bottom": 5,
+      "left": 1
+    },
+    "image_id": 257
+  },
+  {
+    "number": 244,
+    "name": "ルナル",
+    "stars": 2,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088258_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハルグラ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 4,
+      "bottom": 7,
+      "left": 1
+    },
+    "image_id": 258
+  },
+  {
+    "number": 245,
+    "name": "グレノルト",
+    "stars": 2,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088259_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "サウスィー・コール"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 3,
+      "bottom": 7,
+      "left": 7
+    },
+    "image_id": 259
+  },
+  {
+    "number": 246,
+    "name": "フィリア",
+    "stars": 3,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088260_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "殺戮郷村 ホルミンスター"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Dream Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 6,
+      "bottom": 8,
+      "left": 6
+    },
+    "image_id": 260
+  },
+  {
+    "number": 247,
+    "name": "ティターニア",
+    "stars": 3,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088261_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "ティターニア討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ティターニア討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 6,
+      "bottom": 6,
+      "left": 2
+    },
+    "image_id": 261
+  },
+  {
+    "number": 248,
+    "name": "エロース",
+    "stars": 3,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088262_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "古跡探索 キタンナ神影洞"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Dream Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 2,
+      "bottom": 6,
+      "left": 8
+    },
+    "image_id": 262
+  },
+  {
+    "number": 249,
+    "name": "ストルゲー",
+    "stars": 3,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088263_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "爽涼離宮 マリカの大井戸"
+      },
+      {
+        "type": "Gold Saucer",
+        "text": "Dream Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 8,
+      "bottom": 2,
+      "left": 6
+    },
+    "image_id": 263
+  },
+  {
+    "number": 250,
+    "name": "フォーミダブル",
+    "stars": 3,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088264_hr1.tex",
+    "sources": [
+      {
+        "type": "FATE",
+        "text": "Zumutt - Tomra (Kholusia) - 200 Bicolor Gemstones (Rank 3)"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 5,
+      "bottom": 5,
+      "left": 5
+    },
+    "image_id": 264
+  },
+  {
+    "number": 251,
+    "name": "ライナ",
+    "stars": 3,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088265_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ラムリン"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 8,
+      "bottom": 8,
+      "left": 3
+    },
+    "image_id": 265
+  },
+  {
+    "number": 252,
+    "name": "ユールモアの道化",
+    "stars": 3,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088266_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "グレウェン"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 4,
+      "bottom": 7,
+      "left": 6
+    },
+    "image_id": 266
+  },
+  {
+    "number": 253,
+    "name": "イノセンス",
+    "stars": 4,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088267_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "イノセンス討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極イノセンス討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 3,
+      "bottom": 8,
+      "left": 8
+    },
+    "image_id": 267
+  },
+  {
+    "number": 254,
+    "name": "ヤ・シュトラ（漆黒）",
+    "stars": 4,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088268_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ハルグラ"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 9,
+      "bottom": 5,
+      "left": 9
+    },
+    "image_id": 268
+  },
+  {
+    "number": 255,
+    "name": "ウリエンジェ（漆黒）",
+    "stars": 4,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088269_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "カードコレクター：ランク9"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 2,
+      "bottom": 5,
+      "left": 9
+    },
+    "image_id": 269
+  },
+  {
+    "number": 256,
+    "name": "ランジート",
+    "stars": 4,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088270_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "グレウェン"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 9,
+      "bottom": 9,
+      "left": 5
+    },
+    "image_id": 270
+  },
+  {
+    "number": 257,
+    "name": "ハーデス",
+    "stars": 5,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088271_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "ハーデス討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ハーデス討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 6,
+      "bottom": 6,
+      "left": 10
+    },
+    "image_id": 271
+  },
+  {
+    "number": 258,
+    "name": "アルバート",
+    "stars": 5,
+    "patch": "5.0",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088272_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "街角のデュエリスト：ランク7"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 9,
+      "bottom": 9,
+      "left": 9
+    },
+    "image_id": 272
+  },
+  {
+    "number": 259,
+    "name": "ホブゴブリン",
+    "stars": 1,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088273_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Dream Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 7,
+      "bottom": 2,
+      "left": 2
+    },
+    "image_id": 273
+  },
+  {
+    "number": 260,
+    "name": "ポークシー",
+    "stars": 1,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088274_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "エオ＝シグン"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 2,
+      "bottom": 6,
+      "left": 4
+    },
+    "image_id": 274
+  },
+  {
+    "number": 261,
+    "name": "イグアナ",
+    "stars": 2,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088275_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Dream Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 5,
+      "bottom": 6,
+      "left": 5
+    },
+    "image_id": 275
+  },
+  {
+    "number": 262,
+    "name": "ン・モゥ",
+    "stars": 2,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088276_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "エオ＝シグン"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 6,
+      "bottom": 2,
+      "left": 4
+    },
+    "image_id": 276
+  },
+  {
+    "number": 263,
+    "name": "フーア",
+    "stars": 2,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088277_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Dream Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 4,
+      "bottom": 6,
+      "left": 2
+    },
+    "image_id": 277
+  },
+  {
+    "number": 264,
+    "name": "リャナンシー",
+    "stars": 3,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088278_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Dream Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 7,
+      "bottom": 2,
+      "left": 4
+    },
+    "image_id": 278
+  },
+  {
+    "number": 265,
+    "name": "黒の導師",
+    "stars": 3,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088279_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "魔法宮殿 グラン・コスモス"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 6,
+      "bottom": 6,
+      "left": 8
+    },
+    "image_id": 279
+  },
+  {
+    "number": 266,
+    "name": "光の巫女",
+    "stars": 4,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088280_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Dream Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 7,
+      "bottom": 9,
+      "left": 4
+    },
+    "image_id": 280
+  },
+  {
+    "number": 267,
+    "name": "アルケオタニア",
+    "stars": 5,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088281_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "Dream Triad Card"
+      }
+    ],
+    "stats": {
+      "top": 10,
+      "right": 9,
+      "bottom": 7,
+      "left": 1
+    },
+    "image_id": 281
+  },
+  {
+    "number": 268,
+    "name": "９Ｓ",
+    "stars": 5,
+    "patch": "5.1",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088282_hr1.tex",
+    "sources": [
+      {
+        "type": "Raid",
+        "text": "複製サレタ工場廃墟"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 8,
+      "bottom": 6,
+      "left": 10
+    },
+    "image_id": 282
+  },
+  {
+    "number": 269,
+    "name": "フラワーバスケット",
+    "stars": 1,
+    "patch": "5.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088283_hr1.tex",
+    "sources": [
+      {
+        "type": "FATE",
+        "text": "Sul Lad - Lydha Lran (Il Mheg) - 40 Bicolor Gemstones"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 2,
+      "bottom": 2,
+      "left": 7
+    },
+    "image_id": 283
+  },
+  {
+    "number": 270,
+    "name": "キタリ",
+    "stars": 1,
+    "patch": "5.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088284_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "レダード"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 6,
+      "bottom": 2,
+      "left": 2
+    },
+    "image_id": 284
+  },
+  {
+    "number": 271,
+    "name": "ノール",
+    "stars": 2,
+    "patch": "5.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088285_hr1.tex",
+    "sources": [
+      {
+        "type": "FATE",
+        "text": "Siulmet - Fort Jobb (Lakeland) - 60 Bicolor Gemstones"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 4,
+      "bottom": 7,
+      "left": 6
+    },
+    "image_id": 285
+  },
+  {
+    "number": 272,
+    "name": "バッツカッチ",
+    "stars": 3,
+    "patch": "5.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088287_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "レダード"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 2,
+      "bottom": 8,
+      "left": 6
+    },
+    "image_id": 287
+  },
+  {
+    "number": 273,
+    "name": "フォーギヴン・オブセニティー",
+    "stars": 3,
+    "patch": "5.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088288_hr1.tex",
+    "sources": [
+      {
+        "type": "FATE",
+        "text": "Zumutt - Tomra (Kholusia) - 100 Bicolor Gemstones"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 7,
+      "bottom": 1,
+      "left": 6
+    },
+    "image_id": 288
+  },
+  {
+    "number": 274,
+    "name": "フアガス",
+    "stars": 3,
+    "patch": "5.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088289_hr1.tex",
+    "sources": [
+      {
+        "type": "FATE",
+        "text": "Nacille - Fanow (The Rak'tika Greatwood) - 100 Bicolor Gemstones"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 5,
+      "bottom": 8,
+      "left": 2
+    },
+    "image_id": 289
+  },
+  {
+    "number": 275,
+    "name": "正体不明",
+    "stars": 3,
+    "patch": "5.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088290_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "黒風海底 アニドラス・アナムネーシス"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 6,
+      "bottom": 3,
+      "left": 8
+    },
+    "image_id": 290
+  },
+  {
+    "number": 276,
+    "name": "ルビーウェポン",
+    "stars": 4,
+    "patch": "5.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088291_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "ルビーウェポン破壊作戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ルビーウェポン破壊作戦"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 7,
+      "bottom": 1,
+      "left": 9
+    },
+    "image_id": 291
+  },
+  {
+    "number": 277,
+    "name": "メガセリオン",
+    "stars": 5,
+    "patch": "5.2",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088292_hr1.tex",
+    "sources": [
+      {
+        "type": "FATE",
+        "text": "Goushs Ooan - The Ondo Cups (The Tempest) - 250 Bicolor Gemstones"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 9,
+      "bottom": 2,
+      "left": 9
+    },
+    "image_id": 292
+  },
+  {
+    "number": 278,
+    "name": "リズベス",
+    "stars": 2,
+    "patch": "5.21",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088286_hr1.tex",
+    "sources": [
+      {
+        "type": "Skybuilders",
+        "text": "Enie - The Firmament - 500 Skybuilders' Scrips"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 5,
+      "bottom": 6,
+      "left": 4
+    },
+    "image_id": 286
+  },
+  {
+    "number": 279,
+    "name": "ヴァリス・イェー・ガルヴァス",
+    "stars": 5,
+    "patch": "5.25",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088293_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "極シタデル・ボズヤ追憶戦"
+      }
+    ],
+    "stats": {
+      "top": 10,
+      "right": 10,
+      "bottom": 4,
+      "left": 1
+    },
+    "image_id": 293
+  },
+  {
+    "number": 280,
+    "name": "ドワーフ",
+    "stars": 1,
+    "patch": "5.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088294_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "コブレヴァ"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 4,
+      "bottom": 6,
+      "left": 2
+    },
+    "image_id": 294
+  },
+  {
+    "number": 281,
+    "name": "ドワーフ戦車",
+    "stars": 2,
+    "patch": "5.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088296_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "コブレヴァ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 4,
+      "bottom": 2,
+      "left": 6
+    },
+    "image_id": 296
+  },
+  {
+    "number": 282,
+    "name": "ルゴス",
+    "stars": 3,
+    "patch": "5.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088297_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "21,000 MGP"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 4,
+      "bottom": 7,
+      "left": 7
+    },
+    "image_id": 297
+  },
+  {
+    "number": 283,
+    "name": "アシエン・エリディブス",
+    "stars": 4,
+    "patch": "5.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088300_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "56,000 MGP"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 4,
+      "bottom": 9,
+      "left": 4
+    },
+    "image_id": 300
+  },
+  {
+    "number": 284,
+    "name": "サンクレッド（漆黒）",
+    "stars": 4,
+    "patch": "5.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088301_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "カードコレクター：ランク10"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 9,
+      "bottom": 8,
+      "left": 1
+    },
+    "image_id": 301
+  },
+  {
+    "number": 285,
+    "name": "サファイアウェポン",
+    "stars": 4,
+    "patch": "5.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088302_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "威勢のいい帝国兵"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 9,
+      "bottom": 8,
+      "left": 7
+    },
+    "image_id": 302
+  },
+  {
+    "number": 286,
+    "name": "２Ｐ",
+    "stars": 5,
+    "patch": "5.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088303_hr1.tex",
+    "sources": [
+      {
+        "type": "Raid",
+        "text": "人形タチノ軍事基地"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 8,
+      "bottom": 10,
+      "left": 6
+    },
+    "image_id": 303
+  },
+  {
+    "number": 287,
+    "name": "ウォーリア・オブ・ライト（漆黒）",
+    "stars": 5,
+    "patch": "5.3",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088304_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "ウォーリア・オブ・ライト討滅戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ウォーリア・オブ・ライト討滅戦"
+      }
+    ],
+    "stats": {
+      "top": 2,
+      "right": 10,
+      "bottom": 10,
+      "left": 5
+    },
+    "image_id": 304
+  },
+  {
+    "number": 288,
+    "name": "エル・トゥ",
+    "stars": 2,
+    "patch": "5.31",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088295_hr1.tex",
+    "sources": [
+      {
+        "type": "Skybuilders",
+        "text": "Enie - The Firmament - 500 Skybuilders' Scrips"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 7,
+      "bottom": 1,
+      "left": 7
+    },
+    "image_id": 295
+  },
+  {
+    "number": 289,
+    "name": "ドゥン",
+    "stars": 3,
+    "patch": "5.35",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088298_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "アルシウ"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 4,
+      "bottom": 6,
+      "left": 6
+    },
+    "image_id": 298
+  },
+  {
+    "number": 290,
+    "name": "アドラメレク",
+    "stars": 3,
+    "patch": "5.35",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088299_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "アルシウ"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 1,
+      "bottom": 7,
+      "left": 8
+    },
+    "image_id": 299
+  },
+  {
+    "number": 291,
+    "name": "マザーポークシー",
+    "stars": 2,
+    "patch": "5.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088306_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "魔術工房 マトーヤのアトリエ"
+      }
+    ],
+    "stats": {
+      "top": 3,
+      "right": 3,
+      "bottom": 7,
+      "left": 6
+    },
+    "image_id": 306
+  },
+  {
+    "number": 292,
+    "name": "エメラルドウェポン",
+    "stars": 4,
+    "patch": "5.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088312_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "エメラルドウェポン破壊作戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極エメラルドウェポン破壊作戦"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 1,
+      "bottom": 9,
+      "left": 8
+    },
+    "image_id": 312
+  },
+  {
+    "number": 293,
+    "name": "リーン",
+    "stars": 4,
+    "patch": "5.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088313_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "リュート・スー"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 9,
+      "bottom": 7,
+      "left": 1
+    },
+    "image_id": 313
+  },
+  {
+    "number": 294,
+    "name": "ガイア",
+    "stars": 4,
+    "patch": "5.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088314_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "リュート・スー"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 9,
+      "bottom": 1,
+      "left": 9
+    },
+    "image_id": 314
+  },
+  {
+    "number": 295,
+    "name": "プロミス・オブ・エデン",
+    "stars": 5,
+    "patch": "5.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088315_hr1.tex",
+    "sources": [
+      {
+        "type": "Raid",
+        "text": "希望の園エデン：再生編4"
+      },
+      {
+        "type": "Raid",
+        "text": "希望の園エデン零式：再生編4"
+      }
+    ],
+    "stats": {
+      "top": 10,
+      "right": 5,
+      "bottom": 8,
+      "left": 6
+    },
+    "image_id": 315
+  },
+  {
+    "number": 296,
+    "name": "フェニックス",
+    "stars": 5,
+    "patch": "5.4",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088316_hr1.tex",
+    "sources": [
+      {
+        "type": "Achievement",
+        "text": "トーナメントの勝者：ランク１"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 9,
+      "bottom": 6,
+      "left": 9
+    },
+    "image_id": 316
+  },
+  {
+    "number": 297,
+    "name": "マスク・ザ・ブルー",
+    "stars": 1,
+    "patch": "5.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088305_hr1.tex",
+    "sources": [
+      {
+        "type": "Hunts",
+        "text": "Maudlin Latool Ja - Ul'dah - 100 Allied Seals"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 7,
+      "bottom": 1,
+      "left": 1
+    },
+    "image_id": 305
+  },
+  {
+    "number": 298,
+    "name": "トリニティ・シーカー",
+    "stars": 3,
+    "patch": "5.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088307_hr1.tex",
+    "sources": [
+      {
+        "type": "Bozja",
+        "text": "3 Bozjan Clusters"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 1,
+      "bottom": 8,
+      "left": 7
+    },
+    "image_id": 307
+  },
+  {
+    "number": 299,
+    "name": "トリニティ・アヴァウド",
+    "stars": 3,
+    "patch": "5.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088308_hr1.tex",
+    "sources": [
+      {
+        "type": "Bozja",
+        "text": "3 Bozjan Clusters"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 7,
+      "bottom": 6,
+      "left": 1
+    },
+    "image_id": 308
+  },
+  {
+    "number": 300,
+    "name": "アポカリョープス",
+    "stars": 3,
+    "patch": "5.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088309_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ドロイン"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 8,
+      "bottom": 6,
+      "left": 6
+    },
+    "image_id": 309
+  },
+  {
+    "number": 301,
+    "name": "ジークフリード",
+    "stars": 3,
+    "patch": "5.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088310_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "ドロイン"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 6,
+      "bottom": 4,
+      "left": 8
+    },
+    "image_id": 310
+  },
+  {
+    "number": 302,
+    "name": "ものまね士ゴゴ",
+    "stars": 3,
+    "patch": "5.45",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088311_hr1.tex",
+    "sources": [
+      {
+        "type": "Quest",
+        "text": "青魔法の未来"
+      },
+      {
+        "type": "Hunts",
+        "text": "Maudlin Latool Ja - Ul'dah - 300 Allied Seals"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 6,
+      "bottom": 4,
+      "left": 6
+    },
+    "image_id": 311
+  },
+  {
+    "number": 303,
+    "name": "キーパー・オブ・ダンジョン",
+    "stars": 2,
+    "patch": "5.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088317_hr1.tex",
+    "sources": [
+      {
+        "type": "FATE",
+        "text": "Sul Lad - Lydha Lran (Il Mheg) - 60 Bicolor Gemstones"
+      }
+    ],
+    "stats": {
+      "top": 5,
+      "right": 4,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 317
+  },
+  {
+    "number": 304,
+    "name": "ルナバハムート",
+    "stars": 3,
+    "patch": "5.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088318_hr1.tex",
+    "sources": [
+      {
+        "type": "Dungeon",
+        "text": "黄金平原 パガルザン"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 2,
+      "bottom": 8,
+      "left": 4
+    },
+    "image_id": 318
+  },
+  {
+    "number": 305,
+    "name": "ウァレンス・ヴァン・ウァロ",
+    "stars": 3,
+    "patch": "5.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088319_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "22,400 MGP"
+      }
+    ],
+    "stats": {
+      "top": 7,
+      "right": 5,
+      "bottom": 8,
+      "left": 3
+    },
+    "image_id": 319
+  },
+  {
+    "number": 306,
+    "name": "Gウォリアー",
+    "stars": 4,
+    "patch": "5.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088323_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "C'intana - Mor Dhona - 1 Ruby Totem, 1 Emerald Totem and 1 Diamond Totem"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 1,
+      "bottom": 7,
+      "left": 8
+    },
+    "image_id": 323
+  },
+  {
+    "number": 307,
+    "name": "ダイヤウェポン",
+    "stars": 4,
+    "patch": "5.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088324_hr1.tex",
+    "sources": [
+      {
+        "type": "Trial",
+        "text": "ダイヤウェポン捕獲作戦"
+      },
+      {
+        "type": "Trial",
+        "text": "極ダイヤウェポン捕獲作戦"
+      }
+    ],
+    "stats": {
+      "top": 9,
+      "right": 8,
+      "bottom": 7,
+      "left": 1
+    },
+    "image_id": 324
+  },
+  {
+    "number": 308,
+    "name": "２Ｂ",
+    "stars": 5,
+    "patch": "5.5",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088326_hr1.tex",
+    "sources": [
+      {
+        "type": "Raid",
+        "text": "希望ノ砲台：「塔」"
+      }
+    ],
+    "stats": {
+      "top": 6,
+      "right": 10,
+      "bottom": 4,
+      "left": 8
+    },
+    "image_id": 326
+  },
+  {
+    "number": 309,
+    "name": "ルナイフリート",
+    "stars": 3,
+    "patch": "5.55",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088320_hr1.tex",
+    "sources": [
+      {
+        "type": "Gold Saucer",
+        "text": "22,400 MGP"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 3,
+      "bottom": 4,
+      "left": 7
+    },
+    "image_id": 320
+  },
+  {
+    "number": 310,
+    "name": "IVレギオン・シュミハザ",
+    "stars": 3,
+    "patch": "5.55",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088321_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "スラッドキー"
+      }
+    ],
+    "stats": {
+      "top": 1,
+      "right": 6,
+      "bottom": 7,
+      "left": 8
+    },
+    "image_id": 321
+  },
+  {
+    "number": 311,
+    "name": "IVレギオン・キュクレイン",
+    "stars": 3,
+    "patch": "5.55",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088322_hr1.tex",
+    "sources": [
+      {
+        "type": "NPC",
+        "text": "スラッドキー"
+      }
+    ],
+    "stats": {
+      "top": 8,
+      "right": 1,
+      "bottom": 7,
+      "left": 6
+    },
+    "image_id": 322
+  },
+  {
+    "number": 312,
+    "name": "ディアブロ・アーマメント",
+    "stars": 4,
+    "patch": "5.55",
+    "icon": "https://v2.xivapi.com/api/asset?format=webp&path=ui%2Ficon%2F088000%2F088325_hr1.tex",
+    "sources": [
+      {
+        "type": "Bozja",
+        "text": "7 Bozjan Clusters"
+      }
+    ],
+    "stats": {
+      "top": 4,
+      "right": 4,
+      "bottom": 9,
+      "left": 9
+    },
+    "image_id": 325
+  }
+]
