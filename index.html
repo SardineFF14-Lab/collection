@@ -19,7 +19,6 @@
     --text3:   #a09880;
     --checked:        rgba(138,106,26,0.08);
     --checked-border: rgba(138,106,26,0.35);
-
     --c-npc:   #1a6b5a; --cb-npc:   rgba(26,107,90,0.1);
     --c-duty:  #2a4a9a; --cb-duty:  rgba(42,74,154,0.1);
     --c-gs:    #8a4a10; --cb-gs:    rgba(138,74,16,0.1);
@@ -63,34 +62,34 @@
   .stat-label { font-size: 10px; color: var(--text2); margin-top: 1px; }
   .stat-num.owned   { color: var(--gold); }
   .stat-num.missing { color: var(--text2); }
-  .progress-wrap { flex: 1; min-width: 140px; }
+  .progress-wrap { min-width: 120px; }
   .progress-bar { height: 6px; background: var(--bg3); border-radius: 3px; overflow: hidden; margin-bottom: 3px; }
   .progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold2)); border-radius: 3px; transition: width 0.3s; }
-  .progress-label { font-size: 11px; color: var(--text2); }
+  .progress-label { font-size: 11px; color: var(--text2); white-space: nowrap; }
   .progress-label strong { color: var(--gold); }
 
   /* オーナーメモ */
   .owner-memo {
-    flex: 0 0 auto; min-width: 200px; max-width: 320px;
+    flex: 1; min-width: 260px;
     background: #fffef5;
     border: 1px solid var(--border2);
     border-radius: 6px;
-    padding: 6px 10px;
-    font-size: 11px;
+    padding: 6px 12px;
+    font-size: 12px;
     color: var(--text2);
-    line-height: 1.7;
+    line-height: 1.8;
   }
-  .owner-memo-title { font-size: 10px; font-weight: 700; color: var(--gold); margin-bottom: 2px; }
+  .owner-memo-title { font-size: 11px; font-weight: 700; color: var(--gold); margin-bottom: 2px; }
 
   /* URL共有 */
-  .share-area { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 8px 20px; }
+  .share-area { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 7px 20px; }
   .share-inner {
     max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
   }
   .share-label { font-size: 12px; color: var(--text2); white-space: nowrap; }
   .share-url {
-    flex: 1; min-width: 180px;
+    flex: 1; min-width: 160px;
     background: var(--card); border: 1px solid var(--border);
     border-radius: 5px; padding: 5px 9px;
     color: var(--text2); font-size: 11px; font-family: monospace;
@@ -106,7 +105,7 @@
   .btn.gold { border-color: var(--gold); color: var(--gold); }
   .btn.gold:hover { background: var(--checked); }
   .restore-input {
-    flex: 1; min-width: 180px;
+    flex: 1; min-width: 160px;
     background: var(--card); border: 1px solid var(--border);
     border-radius: 5px; padding: 5px 9px;
     color: var(--text); font-size: 11px; font-family: monospace;
@@ -116,18 +115,20 @@
   /* フィルター */
   .filters {
     background: var(--bg2); border-bottom: 1px solid var(--border);
-    padding: 8px 20px;
+    padding: 7px 20px;
     position: sticky; top: 52px; z-index: 90;
   }
   .filters-inner {
     max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
   }
+  .filter-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; width: 100%; }
+  .filter-row + .filter-row { margin-top: 5px; }
   .filter-btn {
-    padding: 3px 10px; border-radius: 14px;
+    padding: 3px 11px; border-radius: 14px;
     border: 1px solid var(--border);
     background: var(--card); color: var(--text2);
-    font-size: 11px; cursor: pointer; transition: all 0.15s;
+    font-size: 12px; cursor: pointer; transition: all 0.15s;
     white-space: nowrap;
   }
   .filter-btn:hover { border-color: var(--border2); color: var(--text); }
@@ -136,21 +137,21 @@
   .search-input {
     background: var(--card); border: 1px solid var(--border);
     border-radius: 5px; padding: 3px 9px;
-    color: var(--text); font-size: 11px; width: 150px;
+    color: var(--text); font-size: 12px; width: 160px;
   }
   .search-input:focus { outline: none; border-color: var(--gold); }
-  .filter-label { font-size: 10px; color: var(--text3); white-space: nowrap; }
+  .filter-label { font-size: 12px; font-weight: 600; color: var(--text2); white-space: nowrap; }
 
   /* メイン */
-  main { max-width: 1400px; margin: 0 auto; padding: 14px 20px 60px; }
+  main { max-width: 1400px; margin: 0 auto; padding: 12px 20px 60px; }
 
   /* グループヘッダー */
-  .group { margin-bottom: 20px; }
+  .group { margin-bottom: 16px; }
   .group-header {
     display: flex; align-items: center; gap: 8px;
-    padding: 6px 0; border-bottom: 1px solid var(--border);
-    margin-bottom: 6px;
-    position: sticky; top: 94px;
+    padding: 5px 0; border-bottom: 1px solid var(--border);
+    margin-bottom: 4px;
+    position: sticky; top: 108px;
     background: var(--bg); z-index: 80;
   }
   .group-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
@@ -162,9 +163,9 @@
   .card-item {
     display: grid;
     grid-template-columns: 26px 30px 46px 1fr;
-    align-items: center;
+    align-items: start;
     gap: 8px;
-    padding: 4px 8px;
+    padding: 5px 8px;
     border: 1px solid transparent;
     border-radius: 4px;
     background: var(--card);
@@ -181,6 +182,7 @@
     border: 1.5px solid var(--border2); border-radius: 3px;
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0; cursor: pointer; transition: all 0.1s;
+    margin-top: 3px;
   }
   .card-check:hover { border-color: var(--gold); }
   .card-item.checked .card-check { background: var(--gold); border-color: var(--gold); }
@@ -194,30 +196,40 @@
   }
 
   /* アイコン */
-  .card-icon-wrap { width: 30px; height: 30px; flex-shrink: 0; }
+  .card-icon-wrap { width: 30px; height: 30px; flex-shrink: 0; cursor: zoom-in; }
   .card-icon-wrap img {
     width: 30px; height: 30px; border-radius: 3px; display: block;
     border: 1px solid var(--border);
+    transition: border-color 0.1s;
   }
+  .card-icon-wrap img:hover { border-color: var(--gold); }
   .card-item.checked .card-icon-wrap img { border-color: var(--gold2); }
 
-  /* テキスト */
+  /* No列 */
+  .card-no-wrap { display: flex; flex-direction: column; justify-content: flex-start; padding-top: 1px; }
   .card-no   { font-size: 10px; color: var(--text3); font-family: monospace; }
-  .card-name { font-size: 12px; color: var(--text); font-weight: 500; white-space: nowrap; }
+  .card-stars { font-size: 10px; color: var(--gold2); letter-spacing: 0.5px; }
 
-  /* sourcesエリア */
+  /* 名前+sources列 */
+  .card-name-wrap { min-width: 0; }
+  .card-name { font-size: 12px; color: var(--text); font-weight: 500; }
   .card-sources {
     display: flex; flex-wrap: wrap; gap: 3px;
-    justify-content: flex-end; align-items: center;
+    justify-content: flex-start; align-items: center;
+    margin-top: 3px;
   }
+  .card-note {
+    font-size: 11px; color: var(--gold);
+    margin-top: 2px;
+  }
+
+  /* バッジ */
   .src-badge {
     font-size: 10px; padding: 1px 6px;
     border-radius: 8px; white-space: nowrap;
     border: 1px solid transparent;
   }
   .src-type-label { font-size: 9px; font-weight: 700; margin-right: 1px; }
-
-  /* badge color helpers */
   .src-npc   { background: var(--cb-npc);  color: var(--c-npc);  border-color: rgba(26,107,90,0.2); }
   .src-duty  { background: var(--cb-duty); color: var(--c-duty); border-color: rgba(42,74,154,0.2); }
   .src-gs    { background: var(--cb-gs);   color: var(--c-gs);   border-color: rgba(138,74,16,0.2); }
@@ -225,9 +237,49 @@
   .src-fate  { background: var(--cb-fate); color: var(--c-fate); border-color: rgba(106,58,154,0.2); }
   .src-other { background: var(--cb-other);color: var(--c-other);border-color: rgba(90,80,72,0.2); }
 
-  /* ★パッチ小表示 */
-  .card-meta { font-size: 10px; color: var(--text3); white-space: nowrap; }
-  .card-stars { color: var(--gold2); }
+  /* ポップアップ */
+  #popup-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.5); z-index: 500;
+    align-items: center; justify-content: center;
+  }
+  #popup-overlay.show { display: flex; }
+  #popup-box {
+    background: var(--card);
+    border: 1px solid var(--border2);
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    position: relative;
+    animation: pop-in 0.15s ease;
+  }
+  @keyframes pop-in { from { opacity:0; transform:scale(0.92); } to { opacity:1; transform:scale(1); } }
+  #popup-box .p-close {
+    position: absolute; top: 10px; right: 12px;
+    background: none; border: none;
+    color: var(--text3); font-size: 18px; cursor: pointer;
+  }
+  #popup-box .p-close:hover { color: var(--text); }
+  #popup-box .p-title { font-size: 13px; font-weight: 700; color: var(--gold); text-align: center; margin-bottom: 10px; }
+  #popup-box .p-body { display: flex; gap: 14px; align-items: flex-start; }
+  #popup-box .p-img img { width: 120px; height: auto; border-radius: 6px; border: 1px solid var(--border2); display: block; }
+  #popup-box .p-info { flex: 1; }
+  #popup-box .p-type { font-size: 11px; color: var(--text2); margin-bottom: 6px; }
+  #popup-box .p-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 3px; margin-top: 8px;
+  }
+  #popup-box .p-stats .sv {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 5px; text-align: center;
+    font-size: 15px; font-weight: 700; color: var(--text);
+    padding: 5px 0; line-height: 1;
+  }
+  #popup-box .p-stats .sv.empty { background: transparent; border-color: transparent; }
+  #popup-box .p-stats .sv-label { font-size: 8px; color: var(--text3); display: block; }
 
   /* ローディング */
   #loading {
@@ -237,10 +289,8 @@
   }
   .spinner {
     width: 36px; height: 36px;
-    border: 2px solid var(--border);
-    border-top-color: var(--gold);
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
+    border: 2px solid var(--border); border-top-color: var(--gold);
+    border-radius: 50%; animation: spin 0.8s linear infinite;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
   #error { display: none; text-align: center; padding: 40px; color: var(--text2); }
@@ -258,17 +308,8 @@
   }
   #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-
-  /* No列 */
-  .card-no-wrap { display: flex; flex-direction: column; justify-content: center; }
-  /* 名前+sources列 */
-  .card-name-wrap { min-width: 0; }
-  .card-sources { display: flex; flex-wrap: wrap; gap: 3px; justify-content: flex-start; }
-  /* パッチ */
-
   @media (max-width: 600px) {
     .card-item { grid-template-columns: 26px 30px 40px 1fr; }
-    .card-sources { display: none; }
   }
 </style>
 </head>
@@ -301,7 +342,7 @@
       <div class="progress-bar">
         <div class="progress-fill" id="progress-fill" style="width:0%"></div>
       </div>
-      <div class="progress-label">達成率 <strong id="progress-pct">0%</strong> — あと <strong id="progress-left">312</strong> 枚</div>
+      <div class="progress-label">あと <strong id="progress-left">312</strong> 枚</div>
     </div>
 
     <!-- ▼▼▼ オーナーメモ（ここに5行のTIPSを書いてください） ▼▼▼ -->
@@ -316,7 +357,6 @@
       </div>
     </div>
     <!-- ▲▲▲ オーナーメモここまで ▲▲▲ -->
-
   </div>
 </div>
 
@@ -334,27 +374,25 @@
 
 <div class="filters">
   <div class="filters-inner">
-    <span class="filter-label">表示：</span>
-    <button class="filter-btn" data-view="all"     onclick="setView(this,'all')">すべて</button>
-    <button class="filter-btn active" data-view="missing" onclick="setView(this,'missing')">未所持のみ</button>
-    <button class="filter-btn" data-view="owned"   onclick="setView(this,'owned')">所持済み</button>
-    <div class="filter-sep"></div>
-    <span class="filter-label">入手方法：</span>
-    <button class="filter-btn" data-type="VS"         onclick="toggleType(this,'NPC')">NPC対戦</button>
-    <button class="filter-btn" data-type="DU"       onclick="toggleType(this,'Trial')">討滅戦</button>
-    <button class="filter-btn" data-type="DU"        onclick="toggleType(this,'Raid')">レイド</button>
-    <button class="filter-btn" data-type="DU"     onclick="toggleType(this,'Dungeon')">ダンジョン</button>
-    <button class="filter-btn" data-type="FA"        onclick="toggleType(this,'FATE')">FATE</button>
-    <button class="filter-btn" data-type="CP" onclick="toggleType(this,'Gold Saucer')">ゴールドソーサー</button>
-    <button class="filter-btn" data-type="AC" onclick="toggleType(this,'Achievement')">アチーブメント</button>
-    <button class="filter-btn" data-type="Questt"       onclick="toggleType(this,'Quest')">クエスト</button>
-    <button class="filter-btn" data-type="TR"       onclick="toggleType(this,'Hunts')">モブハント</button>
-    <button class="filter-btn" data-type="EX" onclick="toggleType(this,'Deep Dungeon')">ディープダンジョン</button>
-    <button class="filter-btn" data-type="DU"      onclick="toggleType(this,'Eureka')">エウレカ</button>
-    <button class="filter-btn" data-type="TR"       onclick="toggleType(this,'Bozja')">ボズヤ</button>
-    <button class="filter-btn" data-type="TR" onclick="toggleType(this,'Skybuilders')">蒼天街</button>
-    <div class="filter-sep"></div>
-    <input class="search-input" id="search" type="text" placeholder="カード名で検索..." oninput="renderCards()">
+    <div class="filter-row">
+      <span class="filter-label">表示：</span>
+      <button class="filter-btn" data-view="all"     onclick="setView(this,'all')">すべて</button>
+      <button class="filter-btn active" data-view="missing" onclick="setView(this,'missing')">未所持のみ</button>
+      <button class="filter-btn" data-view="owned"   onclick="setView(this,'owned')">所持済み</button>
+      <div class="filter-sep"></div>
+      <input class="search-input" id="search" type="text" placeholder="カード名で検索..." oninput="renderCards()">
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">入手方法：</span>
+      <button class="filter-btn" data-type="VS"  onclick="toggleType(this,'VS')">NPC対戦</button>
+      <button class="filter-btn" data-type="DU"  onclick="toggleType(this,'DU')">ダンジョン/討滅戦</button>
+      <button class="filter-btn" data-type="FA"  onclick="toggleType(this,'FA')">FATE</button>
+      <button class="filter-btn" data-type="CP"  onclick="toggleType(this,'CP')">カードパック</button>
+      <button class="filter-btn" data-type="TR"  onclick="toggleType(this,'TR')">アイテム交換</button>
+      <button class="filter-btn" data-type="AC"  onclick="toggleType(this,'AC')">アチーブメント</button>
+      <button class="filter-btn" data-type="初"  onclick="toggleType(this,'初')">チュートリアル</button>
+      <button class="filter-btn" data-type="EX"  onclick="toggleType(this,'EX')">その他</button>
+    </div>
   </div>
 </div>
 
@@ -370,155 +408,144 @@
 <main id="app"></main>
 <div id="toast"></div>
 
-<!--
-==============================
-ポップアップ機能（コメントアウト中）
-==============================
-<div id="card-popup-overlay" onclick="closePopup(event)">
-  <div id="card-popup">
-    <button class="popup-close" onclick="closePopup(null)">✕</button>
-    <div class="popup-name" id="popup-name"></div>
-    <div class="popup-img-wrap"><img id="popup-img" src="" alt=""></div>
-    <div class="popup-stats">
-      <div class="s-top"><div class="stat-val" id="popup-top"></div></div>
-      <div class="s-left"><div class="stat-val" id="popup-left"></div></div>
-      <div class="s-center"><div class="stat-val"></div></div>
-      <div class="s-right"><div class="stat-val" id="popup-right"></div></div>
-      <div class="s-bottom"><div class="stat-val" id="popup-bottom"></div></div>
+<!-- ポップアップ -->
+<div id="popup-overlay" onclick="closePopup(event)">
+  <div id="popup-box">
+    <button class="p-close" onclick="closePopup(null)">✕</button>
+    <div class="p-title" id="p-title"></div>
+    <div class="p-body">
+      <div class="p-img"><img id="p-img" src="" alt=""></div>
+      <div class="p-info">
+        <div class="p-type" id="p-type"></div>
+        <div class="p-stats">
+          <div></div><div class="sv" id="p-top"><span class="sv-label">上</span><span id="p-top-v"></span></div><div></div>
+          <div class="sv" id="p-left-box"><span class="sv-label">左</span><span id="p-left-v"></span></div>
+          <div class="sv empty"></div>
+          <div class="sv" id="p-right-box"><span class="sv-label">右</span><span id="p-right-v"></span></div>
+          <div></div><div class="sv" id="p-bot"><span class="sv-label">下</span><span id="p-bot-v"></span></div><div></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-function openPopup(card) {
-  const s = card.stats && card.stats.numeric ? card.stats.numeric : {};
-  const fmt = v => (v === 10 ? 'A' : v ?? '-');
-  const imgUrl = card.image || '';
-  document.getElementById('popup-name').textContent = card.name;
-  document.getElementById('popup-img').src = imgUrl;
-  document.getElementById('popup-top').textContent    = fmt(s.top);
-  document.getElementById('popup-left').textContent   = fmt(s.left);
-  document.getElementById('popup-right').textContent  = fmt(s.right);
-  document.getElementById('popup-bottom').textContent = fmt(s.bottom);
-  document.getElementById('card-popup-overlay').classList.add('show');
-}
-function closePopup(e) {
-  if (e && e.target !== document.getElementById('card-popup-overlay')) return;
-  document.getElementById('card-popup-overlay').classList.remove('show');
-}
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') document.getElementById('card-popup-overlay').classList.remove('show');
-});
-==============================
--->
 
 <script>
-// =====================
-// 定数・状態
-// =====================
 const TOTAL = 312;
 let allCards = [];
+let notes = {};
 let owned = new Array(TOTAL + 1).fill(false);
 let currentView = 'missing';
 let activeTypes = new Set();
 
 // =====================
-// typeの日本語マッピング
-// =====================
-const TYPE_JA = {
-  'NPC':          'NPC対戦',
-  'Trial':        '討滅戦',
-  'Raid':         'レイド',
-  'Dungeon':      'ダンジョン',
-  'FATE':         'FATE',
-  'Gold Saucer':  'ゴールドソーサー',
-  'Achievement':  'アチーブメント',
-  'Quest':        'クエスト',
-  'Hunts':        'モブハント',
-  'Deep Dungeon': 'ディープダンジョン',
-  'Eureka':       'エウレカ',
-  'Bozja':        'ボズヤ',
-  'Skybuilders':  '蒼天街',
-};
-
 // typeからバッジCSSクラス
-function typeCls(type) {
-  if (type === 'NPC' || type === 'VS') return 'src-npc';
-  if (type === 'Trial' || type === 'Raid' || type === 'Dungeon' || type === 'DU') return 'src-duty';
-  if (type === 'Gold Saucer' || type === 'CP' || type === 'TR') return 'src-gs';
-  if (type === 'Achievement' || type === 'AC') return 'src-ach';
-  if (type === 'FATE' || type === 'FA' || type === 'Eureka' || type === 'Bozja' || type === 'EX') return 'src-fate';
-  if (type === '初') return 'src-other';
+// =====================
+function typeCls(abbr) {
+  if (abbr === 'VS') return 'src-npc';
+  if (abbr === 'DU') return 'src-duty';
+  if (abbr === 'CP') return 'src-gs';
+  if (abbr === 'TR') return 'src-gs';
+  if (abbr === 'AC') return 'src-ach';
+  if (abbr === 'FA' || abbr === 'EX') return 'src-fate';
   return 'src-other';
 }
 
 // =====================
-// グループ定義（表示順）
+// グループ定義（typeフィルター選択時）
 // =====================
 const GROUPS = [
-  { key: 'NPC',         label: 'NPC対戦',         color: '#1a6b5a', types: ['NPC'] },
-  { key: 'Duty',        label: 'ID / 討滅戦 / レイド', color: '#2a4a9a', types: ['Trial','Raid','Dungeon'] },
-  { key: 'Gold Saucer', label: 'ゴールドソーサー',   color: '#8a4a10', types: ['Gold Saucer'] },
-  { key: 'Achievement', label: 'アチーブメント',     color: '#4a7a20', types: ['Achievement'] },
-  { key: 'Field',       label: 'フィールド系',       color: '#6a3a9a', types: ['FATE','Eureka','Bozja','Hunts','Deep Dungeon','Skybuilders'] },
-  { key: 'Quest',       label: 'クエスト',           color: '#7a5a20', types: ['Quest'] },
-  { key: 'Other',       label: 'その他',             color: '#5a5048', types: [] },
+  { key: 'VS',  label: 'NPC対戦',           color: '#1a6b5a' },
+  { key: 'DU',  label: 'ダンジョン / 討滅戦', color: '#2a4a9a' },
+  { key: 'FA',  label: 'FATE',               color: '#6a3a9a' },
+  { key: 'CP',  label: 'カードパック',         color: '#8a4a10' },
+  { key: 'TR',  label: 'アイテム交換',         color: '#7a5a20' },
+  { key: 'AC',  label: 'アチーブメント',       color: '#4a7a20' },
+  { key: '初',  label: 'チュートリアル',       color: '#5a5048' },
+  { key: 'EX',  label: 'その他',              color: '#5a5048' },
 ];
 
 function getGroupKey(card) {
-  if (!card.sources || card.sources.length === 0) return 'Other';
-  const types = card.sources.map(s => s.type);
-  for (const g of GROUPS) {
-    if (g.types.some(t => types.includes(t))) return g.key;
-  }
-  return 'Other';
+  const src = (card.tsv_sources || [])[0];
+  return src ? src.abbr : 'EX';
 }
 
 // =====================
-// URLハッシュ
+// Base64 URLハッシュ
 // =====================
-function hashFromOwned() {
-  let bits = '';
-  for (let i = 1; i <= TOTAL; i++) bits += owned[i] ? '1' : '0';
-  return bits;
+function ownedToBase64() {
+  // 312ビット → 39バイト → Base64
+  const bytes = new Uint8Array(Math.ceil(TOTAL / 8));
+  for (let i = 1; i <= TOTAL; i++) {
+    if (owned[i]) bytes[Math.floor((i-1)/8)] |= (1 << ((i-1) % 8));
+  }
+  let bin = '';
+  bytes.forEach(b => bin += String.fromCharCode(b));
+  return btoa(bin).replace(/=/g, '');
 }
-function ownedFromHash(hash) {
+
+function base64ToOwned(b64) {
   owned = new Array(TOTAL + 1).fill(false);
-  for (let i = 0; i < Math.min(hash.length, TOTAL); i++) {
-    if (hash[i] === '1') owned[i + 1] = true;
+  try {
+    const bin = atob(b64.replace(/-/g,'+').replace(/_/g,'/'));
+    for (let i = 1; i <= TOTAL; i++) {
+      const byte = bin.charCodeAt(Math.floor((i-1)/8));
+      if (byte & (1 << ((i-1) % 8))) owned[i] = true;
+    }
+  } catch(e) {}
+}
+
+// 旧形式(312文字0/1)との互換
+function loadHash(hash) {
+  if (/^[01]{312}$/.test(hash)) {
+    // 旧形式
+    owned = new Array(TOTAL + 1).fill(false);
+    for (let i = 0; i < 312; i++) {
+      if (hash[i] === '1') owned[i + 1] = true;
+    }
+  } else if (hash.length > 0) {
+    base64ToOwned(hash);
   }
 }
+
 function updateUrl() {
-  history.replaceState(null, '', '#' + hashFromOwned());
+  const b64 = ownedToBase64();
+  history.replaceState(null, '', '#' + b64);
   document.getElementById('share-url').textContent = location.href;
 }
+
 function restoreFromInput() {
   const input = document.getElementById('restore-input').value.trim();
-  let hash = input.includes('#') ? input.split('#')[1] : input;
-  if (hash.length !== TOTAL || !/^[01]+$/.test(hash)) {
-    showToast('URLが正しくありません'); return;
-  }
-  ownedFromHash(hash);
+  const hash = input.includes('#') ? input.split('#')[1] : input;
+  if (!hash) { showToast('URLが正しくありません'); return; }
+  loadHash(hash);
   updateUrl(); updateStats(); renderCards();
   showToast('所持状態を復元しました');
 }
 
 // =====================
-// cards.json 読み込み
+// データ読み込み
 // =====================
 async function fetchCards() {
-  const res = await fetch('./cards.json');
-  if (!res.ok) throw new Error('cards.json load error');
-  const data = await res.json();
+  const [cardsRes, notesRes] = await Promise.all([
+    fetch('./cards.json'),
+    fetch('./notes.json').catch(() => null)
+  ]);
+  if (!cardsRes.ok) throw new Error('cards.json load error');
+  const data = await cardsRes.json();
+  if (notesRes && notesRes.ok) {
+    notes = await notesRes.json();
+  }
   return data.map(c => ({
-    number:   c.number,
-    name:     c.name,
-    stars:    c.stars,
-    patch:    c.patch,
-    icon:     c.icon,
-    image:    `https://ffxivcollect.com/images/cards/large/${c.image_id || c.number}.png`,
+    number:      c.number,
+    name:        c.name,
+    stars:       c.stars,
+    patch:       c.patch,
+    icon:        c.icon,
+    image:       `https://ffxivcollect.com/images/cards/large/${c.image_id || c.number}.png`,
     sources:     c.sources || [],
-    stats:       c.stats || {},
     tsv_sources: c.tsv_sources || [],
     card_type:   c.card_type || '',
+    stats:       c.stats || {},
   }));
 }
 
@@ -553,8 +580,46 @@ function updateStats() {
   document.getElementById('stat-missing').textContent = TOTAL - cnt;
   const pct = Math.floor(cnt / TOTAL * 100);
   document.getElementById('progress-fill').style.width = pct + '%';
-  document.getElementById('progress-pct').textContent  = pct + '%';
   document.getElementById('progress-left').textContent = TOTAL - cnt;
+}
+
+// =====================
+// カード1行のHTML生成
+// =====================
+function buildCardHtml(card) {
+  const num     = card.number;
+  const isOwned = owned[num];
+  const starsHtml = '★'.repeat(card.stars||1) + '☆'.repeat(Math.max(0,5-(card.stars||1)));
+  const note    = notes[String(num)] || '';
+
+  const tsvHtml = card.tsv_sources.map(s => {
+    const cls = typeCls(s.abbr);
+    return `<span class="src-badge ${cls}"><span class="src-type-label">${escHtml(s.label)}</span>：${escHtml(s.text)}</span>`;
+  }).join('');
+
+  const ctHtml = card.card_type
+    ? `<span class="src-badge src-other" style="font-size:9px;margin-left:2px">${escHtml(card.card_type)}</span>`
+    : '';
+
+  const noteHtml = note
+    ? `<div class="card-note">📝 ${escHtml(note)}</div>`
+    : '';
+
+  return `<div class="card-item${isOwned ? ' checked' : ''}" data-num="${num}">
+    <div class="card-check" onclick="toggleCard(event,${num})"></div>
+    <div class="card-icon-wrap" onclick="openPopup(${num})">
+      <img src="${escHtml(card.icon)}" alt="${escHtml(card.name)}" loading="lazy" onerror="this.style.opacity='0.3'">
+    </div>
+    <div class="card-no-wrap">
+      <div class="card-no">No.${String(num).padStart(3,'0')}</div>
+      <div class="card-stars">${starsHtml}</div>
+    </div>
+    <div class="card-name-wrap">
+      <div class="card-name">${escHtml(card.name)}${ctHtml}</div>
+      <div class="card-sources">${tsvHtml}</div>
+      ${noteHtml}
+    </div>
+  </div>`;
 }
 
 // =====================
@@ -564,86 +629,50 @@ function renderCards() {
   const app    = document.getElementById('app');
   const search = document.getElementById('search').value.trim().toLowerCase();
 
-  // フィルター
   const filtered = allCards.filter(card => {
     const num = card.number;
     if (num < 1 || num > TOTAL) return false;
-
-    // 未所持キープ（viewに関係なく未所持を基本とする）
     if (currentView === 'missing' && owned[num]) return false;
     if (currentView === 'owned'   && !owned[num]) return false;
-
-    // typeフィルター（OR）
     if (activeTypes.size > 0) {
-      const cardTypes = (card.tsv_sources || []).map(s => s.abbr);
-      if (!cardTypes.some(t => activeTypes.has(t))) return false;
+      const cardAbbrs = card.tsv_sources.map(s => s.abbr);
+      if (!cardAbbrs.some(a => activeTypes.has(a))) return false;
     }
-
-    // 検索
     if (search && !card.name.toLowerCase().includes(search) && !String(num).includes(search)) return false;
-
     return true;
   });
 
-  // グループ化
-  const groupMap = {};
-  GROUPS.forEach(g => groupMap[g.key] = []);
-  filtered.forEach(card => {
-    const key = getGroupKey(card);
-    groupMap[key].push(card);
-  });
-
   let html = '';
-  GROUPS.forEach(g => {
-    const cards = groupMap[g.key];
-    if (!cards || cards.length === 0) return;
-    const ownedCnt = cards.filter(c => owned[c.number]).length;
 
-    html += `<div class="group">
-      <div class="group-header">
-        <div class="group-dot" style="background:${g.color}"></div>
-        <div class="group-name" style="color:${g.color}">${g.label}</div>
-        <div class="group-owned" style="color:${g.color}">${ownedCnt} / ${cards.length}</div>
-      </div>
-      <div class="card-list">`;
-
-    cards.forEach(card => {
-      const num     = card.number;
-      const isOwned = owned[num];
-      const starsHtml = '★'.repeat(card.stars || 1) + '☆'.repeat(Math.max(0, 5 - (card.stars || 1)));
-
-      // sourcesバッジ（全件・日本語type）
-      // TSVソースバッジ（座標付き詳細情報）
-      const tsvHtml = (card.tsv_sources || []).map(s => {
-        const cls = typeCls(s.abbr);
-        return `<span class="src-badge ${cls}"><span class="src-type-label">${escHtml(s.label)}</span>：${escHtml(s.text)}</span>`;
-      }).join('');
-      const ctHtml = card.card_type
-        ? `<span class="src-badge src-other" style="font-size:9px;margin-left:4px">${escHtml(card.card_type)}</span>`
-        : '';
-
-      html += `<div class="card-item${isOwned ? ' checked' : ''}" data-num="${num}">
-        <div class="card-check" onclick="toggleCard(event,${num})"></div>
-        <div class="card-icon-wrap">
-          <img src="${escHtml(card.icon)}" alt="${escHtml(card.name)}" loading="lazy" onerror="this.style.opacity='0.3'">
-        </div>
-        <div class="card-no-wrap">
-          <div class="card-no">No.${String(num).padStart(3,'0')}</div>
-          <div class="card-meta card-stars">${starsHtml}</div>
-        </div>
-        <div class="card-name-wrap">
-          <div class="card-name">${escHtml(card.name)}${ctHtml}</div>
-          <div class="card-sources">${tsvHtml}</div>
-        </div>
-       </div>`;
+  if (activeTypes.size === 0) {
+    // タイプ未選択 → 番号順フラット
+    filtered.forEach(card => { html += buildCardHtml(card); });
+  } else {
+    // タイプ選択中 → グループ表示
+    const groupMap = {};
+    GROUPS.forEach(g => groupMap[g.key] = []);
+    filtered.forEach(card => {
+      const key = getGroupKey(card);
+      if (groupMap[key]) groupMap[key].push(card);
+      else groupMap['EX'].push(card);
     });
-
-    html += `</div></div>`;
-  });
-
-  if (!html) {
-    html = '<div style="text-align:center;padding:60px;color:var(--text3);">該当するカードがありません</div>';
+    GROUPS.forEach(g => {
+      const cards = groupMap[g.key];
+      if (!cards || cards.length === 0) return;
+      const ownedCnt = cards.filter(c => owned[c.number]).length;
+      html += `<div class="group">
+        <div class="group-header">
+          <div class="group-dot" style="background:${g.color}"></div>
+          <div class="group-name" style="color:${g.color}">${g.label}</div>
+          <div class="group-owned" style="color:${g.color}">${ownedCnt} / ${cards.length}</div>
+        </div>
+        <div class="card-list">`;
+      cards.forEach(card => { html += buildCardHtml(card); });
+      html += `</div></div>`;
+    });
   }
+
+  if (!html) html = '<div style="text-align:center;padding:60px;color:var(--text3);">該当するカードがありません</div>';
   app.innerHTML = html;
 }
 
@@ -653,21 +682,54 @@ function escHtml(s) {
 }
 
 // =====================
-// チェック（チェックボックスのみ）
+// チェック
 // =====================
 function toggleCard(e, num) {
   e.stopPropagation();
   owned[num] = !owned[num];
-  updateUrl();
-  updateStats();
+  updateUrl(); updateStats();
   const el = document.querySelector(`.card-item[data-num="${num}"]`);
-  if (el) {
-    el.classList.toggle('checked', owned[num]);
-  }
-  // 未所持フィルター中はチェックした行を非表示
+  if (el) el.classList.toggle('checked', owned[num]);
   if (currentView === 'missing' && owned[num] && el) el.style.display = 'none';
-  if (currentView === 'owned' && !owned[num] && el) el.style.display = 'none';
+  if (currentView === 'owned'   && !owned[num] && el) el.style.display = 'none';
 }
+
+// =====================
+// ポップアップ
+// =====================
+function openPopup(num) {
+  const card = allCards.find(c => c.number === num);
+  if (!card) return;
+  const s   = card.stats || {};
+  const fmt = v => (v === 10 ? 'A' : (v != null ? v : '-'));
+
+  document.getElementById('p-title').textContent =
+    `No.${String(num).padStart(3,'0')} ${card.name}`;
+  document.getElementById('p-img').src = card.image;
+  document.getElementById('p-img').alt = card.name;
+
+  const typeText = [
+    card.card_type ? `タイプ：${card.card_type}` : '',
+    `★${'★'.repeat(card.stars||1)}`,
+    `patch ${card.patch||''}`
+  ].filter(Boolean).join(' / ');
+  document.getElementById('p-type').textContent = typeText;
+
+  document.getElementById('p-top-v').textContent   = fmt(s.top);
+  document.getElementById('p-left-v').textContent  = fmt(s.left);
+  document.getElementById('p-right-v').textContent = fmt(s.right);
+  document.getElementById('p-bot-v').textContent   = fmt(s.bottom);
+
+  document.getElementById('popup-overlay').classList.add('show');
+}
+
+function closePopup(e) {
+  if (e && e.target !== document.getElementById('popup-overlay')) return;
+  document.getElementById('popup-overlay').classList.remove('show');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('popup-overlay').classList.remove('show');
+});
 
 // =====================
 // URLコピー
@@ -695,15 +757,13 @@ function showToast(msg) {
 // =====================
 async function init() {
   const hash = location.hash.slice(1);
-  if (hash.length === TOTAL && /^[01]+$/.test(hash)) ownedFromHash(hash);
+  if (hash) loadHash(hash);
 
   try {
     const cards = await fetchCards();
-    // No.1〜312 を number順にソート（No.1が先頭に来るよう明示）
     allCards = cards
       .filter(c => c.number >= 1 && c.number <= TOTAL)
       .sort((a, b) => a.number - b.number);
-
     if (allCards.length === 0) throw new Error('no cards');
 
     document.getElementById('loading').style.display = 'none';
@@ -711,10 +771,7 @@ async function init() {
 
     updateStats();
     renderCards();
-
-    if (hash.length === TOTAL) {
-      document.getElementById('share-url').textContent = location.href;
-    }
+    if (hash) document.getElementById('share-url').textContent = location.href;
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
