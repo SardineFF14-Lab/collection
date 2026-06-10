@@ -669,8 +669,8 @@ function buildCardHtml(card) {
       <div class="card-stars">${starsHtml}</div>
     </div>
      <div class="card-name-wrap">
-      <div class="card-name">...</div>
-      <div class="card-sources">...</div>
+      <div class="card-name">${escHtml(card.name)}${ctHtml}</div>
+      <div class="card-sources">${tsvHtml}</div>
     </div>
     <div style="font-size:11px;color:var(--gold);text-align:right;align-self:center">${note ? '📝 ' + escHtml(note) : ''}</div>
   </div>`;
