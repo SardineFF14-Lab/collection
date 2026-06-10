@@ -675,11 +675,12 @@ function buildCardHtml(card) {
       <div class="card-no">No.${String(num).padStart(3,'0')}</div>
       <div class="card-stars">${starsHtml}</div>
     </div>
-     <div class="card-name-wrap">
-      <div class="card-name">${escHtml(card.name)}${ctHtml}</div>
-      <div class="card-sources">${tsvHtml}</div>
-    </div>
-    <div style="font-size:11px;color:var(--gold);text-align:right;align-self:center">${note ? '📝 ' + escHtml(note) : ''}</div>
+    <div class="card-name-wrap">
+  <div class="card-name">${escHtml(card.name)}${ctHtml}</div>
+  <div class="card-sources">${tsvHtml}</div>
+  ${noteHtml}
+</div>
+<div></div>
   </div>`;
 }
 
