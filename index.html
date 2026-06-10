@@ -162,7 +162,7 @@
   .card-list { display: flex; flex-direction: column; gap: 1px; }
   .card-item {
     display: grid;
-    grid-template-columns: 26px 30px 46px 1fr;
+    grid-template-columns: 26px 30px 46px 1fr 60px;
     align-items: start;
     gap: 8px;
     padding: 5px 8px;
@@ -340,7 +340,20 @@
   white-space: normal;
 }
 .help-btn:hover .help-tip { display: block; animation: pop-in 0.15s ease; }
-
+  /* リストヘッダー */
+.list-header {
+  display: grid;
+  grid-template-columns: 26px 30px 46px 1fr 60px;
+  gap: 8px;
+  padding: 4px 8px;
+  border-bottom: 1.5px solid var(--border2);
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text2);
+  letter-spacing: 0.04em;
+}
+    
 </style>
 </head>
 <body>
@@ -655,11 +668,11 @@ function buildCardHtml(card) {
       <div class="card-no">No.${String(num).padStart(3,'0')}</div>
       <div class="card-stars">${starsHtml}</div>
     </div>
-    <div class="card-name-wrap">
-      <div class="card-name">${escHtml(card.name)}${ctHtml}</div>
-      <div class="card-sources">${tsvHtml}</div>
-      ${noteHtml}
+     <div class="card-name-wrap">
+      <div class="card-name">...</div>
+      <div class="card-sources">...</div>
     </div>
+    <div style="font-size:11px;color:var(--gold);text-align:right;align-self:center">${note ? '📝 ' + escHtml(note) : ''}</div>
   </div>`;
 }
 
@@ -687,6 +700,13 @@ function renderCards() {
 
   if (activeTypes.size === 0) {
     // タイプ未選択 → 番号順フラット
+       html += `<div class="list-header">
+      <div style="text-align:center">所持</div>
+      <div></div>
+      <div>No / 難易度</div>
+      <div>カード名 / 入手方法</div>
+      <div style="text-align:right">メモ</div>
+      </div>`;
     filtered.forEach(card => { html += buildCardHtml(card); });
   } else {
     // タイプ選択中 → グループ表示
@@ -708,6 +728,14 @@ function renderCards() {
           <div class="group-owned" style="color:${g.color}">${ownedCnt} / ${cards.length}</div>
         </div>
         <div class="card-list">`;
+
+      html += `<div class="list-header">
+  <div style="text-align:center">所持</div>
+  <div></div>
+  <div>No / 難易度</div>
+  <div>カード名 / 入手方法</div>
+  <div style="text-align:right">メモ</div>
+</div>`;
       cards.forEach(card => { html += buildCardHtml(card); });
       html += `</div></div>`;
     });
