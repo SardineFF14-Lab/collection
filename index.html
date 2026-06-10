@@ -3,476 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TT Card Tracker — Jack of All Cards</title>
+<title>マジックカードマウントに乗ろう！</title>
 <style>
   :root {
-    --bg: #0d0f14;
-    --bg2: #161920;
-    --bg3: #1e2230;
-    --card: #1a1d28;
-    --border: #2a2f42;
-    --border2: #363d56;
-    --gold: #c9a84c;
-    --gold2: #e8c96a;
-    --teal: #4ecdc4;
-    --text: #e8e4d8;
-    --text2: #9a96a0;
-    --text3: #5c5870;
-    --npc: #4ecdc4;
-    --npc-bg: rgba(78,205,196,0.12);
-    --instance: #7b8cde;
-    --instance-bg: rgba(123,140,222,0.12);
-    --gs: #e88a50;
-    --gs-bg: rgba(232,138,80,0.12);
-    --pack: #b87ed4;
-    --pack-bg: rgba(184,126,212,0.12);
-    --fate: #6bc16b;
-    --fate-bg: rgba(107,193,107,0.12);
-    --other: #9a96a0;
-    --other-bg: rgba(154,150,160,0.12);
-    --checked: #c9a84c22;
-    --checked-border: #c9a84c55;
+    --bg:      #f5f2eb;
+    --bg2:     #ede9df;
+    --bg3:     #e4dfd3;
+    --card:    #fdfcf8;
+    --border:  #d6d0c2;
+    --border2: #c0b89e;
+    --gold:    #8a6a1a;
+    --gold2:   #b58a2a;
+    --text:    #2a2520;
+    --text2:   #6b6050;
+    --text3:   #a09880;
+    --checked:        rgba(138,106,26,0.08);
+    --checked-border: rgba(138,106,26,0.35);
+
+    --c-npc:   #1a6b5a; --cb-npc:   rgba(26,107,90,0.1);
+    --c-duty:  #2a4a9a; --cb-duty:  rgba(42,74,154,0.1);
+    --c-gs:    #8a4a10; --cb-gs:    rgba(138,74,16,0.1);
+    --c-ach:   #4a7a20; --cb-ach:   rgba(74,122,32,0.1);
+    --c-fate:  #6a3a9a; --cb-fate:  rgba(106,58,154,0.1);
+    --c-other: #5a5048; --cb-other: rgba(90,80,72,0.1);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     background: var(--bg);
     color: var(--text);
-    font-family: 'Segoe UI', 'Hiragino Sans', 'Yu Gothic UI', sans-serif;
+    font-family: 'Segoe UI','Hiragino Sans','Yu Gothic UI',sans-serif;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.5;
     min-height: 100vh;
   }
 
   /* ヘッダー */
   header {
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
+    background: #4a3a1a;
+    border-bottom: 2px solid #6a5228;
     padding: 0 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    position: sticky; top: 0; z-index: 100;
   }
   .header-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 56px;
-    gap: 16px;
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center;
+    height: 52px; gap: 12px;
   }
-  .logo {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--gold);
-    letter-spacing: 0.03em;
-    white-space: nowrap;
-  }
-  .logo span { color: var(--text2); font-weight: 400; font-size: 12px; margin-left: 8px; }
+  .logo { font-size: 17px; font-weight: 700; color: #e8d080; letter-spacing: 0.02em; white-space: nowrap; }
+  .logo-sub { font-size: 12px; color: #c0a84a; font-weight: 400; margin-left: 10px; }
 
-  /* サマリーバー */
-  .summary {
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
-    padding: 12px 20px;
-  }
+  /* サマリー */
+  .summary { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 10px 20px; }
   .summary-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
   }
-  .stat { display: flex; flex-direction: column; align-items: center; min-width: 56px; }
-  .stat-num { font-size: 22px; font-weight: 700; line-height: 1.1; }
-  .stat-label { font-size: 11px; color: var(--text2); margin-top: 1px; }
-  .stat-num.owned { color: var(--gold); }
+  .stat { display: flex; flex-direction: column; align-items: center; min-width: 48px; }
+  .stat-num { font-size: 20px; font-weight: 700; line-height: 1.1; }
+  .stat-label { font-size: 10px; color: var(--text2); margin-top: 1px; }
+  .stat-num.owned   { color: var(--gold); }
   .stat-num.missing { color: var(--text2); }
-  .stat-num.total { color: var(--text); }
-  .progress-wrap { flex: 1; min-width: 160px; }
-  .progress-bar {
-    height: 6px;
-    background: var(--bg3);
-    border-radius: 3px;
-    overflow: hidden;
-    margin-bottom: 4px;
-  }
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--gold), var(--gold2));
-    border-radius: 3px;
-    transition: width 0.3s ease;
-  }
+  .progress-wrap { flex: 1; min-width: 140px; }
+  .progress-bar { height: 6px; background: var(--bg3); border-radius: 3px; overflow: hidden; margin-bottom: 3px; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold2)); border-radius: 3px; transition: width 0.3s; }
   .progress-label { font-size: 11px; color: var(--text2); }
   .progress-label strong { color: var(--gold); }
 
-  /* URL共有エリア */
-  .share-area {
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
-    padding: 10px 20px;
+  /* オーナーメモ */
+  .owner-memo {
+    flex: 0 0 auto; min-width: 200px; max-width: 320px;
+    background: #fffef5;
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 11px;
+    color: var(--text2);
+    line-height: 1.7;
   }
+  .owner-memo-title { font-size: 10px; font-weight: 700; color: var(--gold); margin-bottom: 2px; }
+
+  /* URL共有 */
+  .share-area { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 8px 20px; }
   .share-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
   }
   .share-label { font-size: 12px; color: var(--text2); white-space: nowrap; }
   .share-url {
-    flex: 1;
-    min-width: 200px;
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 6px 10px;
-    color: var(--text2);
-    font-size: 12px;
-    font-family: monospace;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: text;
+    flex: 1; min-width: 180px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 5px; padding: 5px 9px;
+    color: var(--text2); font-size: 11px; font-family: monospace;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
   .btn {
-    background: var(--bg3);
-    border: 1px solid var(--border2);
-    border-radius: 6px;
-    color: var(--text);
-    font-size: 12px;
-    padding: 6px 14px;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: background 0.15s, border-color 0.15s;
+    background: var(--bg3); border: 1px solid var(--border2);
+    border-radius: 5px; color: var(--text); font-size: 11px;
+    padding: 5px 12px; cursor: pointer; white-space: nowrap;
+    transition: background 0.15s;
   }
-  .btn:hover { background: var(--border); border-color: var(--gold); }
+  .btn:hover { background: var(--border); }
   .btn.gold { border-color: var(--gold); color: var(--gold); }
   .btn.gold:hover { background: var(--checked); }
   .restore-input {
-    flex: 1;
-    min-width: 200px;
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 6px 10px;
-    color: var(--text);
-    font-size: 12px;
-    font-family: monospace;
+    flex: 1; min-width: 180px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 5px; padding: 5px 9px;
+    color: var(--text); font-size: 11px; font-family: monospace;
   }
   .restore-input:focus { outline: none; border-color: var(--gold); }
 
   /* フィルター */
   .filters {
-    background: var(--bg);
-    border-bottom: 1px solid var(--border);
-    padding: 10px 20px;
-    position: sticky;
-    top: 56px;
-    z-index: 90;
+    background: var(--bg2); border-bottom: 1px solid var(--border);
+    padding: 8px 20px;
+    position: sticky; top: 52px; z-index: 90;
   }
   .filters-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
   }
   .filter-btn {
-    padding: 4px 12px;
-    border-radius: 20px;
+    padding: 3px 10px; border-radius: 14px;
     border: 1px solid var(--border);
-    background: transparent;
-    color: var(--text2);
-    font-size: 12px;
-    cursor: pointer;
-    transition: all 0.15s;
+    background: var(--card); color: var(--text2);
+    font-size: 11px; cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
   }
   .filter-btn:hover { border-color: var(--border2); color: var(--text); }
-  .filter-btn.active { border-color: var(--gold); color: var(--gold); background: var(--checked); }
-  .filter-sep { width: 1px; height: 20px; background: var(--border); margin: 0 4px; }
+  .filter-btn.active { border-color: var(--gold); color: var(--gold); background: var(--checked); font-weight: 600; }
+  .filter-sep { width: 1px; height: 18px; background: var(--border); margin: 0 2px; }
   .search-input {
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 4px 10px;
-    color: var(--text);
-    font-size: 12px;
-    width: 160px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 5px; padding: 3px 9px;
+    color: var(--text); font-size: 11px; width: 150px;
   }
   .search-input:focus { outline: none; border-color: var(--gold); }
+  .filter-label { font-size: 10px; color: var(--text3); white-space: nowrap; }
 
-  /* メインコンテンツ */
-  main { max-width: 1000px; margin: 0 auto; padding: 16px 20px 60px; }
+  /* メイン */
+  main { max-width: 1100px; margin: 0 auto; padding: 14px 20px 60px; }
 
   /* グループヘッダー */
-  .group { margin-bottom: 24px; }
+  .group { margin-bottom: 20px; }
   .group-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 0 8px;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 10px;
-    position: sticky;
-    top: 102px;
-    background: var(--bg);
-    z-index: 80;
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 0; border-bottom: 1px solid var(--border);
+    margin-bottom: 6px;
+    position: sticky; top: 94px;
+    background: var(--bg); z-index: 80;
   }
-  .group-dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-  .group-name { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; }
-  .group-count { font-size: 12px; color: var(--text3); margin-left: auto; }
-  .group-owned { font-size: 12px; }
+  .group-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .group-name { font-size: 12px; font-weight: 600; letter-spacing: 0.03em; }
+  .group-owned { font-size: 11px; margin-left: auto; }
 
   /* カードリスト */
-  .card-list { display: flex; flex-direction: column; gap: 2px; }
+  .card-list { display: flex; flex-direction: column; gap: 1px; }
   .card-item {
     display: grid;
-    grid-template-columns: 28px 36px 44px 1fr auto auto;
+    grid-template-columns: 26px 30px 42px 1fr auto;
     align-items: center;
-    gap: 10px;
-    padding: 8px 10px;
+    gap: 8px;
+    padding: 4px 8px;
     border: 1px solid transparent;
-    border-radius: 6px;
+    border-radius: 4px;
     background: var(--card);
     transition: background 0.1s, border-color 0.1s;
-    cursor: pointer;
-  }
-
-  /* カードアイコン画像 */
-  .card-icon-wrap {
-    width: 36px; height: 36px;
-    flex-shrink: 0;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .card-icon-wrap img {
-    width: 36px; height: 36px;
-    border-radius: 4px;
-    display: block;
-    border: 1px solid var(--border);
-    transition: border-color 0.1s;
-  }
-  .card-item.checked .card-icon-wrap img {
-    border-color: var(--gold);
-  }
-  .card-icon-wrap a {
-    display: block;
-    line-height: 0;
-  }
-  /* 複数バッジ対応 */
-  .card-sources {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    justify-content: flex-end;
   }
   .card-item:hover { background: var(--bg3); border-color: var(--border); }
-  .card-item.checked {
-    background: var(--checked);
-    border-color: var(--checked-border);
-  }
-  .card-item.checked .card-name { color: var(--gold); }
-  .card-item.checked .card-no { color: var(--gold2); }
+  .card-item.checked { background: var(--checked); border-color: var(--checked-border); }
+  .card-item.checked .card-name { color: var(--gold2); }
+  .card-item.checked .card-no  { color: var(--gold); }
 
+  /* チェックボックス */
   .card-check {
-    width: 18px; height: 18px;
-    border: 1.5px solid var(--border2);
-    border-radius: 4px;
+    width: 17px; height: 17px;
+    border: 1.5px solid var(--border2); border-radius: 3px;
     display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-    transition: all 0.1s;
-    pointer-events: none;
+    flex-shrink: 0; cursor: pointer; transition: all 0.1s;
   }
-  .card-item.checked .card-check {
-    background: var(--gold);
-    border-color: var(--gold);
-  }
+  .card-check:hover { border-color: var(--gold); }
+  .card-item.checked .card-check { background: var(--gold); border-color: var(--gold); }
   .card-item.checked .card-check::after {
     content: '';
     display: block;
-    width: 5px; height: 9px;
-    border: 2px solid #0d0f14;
+    width: 4px; height: 8px;
+    border: 2px solid #fff;
     border-top: none; border-left: none;
-    transform: rotate(45deg) translate(-1px, -1px);
+    transform: rotate(45deg) translate(-1px,-1px);
   }
 
-  .card-no { font-size: 11px; color: var(--text3); font-family: monospace; }
-  .card-name { font-size: 13px; color: var(--text); }
-  .card-stars { font-size: 11px; color: var(--gold); letter-spacing: 1px; }
-  .card-source-badge {
-    font-size: 11px;
-    padding: 2px 8px;
-    border-radius: 10px;
-    white-space: nowrap;
-  }
-
-  /* メモ欄 */
-  .card-memo-wrap {
-    grid-column: 1 / -1;
-    padding-top: 4px;
-    display: none;
-  }
-  .card-item.checked .card-memo-wrap,
-  .card-item.memo-open .card-memo-wrap { display: block; }
-  .card-memo {
-    width: 100%;
-    background: var(--bg2);
+  /* アイコン */
+  .card-icon-wrap { width: 30px; height: 30px; flex-shrink: 0; }
+  .card-icon-wrap img {
+    width: 30px; height: 30px; border-radius: 3px; display: block;
     border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 5px 8px;
-    color: var(--text2);
-    font-size: 12px;
-    resize: none;
-    height: 32px;
-    line-height: 1.4;
   }
-  .card-memo:focus { outline: none; border-color: var(--gold); color: var(--text); }
-  .card-memo::placeholder { color: var(--text3); }
+  .card-item.checked .card-icon-wrap img { border-color: var(--gold2); }
+
+  /* テキスト */
+  .card-no   { font-size: 10px; color: var(--text3); font-family: monospace; }
+  .card-name { font-size: 12px; color: var(--text); font-weight: 500; }
+
+  /* sourcesエリア */
+  .card-sources {
+    display: flex; flex-wrap: wrap; gap: 3px;
+    justify-content: flex-end; align-items: center;
+  }
+  .src-badge {
+    font-size: 10px; padding: 1px 6px;
+    border-radius: 8px; white-space: nowrap;
+    border: 1px solid transparent;
+  }
+  .src-type-label { font-size: 9px; font-weight: 700; margin-right: 1px; }
+
+  /* badge color helpers */
+  .src-npc   { background: var(--cb-npc);  color: var(--c-npc);  border-color: rgba(26,107,90,0.2); }
+  .src-duty  { background: var(--cb-duty); color: var(--c-duty); border-color: rgba(42,74,154,0.2); }
+  .src-gs    { background: var(--cb-gs);   color: var(--c-gs);   border-color: rgba(138,74,16,0.2); }
+  .src-ach   { background: var(--cb-ach);  color: var(--c-ach);  border-color: rgba(74,122,32,0.2); }
+  .src-fate  { background: var(--cb-fate); color: var(--c-fate); border-color: rgba(106,58,154,0.2); }
+  .src-other { background: var(--cb-other);color: var(--c-other);border-color: rgba(90,80,72,0.2); }
+
+  /* ★パッチ小表示 */
+  .card-meta { font-size: 10px; color: var(--text3); white-space: nowrap; }
+  .card-stars { color: var(--gold2); }
 
   /* ローディング */
   #loading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 60vh;
-    gap: 16px;
-    color: var(--text2);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    min-height: 60vh; gap: 14px; color: var(--text2);
   }
   .spinner {
-    width: 40px; height: 40px;
+    width: 36px; height: 36px;
     border: 2px solid var(--border);
     border-top-color: var(--gold);
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
-
   #error { display: none; text-align: center; padding: 40px; color: var(--text2); }
-  #app { display: none; }
+  #app   { display: none; }
 
-  /* コピー成功トースト */
+  /* トースト */
   #toast {
-    position: fixed;
-    bottom: 24px; left: 50%;
+    position: fixed; bottom: 24px; left: 50%;
     transform: translateX(-50%) translateY(20px);
-    background: var(--gold);
-    color: #0d0f14;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s;
-    pointer-events: none;
-    z-index: 999;
+    background: var(--gold); color: #fff;
+    padding: 7px 18px; border-radius: 18px;
+    font-size: 12px; font-weight: 600;
+    opacity: 0; transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none; z-index: 999;
   }
   #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-  /* レスポンシブ */
   @media (max-width: 600px) {
-    .card-item { grid-template-columns: 24px 32px 36px 1fr auto; }
+    .card-item { grid-template-columns: 26px 30px 38px 1fr; }
     .card-sources { display: none; }
-    .share-inner { gap: 6px; }
   }
-
-  /* ========== カードポップアップ ========== */
-  #card-popup-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    z-index: 500;
-    align-items: center;
-    justify-content: center;
-  }
-  #card-popup-overlay.show { display: flex; }
-
-  #card-popup {
-    background: var(--bg2);
-    border: 1px solid var(--border2);
-    border-radius: 12px;
-    padding: 20px;
-    width: 240px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
-    position: relative;
-    animation: popup-in 0.15s ease;
-  }
-  @keyframes popup-in {
-    from { opacity: 0; transform: scale(0.92); }
-    to   { opacity: 1; transform: scale(1); }
-  }
-
-  #card-popup .popup-name {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--gold);
-    text-align: center;
-    margin-bottom: 12px;
-    line-height: 1.3;
-  }
-
-  #card-popup .popup-img-wrap {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 14px;
-  }
-  #card-popup .popup-img-wrap img {
-    width: 160px;
-    height: auto;
-    border-radius: 6px;
-    border: 1px solid var(--border2);
-    display: block;
-  }
-
-  /* 数値グリッド（上下左右） */
-  #card-popup .popup-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 4px;
-    margin-bottom: 14px;
-  }
-  #card-popup .popup-stats .s-top    { grid-column: 2; grid-row: 1; }
-  #card-popup .popup-stats .s-left   { grid-column: 1; grid-row: 2; }
-  #card-popup .popup-stats .s-center { grid-column: 2; grid-row: 2; }
-  #card-popup .popup-stats .s-right  { grid-column: 3; grid-row: 2; }
-  #card-popup .popup-stats .s-bottom { grid-column: 2; grid-row: 3; }
-  #card-popup .popup-stats .stat-val {
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text);
-    padding: 6px 0;
-    line-height: 1;
-  }
-  #card-popup .popup-stats .s-center .stat-val {
-    background: transparent;
-    border-color: transparent;
-  }
-
-  #card-popup .popup-close {
-    position: absolute;
-    top: 10px; right: 12px;
-    background: none;
-    border: none;
-    color: var(--text3);
-    font-size: 18px;
-    cursor: pointer;
-    line-height: 1;
-    padding: 2px 4px;
-  }
-  #card-popup .popup-close:hover { color: var(--text); }
 </style>
 </head>
 <body>
@@ -480,8 +269,8 @@
 <header>
   <div class="header-inner">
     <div class="logo">
-      ♠ TT Card Tracker
-      <span>Jack of All Cards 達成サポート</span>
+      ♠ マジックカードマウントに乗ろう！
+      <span class="logo-sub">「生粋のカードマニア」のアチーブメント支援</span>
     </div>
   </div>
 </header>
@@ -497,7 +286,7 @@
       <div class="stat-label">未所持</div>
     </div>
     <div class="stat">
-      <div class="stat-num total">312</div>
+      <div class="stat-num">312</div>
       <div class="stat-label">目標</div>
     </div>
     <div class="progress-wrap">
@@ -506,6 +295,20 @@
       </div>
       <div class="progress-label">達成率 <strong id="progress-pct">0%</strong> — あと <strong id="progress-left">312</strong> 枚</div>
     </div>
+
+    <!-- ▼▼▼ オーナーメモ（ここに5行のTIPSを書いてください） ▼▼▼ -->
+    <div class="owner-memo">
+      <div class="owner-memo-title">📝 TIPS</div>
+      <div id="owner-memo-content">
+        ・ここにTIPSを書いてください（1行目）<br>
+        ・ここにTIPSを書いてください（2行目）<br>
+        ・ここにTIPSを書いてください（3行目）<br>
+        ・ここにTIPSを書いてください（4行目）<br>
+        ・ここにTIPSを書いてください（5行目）
+      </div>
+    </div>
+    <!-- ▲▲▲ オーナーメモここまで ▲▲▲ -->
+
   </div>
 </div>
 
@@ -515,7 +318,7 @@
     <div class="share-url" id="share-url">チェックするとURLが更新されます</div>
     <button class="btn gold" onclick="copyUrl()">URLをコピー</button>
     <div class="filter-sep"></div>
-    <span class="share-label">🔗 URLを貼って復元</span>
+    <span class="share-label">🔗 URLで復元</span>
     <input class="restore-input" id="restore-input" type="text" placeholder="以前のURLを貼り付け...">
     <button class="btn" onclick="restoreFromInput()">復元</button>
   </div>
@@ -523,14 +326,25 @@
 
 <div class="filters">
   <div class="filters-inner">
-    <button class="filter-btn active" data-filter="all" onclick="setFilter(this,'all')">すべて</button>
-    <button class="filter-btn" data-filter="missing" onclick="setFilter(this,'missing')">未所持のみ</button>
-    <button class="filter-btn" data-filter="owned" onclick="setFilter(this,'owned')">所持済み</button>
+    <span class="filter-label">表示：</span>
+    <button class="filter-btn" data-view="all"     onclick="setView(this,'all')">すべて</button>
+    <button class="filter-btn active" data-view="missing" onclick="setView(this,'missing')">未所持のみ</button>
+    <button class="filter-btn" data-view="owned"   onclick="setView(this,'owned')">所持済み</button>
     <div class="filter-sep"></div>
-    <button class="filter-btn" data-filter="NPC" onclick="setFilter(this,'NPC')">NPC</button>
-    <button class="filter-btn" data-filter="Duty" onclick="setFilter(this,'Duty')">ID/討滅戦</button>
-    <button class="filter-btn" data-filter="Gold Saucer" onclick="setFilter(this,'Gold Saucer')">GS</button>
-    <button class="filter-btn" data-filter="Pack" onclick="setFilter(this,'Pack')">パック</button>
+    <span class="filter-label">入手方法：</span>
+    <button class="filter-btn" data-type="NPC"         onclick="toggleType(this,'NPC')">NPC対戦</button>
+    <button class="filter-btn" data-type="Trial"       onclick="toggleType(this,'Trial')">討滅戦</button>
+    <button class="filter-btn" data-type="Raid"        onclick="toggleType(this,'Raid')">レイド</button>
+    <button class="filter-btn" data-type="Dungeon"     onclick="toggleType(this,'Dungeon')">ダンジョン</button>
+    <button class="filter-btn" data-type="FATE"        onclick="toggleType(this,'FATE')">FATE</button>
+    <button class="filter-btn" data-type="Gold Saucer" onclick="toggleType(this,'Gold Saucer')">ゴールドソーサー</button>
+    <button class="filter-btn" data-type="Achievement" onclick="toggleType(this,'Achievement')">アチーブメント</button>
+    <button class="filter-btn" data-type="Quest"       onclick="toggleType(this,'Quest')">クエスト</button>
+    <button class="filter-btn" data-type="Hunts"       onclick="toggleType(this,'Hunts')">モブハント</button>
+    <button class="filter-btn" data-type="Deep Dungeon" onclick="toggleType(this,'Deep Dungeon')">ディープダンジョン</button>
+    <button class="filter-btn" data-type="Eureka"      onclick="toggleType(this,'Eureka')">エウレカ</button>
+    <button class="filter-btn" data-type="Bozja"       onclick="toggleType(this,'Bozja')">ボズヤ</button>
+    <button class="filter-btn" data-type="Skybuilders" onclick="toggleType(this,'Skybuilders')">蒼天街</button>
     <div class="filter-sep"></div>
     <input class="search-input" id="search" type="text" placeholder="カード名で検索..." oninput="renderCards()">
   </div>
@@ -542,22 +356,21 @@
 </div>
 <div id="error">
   <p>データの読み込みに失敗しました。</p>
-  <p style="margin-top:8px;font-size:12px;">FFXIV Collect API に接続できませんでした。<br>しばらく待ってから再読み込みしてください。</p>
   <button class="btn" style="margin-top:16px;" onclick="location.reload()">再読み込み</button>
 </div>
 
 <main id="app"></main>
+<div id="toast"></div>
 
-<div id="toast">URLをコピーしました</div>
-
-<!-- カードポップアップ -->
+<!--
+==============================
+ポップアップ機能（コメントアウト中）
+==============================
 <div id="card-popup-overlay" onclick="closePopup(event)">
   <div id="card-popup">
     <button class="popup-close" onclick="closePopup(null)">✕</button>
     <div class="popup-name" id="popup-name"></div>
-    <div class="popup-img-wrap">
-      <img id="popup-img" src="" alt="">
-    </div>
+    <div class="popup-img-wrap"><img id="popup-img" src="" alt=""></div>
     <div class="popup-stats">
       <div class="s-top"><div class="stat-val" id="popup-top"></div></div>
       <div class="s-left"><div class="stat-val" id="popup-left"></div></div>
@@ -567,26 +380,87 @@
     </div>
   </div>
 </div>
+function openPopup(card) {
+  const s = card.stats && card.stats.numeric ? card.stats.numeric : {};
+  const fmt = v => (v === 10 ? 'A' : v ?? '-');
+  const imgUrl = card.image || '';
+  document.getElementById('popup-name').textContent = card.name;
+  document.getElementById('popup-img').src = imgUrl;
+  document.getElementById('popup-top').textContent    = fmt(s.top);
+  document.getElementById('popup-left').textContent   = fmt(s.left);
+  document.getElementById('popup-right').textContent  = fmt(s.right);
+  document.getElementById('popup-bottom').textContent = fmt(s.bottom);
+  document.getElementById('card-popup-overlay').classList.add('show');
+}
+function closePopup(e) {
+  if (e && e.target !== document.getElementById('card-popup-overlay')) return;
+  document.getElementById('card-popup-overlay').classList.remove('show');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('card-popup-overlay').classList.remove('show');
+});
+==============================
+-->
 
 <script>
 // =====================
-// 状態管理
+// 定数・状態
 // =====================
+const TOTAL = 312;
 let allCards = [];
-let owned = new Array(313).fill(false); // index = card number (1-312)
-let currentFilter = 'all';
-const MEMO_KEY = 'tt_memos';
-let memos = {};
+let owned = new Array(TOTAL + 1).fill(false);
+let currentView = 'missing';
+let activeTypes = new Set();
 
 // =====================
-// メモ保存・読み込み
+// typeの日本語マッピング
 // =====================
-function loadMemos() {
-  try { memos = JSON.parse(localStorage.getItem(MEMO_KEY) || '{}'); } catch(e) { memos = {}; }
+const TYPE_JA = {
+  'NPC':          'NPC対戦',
+  'Trial':        '討滅戦',
+  'Raid':         'レイド',
+  'Dungeon':      'ダンジョン',
+  'FATE':         'FATE',
+  'Gold Saucer':  'ゴールドソーサー',
+  'Achievement':  'アチーブメント',
+  'Quest':        'クエスト',
+  'Hunts':        'モブハント',
+  'Deep Dungeon': 'ディープダンジョン',
+  'Eureka':       'エウレカ',
+  'Bozja':        'ボズヤ',
+  'Skybuilders':  '蒼天街',
+};
+
+// typeからバッジCSSクラス
+function typeCls(type) {
+  if (type === 'NPC') return 'src-npc';
+  if (type === 'Trial' || type === 'Raid' || type === 'Dungeon') return 'src-duty';
+  if (type === 'Gold Saucer') return 'src-gs';
+  if (type === 'Achievement') return 'src-ach';
+  if (type === 'FATE' || type === 'Eureka' || type === 'Bozja') return 'src-fate';
+  return 'src-other';
 }
-function saveMemo(num, val) {
-  memos[num] = val;
-  try { localStorage.setItem(MEMO_KEY, JSON.stringify(memos)); } catch(e) {}
+
+// =====================
+// グループ定義（表示順）
+// =====================
+const GROUPS = [
+  { key: 'NPC',         label: 'NPC対戦',         color: '#1a6b5a', types: ['NPC'] },
+  { key: 'Duty',        label: 'ID / 討滅戦 / レイド', color: '#2a4a9a', types: ['Trial','Raid','Dungeon'] },
+  { key: 'Gold Saucer', label: 'ゴールドソーサー',   color: '#8a4a10', types: ['Gold Saucer'] },
+  { key: 'Achievement', label: 'アチーブメント',     color: '#4a7a20', types: ['Achievement'] },
+  { key: 'Field',       label: 'フィールド系',       color: '#6a3a9a', types: ['FATE','Eureka','Bozja','Hunts','Deep Dungeon','Skybuilders'] },
+  { key: 'Quest',       label: 'クエスト',           color: '#7a5a20', types: ['Quest'] },
+  { key: 'Other',       label: 'その他',             color: '#5a5048', types: [] },
+];
+
+function getGroupKey(card) {
+  if (!card.sources || card.sources.length === 0) return 'Other';
+  const types = card.sources.map(s => s.type);
+  for (const g of GROUPS) {
+    if (g.types.some(t => types.includes(t))) return g.key;
+  }
+  return 'Other';
 }
 
 // =====================
@@ -594,39 +468,27 @@ function saveMemo(num, val) {
 // =====================
 function hashFromOwned() {
   let bits = '';
-  for (let i = 1; i <= 312; i++) bits += owned[i] ? '1' : '0';
+  for (let i = 1; i <= TOTAL; i++) bits += owned[i] ? '1' : '0';
   return bits;
 }
 function ownedFromHash(hash) {
-  owned = new Array(313).fill(false);
-  for (let i = 0; i < Math.min(hash.length, 312); i++) {
+  owned = new Array(TOTAL + 1).fill(false);
+  for (let i = 0; i < Math.min(hash.length, TOTAL); i++) {
     if (hash[i] === '1') owned[i + 1] = true;
   }
 }
 function updateUrl() {
-  const hash = hashFromOwned();
-  history.replaceState(null, '', '#' + hash);
+  history.replaceState(null, '', '#' + hashFromOwned());
   document.getElementById('share-url').textContent = location.href;
 }
 function restoreFromInput() {
   const input = document.getElementById('restore-input').value.trim();
-  let hash = '';
-  if (input.includes('#')) {
-    hash = input.split('#')[1];
-  } else if (/^[01]{312}$/.test(input)) {
-    hash = input;
-  } else {
-    showToast('URLが正しくありません');
-    return;
-  }
-  if (hash.length !== 312 || !/^[01]+$/.test(hash)) {
-    showToast('URLが正しくありません');
-    return;
+  let hash = input.includes('#') ? input.split('#')[1] : input;
+  if (hash.length !== TOTAL || !/^[01]+$/.test(hash)) {
+    showToast('URLが正しくありません'); return;
   }
   ownedFromHash(hash);
-  updateUrl();
-  renderCards();
-  updateStats();
+  updateUrl(); updateStats(); renderCards();
   showToast('所持状態を復元しました');
 }
 
@@ -638,55 +500,35 @@ async function fetchCards() {
   if (!res.ok) throw new Error('cards.json load error');
   const data = await res.json();
   return data.map(c => ({
-    number: c.number,
-    name: c.name,
-    stars: c.stars,
-    patch: c.patch,
-    icon: c.icon,
-    image: `https://ffxivcollect.com/images/cards/large/${c.image_id || c.number}.png`,
-    sources: c.sources,
-    stats: { numeric: c.stats }
+    number:   c.number,
+    name:     c.name,
+    stars:    c.stars,
+    patch:    c.patch,
+    icon:     c.icon,
+    image:    `https://ffxivcollect.com/images/cards/large/${c.image_id || c.number}.png`,
+    sources:  c.sources || [],
+    stats:    c.stats || {},
   }));
 }
 
 // =====================
-// 取得方法の分類
+// フィルター操作
 // =====================
-function classifySource(card) {
-  if (!card.sources || card.sources.length === 0) return 'Other';
-  const types = card.sources.map(s => s.type);
-  if (types.includes('NPC')) return 'NPC';
-  if (types.some(t => t === 'Duty' || t === 'Trial' || t === 'Raid')) return 'Duty';
-  if (types.includes('Gold Saucer')) return 'Gold Saucer';
-  if (types.includes('Pack')) return 'Pack';
-  if (types.includes('Achievement')) return 'Achievement';
-  if (types.includes('Vendor')) return 'Vendor';
-  return 'Other';
+function setView(btn, val) {
+  currentView = val;
+  document.querySelectorAll('[data-view]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCards();
 }
 
-const SOURCE_META = {
-  'NPC':         { label: 'NPC', color: '#4ecdc4', bgColor: 'rgba(78,205,196,0.12)' },
-  'Duty':        { label: 'ID / 討滅戦', color: '#7b8cde', bgColor: 'rgba(123,140,222,0.12)' },
-  'Gold Saucer': { label: 'ゴールドソーサー', color: '#e88a50', bgColor: 'rgba(232,138,80,0.12)' },
-  'Pack':        { label: 'パック / 交換', color: '#b87ed4', bgColor: 'rgba(184,126,212,0.12)' },
-  'Achievement': { label: 'アチーブメント', color: '#6bc16b', bgColor: 'rgba(107,193,107,0.12)' },
-  'Vendor':      { label: 'ベンダー', color: '#e8c96a', bgColor: 'rgba(232,201,106,0.12)' },
-  'Other':       { label: 'その他', color: '#9a96a0', bgColor: 'rgba(154,150,160,0.12)' },
-};
-const SOURCE_ORDER = ['NPC','Duty','Gold Saucer','Pack','Achievement','Vendor','Other'];
-
-// =====================
-// 星表示
-// =====================
-function stars(n) { return '★'.repeat(n) + '☆'.repeat(Math.max(0, 5-n)); }
-
-// =====================
-// フィルター
-// =====================
-function setFilter(btn, val) {
-  currentFilter = val;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+function toggleType(btn, type) {
+  if (activeTypes.has(type)) {
+    activeTypes.delete(type);
+    btn.classList.remove('active');
+  } else {
+    activeTypes.add(type);
+    btn.classList.add('active');
+  }
   renderCards();
 }
 
@@ -695,163 +537,121 @@ function setFilter(btn, val) {
 // =====================
 function updateStats() {
   let cnt = 0;
-  for (let i = 1; i <= 312; i++) if (owned[i]) cnt++;
-  document.getElementById('stat-owned').textContent = cnt;
-  document.getElementById('stat-missing').textContent = 312 - cnt;
-  const pct = Math.floor(cnt / 312 * 100);
+  for (let i = 1; i <= TOTAL; i++) if (owned[i]) cnt++;
+  document.getElementById('stat-owned').textContent   = cnt;
+  document.getElementById('stat-missing').textContent = TOTAL - cnt;
+  const pct = Math.floor(cnt / TOTAL * 100);
   document.getElementById('progress-fill').style.width = pct + '%';
-  document.getElementById('progress-pct').textContent = pct + '%';
-  document.getElementById('progress-left').textContent = 312 - cnt;
+  document.getElementById('progress-pct').textContent  = pct + '%';
+  document.getElementById('progress-left').textContent = TOTAL - cnt;
 }
 
 // =====================
 // カードレンダリング
 // =====================
 function renderCards() {
-  const app = document.getElementById('app');
+  const app    = document.getElementById('app');
   const search = document.getElementById('search').value.trim().toLowerCase();
 
-  // フィルター処理
-  let filtered = allCards.filter(card => {
+  // フィルター
+  const filtered = allCards.filter(card => {
     const num = card.number;
-    if (!num || num < 1 || num > 312) return false;
-    const isOwned = owned[num];
-    if (currentFilter === 'owned' && !isOwned) return false;
-    if (currentFilter === 'missing' && isOwned) return false;
-    const src = classifySource(card);
-    if (['NPC','Duty','Gold Saucer','Pack'].includes(currentFilter) && src !== currentFilter) return false;
+    if (num < 1 || num > TOTAL) return false;
+
+    // 未所持キープ（viewに関係なく未所持を基本とする）
+    if (currentView === 'missing' && owned[num]) return false;
+    if (currentView === 'owned'   && !owned[num]) return false;
+
+    // typeフィルター（OR）
+    if (activeTypes.size > 0) {
+      const cardTypes = card.sources.map(s => s.type);
+      if (!cardTypes.some(t => activeTypes.has(t))) return false;
+    }
+
+    // 検索
     if (search && !card.name.toLowerCase().includes(search) && !String(num).includes(search)) return false;
+
     return true;
   });
 
   // グループ化
-  const groups = {};
-  SOURCE_ORDER.forEach(k => groups[k] = []);
+  const groupMap = {};
+  GROUPS.forEach(g => groupMap[g.key] = []);
   filtered.forEach(card => {
-    const src = classifySource(card);
-    groups[src].push(card);
+    const key = getGroupKey(card);
+    groupMap[key].push(card);
   });
 
   let html = '';
-  SOURCE_ORDER.forEach(src => {
-    const cards = groups[src];
-    if (cards.length === 0) return;
-    const meta = SOURCE_META[src];
-    const ownedCount = cards.filter(c => owned[c.number]).length;
+  GROUPS.forEach(g => {
+    const cards = groupMap[g.key];
+    if (!cards || cards.length === 0) return;
+    const ownedCnt = cards.filter(c => owned[c.number]).length;
 
     html += `<div class="group">
       <div class="group-header">
-        <div class="group-dot" style="background:${meta.color}"></div>
-        <div class="group-name" style="color:${meta.color}">${meta.label}</div>
-        <div class="group-owned" style="color:${meta.color}">${ownedCount}/${cards.length}</div>
+        <div class="group-dot" style="background:${g.color}"></div>
+        <div class="group-name" style="color:${g.color}">${g.label}</div>
+        <div class="group-owned" style="color:${g.color}">${ownedCnt} / ${cards.length}</div>
       </div>
       <div class="card-list">`;
 
     cards.forEach(card => {
-      const num = card.number;
+      const num     = card.number;
       const isOwned = owned[num];
-      const memo = memos[num] || '';
+      const starsHtml = '★'.repeat(card.stars || 1) + '☆'.repeat(Math.max(0, 5 - (card.stars || 1)));
 
-      // アイコン画像HTML（クリックでポップアップ）
-      const iconUrl = card.icon || '';
-      let iconHtml = '';
-      if (iconUrl) {
-        const img = `<img src="${iconUrl}" alt="${escHtml(card.name)}" loading="lazy" onerror="this.style.opacity='0.3'">`;
-        iconHtml = `<div class="card-icon-wrap" onclick="event.stopPropagation();openPopup(allCards.find(c=>c.number===${num}))" style="cursor:zoom-in">${img}</div>`;
-      } else {
-        iconHtml = `<div class="card-icon-wrap"></div>`;
-      }
+      // sourcesバッジ（全件・日本語type）
+      const srcHtml = card.sources.map(s => {
+        const cls  = typeCls(s.type);
+        const ja   = TYPE_JA[s.type] || s.type;
+        const text = s.text ? escHtml(s.text) : '';
+        return `<span class="src-badge ${cls}"><span class="src-type-label">${ja}</span>${text ? '：' + text : ''}</span>`;
+      }).join('');
 
-      // 全sources バッジHTML
-      const sourcesHtml = (() => {
-        if (!card.sources || card.sources.length === 0) {
-          return `<div class="card-sources"><span class="card-source-badge" style="background:${meta.bgColor};color:${meta.color}">${meta.label}</span></div>`;
-        }
-        const badges = card.sources.map(s => {
-          const sm = SOURCE_META[
-            s.type === 'Trial' || s.type === 'Raid' ? 'Duty' : (SOURCE_META[s.type] ? s.type : 'Other')
-          ] || SOURCE_META['Other'];
-          const label = s.text ? s.text.slice(0, 18) : sm.label;
-          return `<span class="card-source-badge" style="background:${sm.bgColor};color:${sm.color}">${escHtml(label)}</span>`;
-        }).join('');
-        return `<div class="card-sources">${badges}</div>`;
-      })();
-
-      html += `<div class="card-item${isOwned ? ' checked' : ''}" data-num="${num}" onclick="toggleCard(event,${num})">
-        <div class="card-check"></div>
-        ${iconHtml}
-        <div class="card-no">No.${String(num).padStart(3,'0')}</div>
-        <div class="card-name">${escHtml(card.name)}</div>
-        <div class="card-stars">${stars(card.stars || 1)}</div>
-        ${sourcesHtml}
-        <div class="card-memo-wrap">
-          <textarea class="card-memo" maxlength="20" placeholder="メモ（20文字まで）" data-num="${num}" onclick="event.stopPropagation()" oninput="onMemoInput(event,${num})">${escHtml(memo)}</textarea>
+      html += `<div class="card-item${isOwned ? ' checked' : ''}" data-num="${num}">
+        <div class="card-check" onclick="toggleCard(event,${num})"></div>
+        <div class="card-icon-wrap">
+          <img src="${escHtml(card.icon)}" alt="${escHtml(card.name)}" loading="lazy" onerror="this.style.opacity='0.3'">
         </div>
+        <div>
+          <div class="card-no">No.${String(num).padStart(3,'0')}</div>
+          <div class="card-meta"><span class="card-stars">${starsHtml}</span> <span>p${escHtml(card.patch||'')}</span></div>
+        </div>
+        <div class="card-name">${escHtml(card.name)}</div>
+        <div class="card-sources">${srcHtml}</div>
       </div>`;
     });
 
     html += `</div></div>`;
   });
 
-  if (html === '') {
+  if (!html) {
     html = '<div style="text-align:center;padding:60px;color:var(--text3);">該当するカードがありません</div>';
   }
-
   app.innerHTML = html;
 }
 
 function escHtml(s) {
-  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  if (s == null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 // =====================
-// カードポップアップ
+// チェック（チェックボックスのみ）
 // =====================
-function openPopup(card) {
-  const s = card.stats && card.stats.numeric ? card.stats.numeric : {};
-  const fmt = v => (v === 10 ? 'A' : v ?? '-');
-  // 画像URLはffxivcollectのlarge画像を使用 (idはcards.jsonのnumberに対応)
-  // card.imageがあればそれを使い、なければAPIのidから推定
-  const imgUrl = card.image || `https://ffxivcollect.com/images/cards/large/${card.id || card.number}.png`;
-
-  document.getElementById('popup-name').textContent = `No.${String(card.number).padStart(3,'0')} ${card.name}`;
-  document.getElementById('popup-img').src = imgUrl;
-  document.getElementById('popup-img').alt = card.name;
-  document.getElementById('popup-top').textContent    = fmt(s.top);
-  document.getElementById('popup-left').textContent   = fmt(s.left);
-  document.getElementById('popup-right').textContent  = fmt(s.right);
-  document.getElementById('popup-bottom').textContent = fmt(s.bottom);
-
-  document.getElementById('card-popup-overlay').classList.add('show');
-}
-
-function closePopup(e) {
-  if (e && e.target !== document.getElementById('card-popup-overlay')) return;
-  document.getElementById('card-popup-overlay').classList.remove('show');
-}
-
-// ESCキーで閉じる
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') document.getElementById('card-popup-overlay').classList.remove('show');
-});
 function toggleCard(e, num) {
-  if (e.target.tagName === 'TEXTAREA') return;
+  e.stopPropagation();
   owned[num] = !owned[num];
   updateUrl();
   updateStats();
-  // 該当行だけ更新（全再描画を避ける）
   const el = document.querySelector(`.card-item[data-num="${num}"]`);
   if (el) {
     el.classList.toggle('checked', owned[num]);
-    el.querySelector('.card-name').style.color = owned[num] ? 'var(--gold)' : '';
   }
-  // フィルター適用中なら消す
-  if (currentFilter === 'owned' && !owned[num]) el && (el.style.display = 'none');
-  if (currentFilter === 'missing' && owned[num]) el && (el.style.display = 'none');
-}
-
-function onMemoInput(e, num) {
-  saveMemo(num, e.target.value);
+  // 未所持フィルター中はチェックした行を非表示
+  if (currentView === 'missing' && owned[num] && el) el.style.display = 'none';
+  if (currentView === 'owned' && !owned[num] && el) el.style.display = 'none';
 }
 
 // =====================
@@ -863,19 +663,15 @@ function copyUrl() {
     navigator.clipboard.writeText(url).then(() => showToast('URLをコピーしました'));
   } else {
     const ta = document.createElement('textarea');
-    ta.value = url;
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    document.body.removeChild(ta);
+    ta.value = url; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
     showToast('URLをコピーしました');
   }
 }
 
 function showToast(msg) {
   const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
+  t.textContent = msg; t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2000);
 }
 
@@ -883,19 +679,14 @@ function showToast(msg) {
 // 初期化
 // =====================
 async function init() {
-  loadMemos();
-
-  // URLハッシュから所持状態復元
   const hash = location.hash.slice(1);
-  if (hash.length === 312 && /^[01]+$/.test(hash)) {
-    ownedFromHash(hash);
-  }
+  if (hash.length === TOTAL && /^[01]+$/.test(hash)) ownedFromHash(hash);
 
   try {
     const cards = await fetchCards();
-    // number順でソート、312以下のみ
+    // No.1〜312 を number順にソート（No.1が先頭に来るよう明示）
     allCards = cards
-      .filter(c => c.number >= 1 && c.number <= 312)
+      .filter(c => c.number >= 1 && c.number <= TOTAL)
       .sort((a, b) => a.number - b.number);
 
     if (allCards.length === 0) throw new Error('no cards');
@@ -906,10 +697,9 @@ async function init() {
     updateStats();
     renderCards();
 
-    if (hash.length === 312) {
+    if (hash.length === TOTAL) {
       document.getElementById('share-url').textContent = location.href;
     }
-
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
