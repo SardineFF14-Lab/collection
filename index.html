@@ -765,6 +765,15 @@ async function init() {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('app').style.display = 'block';
 
+        // TIPSをnotes.jsonから表示
+    const tipsEl = document.getElementById('owner-memo-content');
+    const tipsHtml = [1,2,3,4,5]
+      .map(i => notes[`tips${i}`])
+      .filter(t => t)
+      .map(t => `・${escHtml(t)}`)
+      .join('<br>');
+    tipsEl.innerHTML = tipsHtml || '（TIPSはnotes.jsonのtips1〜tips5に記入）';
+    
     updateStats();
     renderCards();
     if (hash) document.getElementById('share-url').textContent = location.href;
