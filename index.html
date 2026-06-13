@@ -47,9 +47,18 @@
     max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center;
     height: 52px; gap: 12px;
+    overflow: hidden;
   }
-  .logo { font-size: 17px; font-weight: 700; color: #e8d080; letter-spacing: 0.02em; white-space: nowrap; }
-  .logo-sub { font-size: 12px; color: #c0a84a; font-weight: 400; margin-left: 10px; }
+  .logo {
+    font-size: 17px; font-weight: 700; color: #e8d080;
+    letter-spacing: 0.02em; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+    min-width: 0;
+  }
+  .logo-sub {
+    font-size: 12px; color: #c0a84a; font-weight: 400;
+    margin-left: 10px; white-space: nowrap;
+  }
 
   /* サマリー */
   .summary { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 10px 20px; }
@@ -223,6 +232,15 @@
     margin-top: 2px;
   }
 
+  /* スマホ用No表示（card-name-wrap内） */
+  .card-no-mobile {
+    display: none;
+    font-size: 11px;
+    color: var(--text3);
+    font-family: monospace;
+    margin-right: 4px;
+  }
+
   /* バッジ */
   .src-badge {
     font-size: 12px; padding: 1px 6px;
@@ -308,52 +326,77 @@
   }
   #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-  @media (max-width: 600px) {
-    .card-item { grid-template-columns: 26px 30px 40px 1fr; }
+  /* マニュアルボタン */
+  .help-btn {
+    margin-left: auto;
+    width: auto; height: 22px; padding: 0 10px;
+    border-radius: 50%;
+    border: 1px solid var(--border2);
+    background: var(--card);
+    color: var(--gold); font-size: 13px; font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    user-select: none;
   }
-.help-btn {
-  margin-left: auto;
-  width: auto; height: 22px; padding: 0 10px;
-  border-radius: 50%;
-  border: 1px solid var(--border2);
-  background: var(--card);
-  color: var(--gold); font-size: 13px; font-weight: 700;
-  cursor: default;
-  position: relative;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
-}
-.help-btn .help-tip {
-  display: none;
-  position: absolute;
-  top: 28px; right: 0;
-  width: 280px;
-  background: #fffef5;
-  border: 1px solid var(--border2);
-  border-radius: 8px;
-  padding: 10px 14px;
-  font-size: 11px;
-  color: var(--text2);
-  line-height: 1.8;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  z-index: 200;
-  white-space: normal;
-}
-.help-btn:hover .help-tip { display: block; animation: pop-in 0.15s ease; }
+  .help-btn .help-tip {
+    display: none;
+    position: absolute;
+    top: 28px; right: 0;
+    width: 280px;
+    background: #fffef5;
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 11px;
+    color: var(--text2);
+    line-height: 1.8;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    z-index: 200;
+    white-space: normal;
+  }
+  /* PCはhover、スマホはclassで制御 */
+  @media (hover: hover) {
+    .help-btn:hover .help-tip { display: block; animation: pop-in 0.15s ease; }
+  }
+  .help-btn.open .help-tip { display: block; animation: pop-in 0.15s ease; }
+
   /* リストヘッダー */
-.list-header {
-  display: grid;
-  grid-template-columns: 26px 30px 70px 1fr 60px;
-  gap: 8px;
-  padding: 4px 8px;
-  border-bottom: 1.5px solid var(--border2);
-  margin-bottom: 4px;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text2);
-  letter-spacing: 0.04em;
-}
-    
+  .list-header {
+    display: grid;
+    grid-template-columns: 26px 30px 70px 1fr 60px;
+    gap: 8px;
+    padding: 4px 8px;
+    border-bottom: 1.5px solid var(--border2);
+    margin-bottom: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text2);
+    letter-spacing: 0.04em;
+  }
+
+  /* ===== スマホ対応 ===== */
+  @media (max-width: 600px) {
+    .logo { font-size: 14px; }
+    .logo-sub { display: none; }
+
+    .card-item {
+      grid-template-columns: 26px 30px 1fr;
+    }
+    .card-no-wrap { display: none; }
+    .card-no-mobile { display: inline; }
+
+    .list-header {
+      grid-template-columns: 26px 30px 1fr;
+    }
+    .list-header > div:nth-child(3),
+    .list-header > div:nth-child(5) { display: none; }
+
+    .src-badge { font-size: 11px; }
+
+    #popup-box { width: calc(100vw - 32px); }
+  }
 </style>
 </head>
 <body>
@@ -388,14 +431,12 @@
       <div class="progress-label">あと <strong id="progress-left">312</strong> 枚</div>
     </div>
 
-    <!-- ▼▼▼ オーナーメモ（ここに5行のTIPSを書いてください） ▼▼▼ -->
     <div class="owner-memo">
       <div class="owner-memo-title">📝 TIPS</div>
         <div id="owner-memo-content">
           <!-- notes.jsonから自動読み込み -->
         </div>
     </div>
-    <!-- ▲▲▲ オーナーメモここまで ▲▲▲ -->
   </div>
 </div>
 
@@ -431,7 +472,7 @@
       <button class="filter-btn" data-type="AC"  onclick="toggleType(this,'AC')">アチーブメント</button>
       <button class="filter-btn" data-type="初"  onclick="toggleType(this,'初')">チュートリアル</button>
       <button class="filter-btn" data-type="EX"  onclick="toggleType(this,'EX')">その他</button>
-      <div class="help-btn">📖 マニュアル
+      <div class="help-btn" id="help-btn">📖 マニュアル
         <div class="help-tip">
           <strong>📖 使い方</strong><br>
           ・アイコンクリック → カード詳細ポップアップ<br>
@@ -529,8 +570,6 @@ function getGroupKey(card) {
 // =====================
 // Base64 URLハッシュ
 // =====================
-// 常に最短のハッシュを生成
-// o=所持リスト / m=未所持リスト / b=Base64 のうち最短を選ぶ
 function ownedToHash() {
   const ownedNums = [], missingNums = [];
   for (let i = 1; i <= TOTAL; i++) {
@@ -538,7 +577,6 @@ function ownedToHash() {
   }
   const oStr = 'o' + ownedNums.join(',');
   const mStr = 'm' + missingNums.join(',');
-  // Base64
   const bytes = new Uint8Array(Math.ceil(TOTAL / 8));
   for (let i = 1; i <= TOTAL; i++) {
     if (owned[i]) bytes[Math.floor((i-1)/8)] |= (1 << ((i-1) % 8));
@@ -679,11 +717,13 @@ function buildCardHtml(card) {
       <div class="card-stars">${starsHtml}</div>
     </div>
     <div class="card-name-wrap">
-  <div class="card-name">${escHtml(card.name)}${ctHtml}</div>
-  <div class="card-sources">${tsvHtml}</div>
-  ${noteHtml}
-</div>
-<div></div>
+      <div class="card-name">
+        <span class="card-no-mobile">No.${String(num).padStart(3,'0')} </span>${escHtml(card.name)}${ctHtml}
+      </div>
+      <div class="card-sources">${tsvHtml}</div>
+      ${noteHtml}
+    </div>
+    <div></div>
   </div>`;
 }
 
@@ -710,17 +750,15 @@ function renderCards() {
   let html = '';
 
   if (activeTypes.size === 0) {
-    // タイプ未選択 → 番号順フラット
-       html += `<div class="list-header">
+    html += `<div class="list-header">
       <div style="text-align:center">所持</div>
       <div></div>
       <div>No / 難易度</div>
       <div>カード名 / 入手方法</div>
       <div style="text-align:right">メモ</div>
-      </div>`;
+    </div>`;
     filtered.forEach(card => { html += buildCardHtml(card); });
   } else {
-    // タイプ選択中 → グループ表示
     const groupMap = {};
     GROUPS.forEach(g => groupMap[g.key] = []);
     filtered.forEach(card => {
@@ -739,14 +777,13 @@ function renderCards() {
           <div class="group-owned" style="color:${g.color}">${ownedCnt} / ${cards.length}</div>
         </div>
         <div class="card-list">`;
-
       html += `<div class="list-header">
-  <div style="text-align:center">所持</div>
-  <div></div>
-  <div>No / 難易度</div>
-  <div>カード名 / 入手方法</div>
-  <div style="text-align:right">メモ</div>
-</div>`;
+        <div style="text-align:center">所持</div>
+        <div></div>
+        <div>No / 難易度</div>
+        <div>カード名 / 入手方法</div>
+        <div style="text-align:right">メモ</div>
+      </div>`;
       cards.forEach(card => { html += buildCardHtml(card); });
       html += `</div></div>`;
     });
@@ -833,6 +870,21 @@ function showToast(msg) {
 }
 
 // =====================
+// マニュアル タップ対応
+// =====================
+function initHelpBtn() {
+  const helpBtn = document.getElementById('help-btn');
+  if (!helpBtn) return;
+  helpBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    this.classList.toggle('open');
+  });
+  document.addEventListener('click', function() {
+    helpBtn.classList.remove('open');
+  });
+}
+
+// =====================
 // 初期化
 // =====================
 async function init() {
@@ -849,7 +901,7 @@ async function init() {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('app').style.display = 'block';
 
-        // TIPSをnotes.jsonから表示
+    // TIPSをnotes.jsonから表示
     const tipsEl = document.getElementById('owner-memo-content');
     const tipsHtml = [1,2,3,4,5]
       .map(i => notes[`tips${i}`])
@@ -857,9 +909,10 @@ async function init() {
       .map(t => `・${escHtml(t)}`)
       .join('<br>');
     tipsEl.innerHTML = tipsHtml || '（TIPSはnotes.jsonのtips1〜tips5に記入）';
-    
+
     updateStats();
     renderCards();
+    initHelpBtn();
     if (hash) document.getElementById('share-url').textContent = location.href;
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
