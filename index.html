@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> 「マジックカード」アチーブ支援！</title>
+<title>目指せ「マジックカード」</title>
 <style>
   :root {
     --bg:      #ede8d8;
@@ -36,12 +36,18 @@
     min-height: 100vh;
   }
 
+  /* 固定ラッパー */
+  .sticky-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
   /* ヘッダー */
   header {
     background: #4a3a1a;
     border-bottom: 2px solid #6a5228;
     padding: 0 20px;
-    position: sticky; top: 0; z-index: 100;
   }
   .header-inner {
     max-width: 1400px; margin: 0 auto;
@@ -61,7 +67,7 @@
   }
 
   /* サマリー */
-  .summary { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 10px 20px; position: sticky; top: 52px; z-index: 95; }
+  .summary { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 10px 20px; }
   .summary-inner {
     max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
@@ -91,7 +97,7 @@
   .owner-memo-title { font-size: 11px; font-weight: 700; color: var(--gold); margin-bottom: 2px; }
 
   /* URL共有 */
-  .share-area { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 7px 20px; position: sticky; top: 124px; z-index: 92; }
+  .share-area { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 7px 20px; }
   .share-inner {
     max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
@@ -125,7 +131,6 @@
   .filters {
     background: var(--bg2); border-bottom: 1px solid var(--border);
     padding: 7px 20px;
-    position: sticky; top: 158px; z-index: 90;
   }
   .filters-inner {
     max-width: 1400px; margin: 0 auto;
@@ -160,7 +165,7 @@
     display: flex; align-items: center; gap: 8px;
     padding: 5px 0; border-bottom: 1px solid var(--border);
     margin-bottom: 4px;
-    position: sticky; top: 214px;
+    position: sticky; top: var(--sticky-top, 200px);
     background: var(--bg); z-index: 80;
   }
   .group-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
@@ -356,7 +361,6 @@
     z-index: 200;
     white-space: normal;
   }
-  /* PCはhover、スマホはclassで制御 */
   @media (hover: hover) {
     .help-btn:hover .help-tip { display: block; animation: pop-in 0.15s ease; }
   }
@@ -381,6 +385,7 @@
     .logo { font-size: 14px; }
     .logo-sub { display: none; }
     .owner-memo { display: none; }
+
     .card-item {
       grid-template-columns: 26px 30px 1fr;
     }
@@ -401,97 +406,99 @@
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <div class="logo">
-      ♠ 目指せ「マジックカード」マウント！！
-      <span class="logo-sub">「生粋のカードマニア」のアチーブメント支援</span>
-    </div>
-  </div>
-</header>
-
-<div class="summary">
-  <div class="summary-inner">
-    <div class="stat">
-      <div class="stat-num owned" id="stat-owned">0</div>
-      <div class="stat-label">所持</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num missing" id="stat-missing">312</div>
-      <div class="stat-label">未所持</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">312</div>
-      <div class="stat-label">目標</div>
-    </div>
-    <div class="progress-wrap">
-      <div class="progress-bar">
-        <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+<div class="sticky-wrap">
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        ♠ 目指せ「マジックカード」
+        <span class="logo-sub">「生粋のカードマニア」のアチーブメント支援</span>
       </div>
-      <div class="progress-label">あと <strong id="progress-left">312</strong> 枚</div>
     </div>
+  </header>
 
-    <div class="owner-memo">
-      <div class="owner-memo-title">📝 TIPS</div>
+  <div class="summary">
+    <div class="summary-inner">
+      <div class="stat">
+        <div class="stat-num owned" id="stat-owned">0</div>
+        <div class="stat-label">所持</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num missing" id="stat-missing">312</div>
+        <div class="stat-label">未所持</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">312</div>
+        <div class="stat-label">目標</div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+        </div>
+        <div class="progress-label">あと <strong id="progress-left">312</strong> 枚</div>
+      </div>
+
+      <div class="owner-memo">
+        <div class="owner-memo-title">📝 TIPS</div>
         <div id="owner-memo-content">
           <!-- notes.jsonから自動読み込み -->
         </div>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="share-area">
-  <div class="share-inner">
-    <span class="share-label">📋 現在のURL</span>
-    <div class="share-url" id="share-url">チェックするとURLが更新されます</div>
-    <button class="btn gold" onclick="copyUrl()">URLをコピー</button>
-    <div class="filter-sep"></div>
-    <span class="share-label">🔗 URLで復元</span>
-    <input class="restore-input" id="restore-input" type="text" placeholder="以前のURLを貼り付け...">
-    <button class="btn" onclick="restoreFromInput()">復元</button>
-  </div>
-</div>
-
-<div class="filters">
-  <div class="filters-inner">
-    <div class="filter-row">
-      <span class="filter-label">表示：</span>
-      <button class="filter-btn" data-view="all"     onclick="setView(this,'all')">すべて</button>
-      <button class="filter-btn active" data-view="missing" onclick="setView(this,'missing')">未所持のみ</button>
-      <button class="filter-btn" data-view="owned"   onclick="setView(this,'owned')">所持済み</button>
+  <div class="share-area">
+    <div class="share-inner">
+      <span class="share-label">📋 現在のURL</span>
+      <div class="share-url" id="share-url">チェックするとURLが更新されます</div>
+      <button class="btn gold" onclick="copyUrl()">URLをコピー</button>
       <div class="filter-sep"></div>
-      <input class="search-input" id="search" type="text" placeholder="カード名で検索..." oninput="renderCards()">
+      <span class="share-label">🔗 URLで復元</span>
+      <input class="restore-input" id="restore-input" type="text" placeholder="以前のURLを貼り付け...">
+      <button class="btn" onclick="restoreFromInput()">復元</button>
     </div>
-    <div class="filter-row">
-      <span class="filter-label">入手方法：</span>
-      <button class="filter-btn" data-type="VS"  onclick="toggleType(this,'VS')">NPC対戦</button>
-      <button class="filter-btn" data-type="DU"  onclick="toggleType(this,'DU')">ダンジョン/討滅戦</button>
-      <button class="filter-btn" data-type="FA"  onclick="toggleType(this,'FA')">FATE</button>
-      <button class="filter-btn" data-type="CP"  onclick="toggleType(this,'CP')">カードパック</button>
-      <button class="filter-btn" data-type="TR"  onclick="toggleType(this,'TR')">アイテム交換</button>
-      <button class="filter-btn" data-type="AC"  onclick="toggleType(this,'AC')">アチーブメント</button>
-      <button class="filter-btn" data-type="初"  onclick="toggleType(this,'初')">チュートリアル</button>
-      <button class="filter-btn" data-type="EX"  onclick="toggleType(this,'EX')">その他</button>
-      <div class="help-btn" id="help-btn">📖 マニュアル
-        <div class="help-tip">
-          <strong>📖 使い方</strong><br>
-          ・アイコンクリック → カード詳細ポップアップ<br>
-          ・チェックボックス → 「所持」にステータス変更<br>
-          ・入手方法ボタン → 複数選択でOR絞り込み<br>
-          ・URLをコピー → 所持状態を共有・保存<br>
-          ・URLで復元 → 以前の状態を復元<br>
-          ・所持状況はURLのハッシュ（#以降）に保存されます<br>
-          ・所持状況リセットする場合は「#」以降を除いたURLでアクセスしてください<br>
-            (厳密にはリセットではないですが）<br>
-          <br>
-          <strong>🔧 自分用</strong><br>
-          ・notes.jsonにメモを書くと📝で表示<br>
-          ・TIPSはnotes.jsonのtips1〜5に記入
+  </div>
+
+  <div class="filters">
+    <div class="filters-inner">
+      <div class="filter-row">
+        <span class="filter-label">表示：</span>
+        <button class="filter-btn" data-view="all"     onclick="setView(this,'all')">すべて</button>
+        <button class="filter-btn active" data-view="missing" onclick="setView(this,'missing')">未所持のみ</button>
+        <button class="filter-btn" data-view="owned"   onclick="setView(this,'owned')">所持済み</button>
+        <div class="filter-sep"></div>
+        <input class="search-input" id="search" type="text" placeholder="カード名で検索..." oninput="renderCards()">
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">入手方法：</span>
+        <button class="filter-btn" data-type="VS"  onclick="toggleType(this,'VS')">NPC対戦</button>
+        <button class="filter-btn" data-type="DU"  onclick="toggleType(this,'DU')">ダンジョン/討滅戦</button>
+        <button class="filter-btn" data-type="FA"  onclick="toggleType(this,'FA')">FATE</button>
+        <button class="filter-btn" data-type="CP"  onclick="toggleType(this,'CP')">カードパック</button>
+        <button class="filter-btn" data-type="TR"  onclick="toggleType(this,'TR')">アイテム交換</button>
+        <button class="filter-btn" data-type="AC"  onclick="toggleType(this,'AC')">アチーブメント</button>
+        <button class="filter-btn" data-type="初"  onclick="toggleType(this,'初')">チュートリアル</button>
+        <button class="filter-btn" data-type="EX"  onclick="toggleType(this,'EX')">その他</button>
+        <div class="help-btn" id="help-btn">📖 マニュアル
+          <div class="help-tip">
+            <strong>📖 使い方</strong><br>
+            ・アイコンクリック → カード詳細ポップアップ<br>
+            ・チェックボックス → 「所持」にステータス変更<br>
+            ・入手方法ボタン → 複数選択でOR絞り込み<br>
+            ・URLをコピー → 所持状態を共有・保存<br>
+            ・URLで復元 → 以前の状態を復元<br>
+            ・所持状況はURLのハッシュ（#以降）に保存されます<br>
+            ・所持状況リセットする場合は「#」以降を除いたURLでアクセスしてください<br>
+              (厳密にはリセットではないですが）<br>
+            <br>
+            <strong>🔧 自分用</strong><br>
+            ・notes.jsonにメモを書くと📝で表示<br>
+            ・TIPSはnotes.jsonのtips1〜5に記入
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div><!-- /.sticky-wrap -->
 
 <div id="loading">
   <div class="spinner"></div>
@@ -622,6 +629,17 @@ function restoreFromInput() {
   loadHash(hash);
   updateUrl(); updateStats(); renderCards();
   showToast('所持状態を復元しました');
+}
+
+// =====================
+// グループヘッダーのtopをJSで動的に設定
+// =====================
+function updateGroupHeaderTop() {
+  const wrap = document.querySelector('.sticky-wrap');
+  if (wrap) {
+    const h = wrap.offsetHeight;
+    document.documentElement.style.setProperty('--sticky-top', h + 'px');
+  }
 }
 
 // =====================
@@ -913,6 +931,8 @@ async function init() {
     updateStats();
     renderCards();
     initHelpBtn();
+    updateGroupHeaderTop();
+    window.addEventListener('resize', updateGroupHeaderTop);
     if (hash) document.getElementById('share-url').textContent = location.href;
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
