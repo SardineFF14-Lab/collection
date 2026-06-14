@@ -61,7 +61,7 @@
   }
 
   /* サマリー */
-  .summary { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 10px 20px; }
+  .summary { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 10px 20px; position: sticky; top: 52px; z-index: 95; }
   .summary-inner {
     max-width: 1400px; margin: 0 auto;
     display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
@@ -125,7 +125,7 @@
   .filters {
     background: var(--bg2); border-bottom: 1px solid var(--border);
     padding: 7px 20px;
-    position: sticky; top: 52px; z-index: 90;
+    position: sticky; top: 124px; z-index: 90;
   }
   .filters-inner {
     max-width: 1400px; margin: 0 auto;
@@ -160,7 +160,7 @@
     display: flex; align-items: center; gap: 8px;
     padding: 5px 0; border-bottom: 1px solid var(--border);
     margin-bottom: 4px;
-    position: sticky; top: 108px;
+    position: sticky; top: 180px;
     background: var(--bg); z-index: 80;
   }
   .group-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
@@ -380,7 +380,7 @@
   @media (max-width: 600px) {
     .logo { font-size: 14px; }
     .logo-sub { display: none; }
-
+    .owner-memo { display: none; }
     .card-item {
       grid-template-columns: 26px 30px 1fr;
     }
