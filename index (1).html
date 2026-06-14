@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>目指せ「マジックカード」</title>
+<style>
+  :root {
+    --bg:      #ede8d8;
+    --bg2:     #e0d9c5;
+    --bg3:     #d4ccb5;
+    --card:    #ede8d8;
+    --border:  #d6d0c2;
+    --border2: #c0b89e;
+    --gold:    #8a6a1a;
+    --gold2:   #b58a2a;
+    --text:    #2a2520;
+    --text2:   #6b6050;
+    --text3:   #a09880;
+    --checked:        rgba(138,106,26,0.08);
+    --checked-border: rgba(138,106,26,0.35);
+    --c-npc:   #1a6b5a; --cb-npc:   rgba(26,107,90,0.1);
+    --c-duty:  #2a4a9a; --cb-duty:  rgba(42,74,154,0.1);
+    --c-gs:    #8a4a10; --cb-gs:    rgba(138,74,16,0.1);
+    --c-ach:   #4a7a20; --cb-ach:   rgba(74,122,32,0.1);
+    --c-fate:  #6a3a9a; --cb-fate:  rgba(106,58,154,0.1);
+    --c-other: #5a5048; --cb-other: rgba(90,80,72,0.1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI','Hiragino Sans','Yu Gothic UI',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* 固定ラッパー */
+  .sticky-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* ヘッダー */
+  header {
+    background: #4a3a1a;
+    border-bottom: 2px solid #6a5228;
+    padding: 0 20px;
+  }
+  .header-inner {
+    max-width: 1400px; margin: 0 auto;
+    display: flex; align-items: center;
+    height: 52px; gap: 12px;
+    overflow: hidden;
+  }
+  .logo {
+    font-size: 17px; font-weight: 700; color: #e8d080;
+    letter-spacing: 0.02em; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+    min-width: 0;
+  }
+  .logo-sub {
+    font-size: 12px; color: #c0a84a; font-weight: 400;
+    margin-left: 10px; white-space: nowrap;
+  }
+
+  /* サマリー */
+  .summary { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 10px 20px; }
+  .summary-inner {
+    max-width: 1400px; margin: 0 auto;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .stat { display: flex; flex-direction: column; align-items: center; min-width: 48px; }
+  .stat-num { font-size: 20px; font-weight: 700; line-height: 1.1; }
+  .stat-label { font-size: 10px; color: var(--text2); margin-top: 1px; }
+  .stat-num.owned   { color: var(--gold); }
+  .stat-num.missing { color: var(--text2); }
+  .progress-wrap { min-width: 120px; }
+  .progress-bar { height: 6px; background: var(--bg3); border-radius: 3px; overflow: hidden; margin-bottom: 3px; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold2)); border-radius: 3px; transition: width 0.3s; }
+  .progress-label { font-size: 11px; color: var(--text2); white-space: nowrap; }
+  .progress-label strong { color: var(--gold); }
+
+  /* オーナーメモ */
+  .owner-memo {
+    flex: 1; min-width: 260px;
+    background: #fffef5;
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    color: var(--text2);
+    line-height: 1.8;
+  }
+  .owner-memo-title { font-size: 11px; font-weight: 700; color: var(--gold); margin-bottom: 2px; }
+
+  /* URL共有 */
+  .share-area { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 7px 20px; }
+  .share-inner {
+    max-width: 1400px; margin: 0 auto;
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  }
+  .share-label { font-size: 12px; color: var(--text2); white-space: nowrap; }
+  .share-url {
+    flex: 1; min-width: 160px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 5px; padding: 5px 9px;
+    color: var(--text2); font-size: 11px; font-family: monospace;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .btn {
+    background: var(--bg3); border: 1px solid var(--border2);
+    border-radius: 5px; color: var(--text); font-size: 11px;
+    padding: 5px 12px; cursor: pointer; white-space: nowrap;
+    transition: background 0.15s;
+  }
+  .btn:hover { background: var(--border); }
+  .btn.gold { border-color: var(--gold); color: var(--gold); }
+  .btn.gold:hover { background: var(--checked); }
+  .restore-input {
+    flex: 1; min-width: 160px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 5px; padding: 5px 9px;
+    color: var(--text); font-size: 11px; font-family: monospace;
+  }
+  .restore-input:focus { outline: none; border-color: var(--gold); }
+
+  /* フィルター */
+  .filters {
+    background: var(--bg2); border-bottom: 1px solid var(--border);
+    padding: 7px 20px;
+  }
+  .filters-inner {
+    max-width: 1400px; margin: 0 auto;
+    display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  }
+  .filter-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; width: 100%; }
+  .filter-row + .filter-row { margin-top: 5px; }
+  .filter-btn {
+    padding: 3px 11px; border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--card); color: var(--text2);
+    font-size: 14px; cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .filter-btn:hover { border-color: var(--border2); color: var(--text); }
+  .filter-btn.active { border-color: var(--gold); color: var(--gold); background: var(--checked); font-weight: 600; }
+  .filter-sep { width: 1px; height: 18px; background: var(--border); margin: 0 2px; }
+  .search-input {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 5px; padding: 3px 9px;
+    color: var(--text); font-size: 12px; width: 160px;
+  }
+  .search-input:focus { outline: none; border-color: var(--gold); }
+  .filter-label { font-size: 12px; font-weight: 600; color: var(--text2); white-space: nowrap; }
+
+  /* メイン */
+  main { max-width: 1400px; margin: 0 auto; padding: 12px 20px 60px; }
+
+  /* グループヘッダー */
+  .group { margin-bottom: 16px; }
+  .group-header {
+    display: flex; align-items: center; gap: 8px;
+    padding: 5px 0; border-bottom: 1px solid var(--border);
+    margin-bottom: 4px;
+    position: sticky; top: var(--sticky-top, 200px);
+    background: var(--bg); z-index: 80;
+  }
+  .group-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .group-name { font-size: 12px; font-weight: 600; letter-spacing: 0.03em; }
+  .group-owned { font-size: 11px; margin-left: auto; }
+
+  /* カードリスト */
+  .card-list { display: flex; flex-direction: column; gap: 1px; }
+  .card-item {
+    display: grid;
+    grid-template-columns: 26px 30px 70px 1fr 60px;
+    align-items: start;
+    gap: 8px;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: var(--card);
+    transition: background 0.1s, border-color 0.1s;
+  }
+  .card-item:hover { background: var(--bg3); border-color: var(--border); }
+  .card-item.checked { background: var(--checked); border-color: var(--checked-border); }
+  .card-item.checked .card-name { color: var(--gold2); }
+  .card-item.checked .card-no  { color: var(--gold); }
+
+  /* チェックボックス */
+  .card-check {
+    width: 17px; height: 17px;
+    border: 1.5px solid var(--border2); border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; cursor: pointer; transition: all 0.1s;
+    margin-top: 3px;
+  }
+  .card-check:hover { border-color: var(--gold); }
+  .card-item.checked .card-check { background: var(--gold); border-color: var(--gold); }
+  .card-item.checked .card-check::after {
+    content: '';
+    display: block;
+    width: 4px; height: 8px;
+    border: 2px solid #fff;
+    border-top: none; border-left: none;
+    transform: rotate(45deg) translate(-1px,-1px);
+  }
+
+  /* アイコン */
+  .card-icon-wrap { width: 30px; height: 30px; flex-shrink: 0; cursor: zoom-in; }
+  .card-icon-wrap img {
+    width: 30px; height: 30px; border-radius: 3px; display: block;
+    border: 1px solid var(--border);
+    transition: border-color 0.1s;
+  }
+  .card-icon-wrap img:hover { border-color: var(--gold); }
+  .card-item.checked .card-icon-wrap img { border-color: var(--gold2); }
+
+  /* No列 */
+  .card-no-wrap { display: flex; flex-direction: column; justify-content: flex-start; padding-top: 1px; }
+  .card-no   { font-size: 15px; color: var(--text3); font-family: monospace; }
+  .card-stars { font-size: 10px; color: var(--gold2); letter-spacing: 0.5px; }
+
+  /* 名前+sources列 */
+  .card-name-wrap { min-width: 0; }
+  .card-name { font-size: 14px; color: var(--text); font-weight: 500; }
+  .card-sources {
+    display: flex; flex-wrap: wrap; gap: 3px;
+    justify-content: flex-start; align-items: center;
+    margin-top: 3px;
+  }
+  .card-note {
+    font-size: 13px; color: var(--gold);
+    margin-top: 2px;
+  }
+
+  /* スマホ用No表示（card-name-wrap内） */
+  .card-no-mobile {
+    display: none;
+    font-size: 11px;
+    color: var(--text3);
+    font-family: monospace;
+    margin-right: 4px;
+  }
+
+  /* バッジ */
+  .src-badge {
+    font-size: 12px; padding: 1px 6px;
+    border-radius: 8px; white-space: nowrap;
+    border: 1px solid transparent;
+  }
+  .src-type-label { font-size: 12px; font-weight: 700; margin-right: 1px; }
+  .src-npc   { background: var(--cb-npc);  color: var(--c-npc);  border-color: rgba(26,107,90,0.2); }
+  .src-duty  { background: var(--cb-duty); color: var(--c-duty); border-color: rgba(42,74,154,0.2); }
+  .src-gs    { background: var(--cb-gs);   color: var(--c-gs);   border-color: rgba(138,74,16,0.2); }
+  .src-ach   { background: var(--cb-ach);  color: var(--c-ach);  border-color: rgba(74,122,32,0.2); }
+  .src-fate  { background: var(--cb-fate); color: var(--c-fate); border-color: rgba(106,58,154,0.2); }
+  .src-other { background: var(--cb-other);color: var(--c-other);border-color: rgba(90,80,72,0.2); }
+
+  /* ポップアップ */
+  #popup-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.5); z-index: 500;
+    align-items: center; justify-content: center;
+  }
+  #popup-overlay.show { display: flex; }
+  #popup-box {
+    background: var(--card);
+    border: 1px solid var(--border2);
+    border-radius: 12px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    position: relative;
+    animation: pop-in 0.15s ease;
+  }
+  @keyframes pop-in { from { opacity:0; transform:scale(0.92); } to { opacity:1; transform:scale(1); } }
+  #popup-box .p-close {
+    position: absolute; top: 10px; right: 12px;
+    background: none; border: none;
+    color: var(--text3); font-size: 18px; cursor: pointer;
+  }
+  #popup-box .p-close:hover { color: var(--text); }
+  #popup-box .p-title { font-size: 13px; font-weight: 700; color: var(--gold); text-align: center; margin-bottom: 10px; }
+  #popup-box .p-body { display: flex; gap: 14px; align-items: flex-start; }
+  #popup-box .p-img img { width: 120px; height: auto; border-radius: 6px; border: 1px solid var(--border2); display: block; }
+  #popup-box .p-info { flex: 1; }
+  #popup-box .p-type { font-size: 11px; color: var(--text2); margin-bottom: 6px; }
+  #popup-box .p-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 3px; margin-top: 8px;
+  }
+  #popup-box .p-stats .sv {
+    background: var(--bg3); border: 1px solid var(--border);
+    border-radius: 5px; text-align: center;
+    font-size: 15px; font-weight: 700; color: var(--text);
+    padding: 5px 0; line-height: 1;
+  }
+  #popup-box .p-stats .sv.empty { background: transparent; border-color: transparent; }
+  #popup-box .p-stats .sv-label { font-size: 8px; color: var(--text3); display: block; }
+
+  /* ローディング */
+  #loading {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    min-height: 60vh; gap: 14px; color: var(--text2);
+  }
+  .spinner {
+    width: 36px; height: 36px;
+    border: 2px solid var(--border); border-top-color: var(--gold);
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #error { display: none; text-align: center; padding: 40px; color: var(--text2); }
+  #app   { display: none; }
+
+  /* トースト */
+  #toast {
+    position: fixed; bottom: 24px; left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--gold); color: #fff;
+    padding: 7px 18px; border-radius: 18px;
+    font-size: 12px; font-weight: 600;
+    opacity: 0; transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none; z-index: 999;
+  }
+  #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* マニュアルボタン */
+  .help-btn {
+    margin-left: auto;
+    width: auto; height: 22px; padding: 0 10px;
+    border-radius: 50%;
+    border: 1px solid var(--border2);
+    background: var(--card);
+    color: var(--gold); font-size: 13px; font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .help-btn .help-tip {
+    display: none;
+    position: absolute;
+    top: 28px; right: 0;
+    width: 280px;
+    background: #fffef5;
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 11px;
+    color: var(--text2);
+    line-height: 1.8;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    z-index: 200;
+    white-space: normal;
+  }
+  @media (hover: hover) {
+    .help-btn:hover .help-tip { display: block; animation: pop-in 0.15s ease; }
+  }
+  .help-btn.open .help-tip { display: block; animation: pop-in 0.15s ease; }
+
+  /* リストヘッダー */
+  .list-header {
+    display: grid;
+    grid-template-columns: 26px 30px 70px 1fr 60px;
+    gap: 8px;
+    padding: 4px 8px;
+    border-bottom: 1.5px solid var(--border2);
+    margin-bottom: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text2);
+    letter-spacing: 0.04em;
+  }
+
+  /* ===== スマホ対応 ===== */
+  @media (max-width: 600px) {
+    .logo { font-size: 14px; }
+    .logo-sub { display: none; }
+    .owner-memo { display: none; }
+
+    .card-item {
+      grid-template-columns: 26px 30px 1fr;
+    }
+    .card-no-wrap { display: none; }
+    .card-no-mobile { display: inline; }
+
+    .list-header {
+      grid-template-columns: 26px 30px 1fr;
+    }
+    .list-header > div:nth-child(3),
+    .list-header > div:nth-child(5) { display: none; }
+
+    .src-badge { font-size: 11px; }
+
+    #popup-box { width: calc(100vw - 32px); }
+  }
+</style>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        ♠ 目指せ「マジックカード」
+        <span class="logo-sub">「生粋のカードマニア」のアチーブメント支援</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary">
+    <div class="summary-inner">
+      <div class="stat">
+        <div class="stat-num owned" id="stat-owned">0</div>
+        <div class="stat-label">所持</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num missing" id="stat-missing">312</div>
+        <div class="stat-label">未所持</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">312</div>
+        <div class="stat-label">目標</div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+        </div>
+        <div class="progress-label">あと <strong id="progress-left">312</strong> 枚</div>
+      </div>
+
+      <div class="owner-memo">
+        <div class="owner-memo-title">📝 TIPS</div>
+        <div id="owner-memo-content">
+          <!-- notes.jsonから自動読み込み -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="share-area">
+    <div class="share-inner">
+      <span class="share-label">📋 現在のURL</span>
+      <div class="share-url" id="share-url">チェックするとURLが更新されます</div>
+      <button class="btn gold" onclick="copyUrl()">URLをコピー</button>
+      <div class="filter-sep"></div>
+      <span class="share-label">🔗 URLで復元</span>
+      <input class="restore-input" id="restore-input" type="text" placeholder="以前のURLを貼り付け...">
+      <button class="btn" onclick="restoreFromInput()">復元</button>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="filters-inner">
+      <div class="filter-row">
+        <span class="filter-label">表示：</span>
+        <button class="filter-btn" data-view="all"     onclick="setView(this,'all')">すべて</button>
+        <button class="filter-btn active" data-view="missing" onclick="setView(this,'missing')">未所持のみ</button>
+        <button class="filter-btn" data-view="owned"   onclick="setView(this,'owned')">所持済み</button>
+        <div class="filter-sep"></div>
+        <input class="search-input" id="search" type="text" placeholder="カード名で検索..." oninput="renderCards()">
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">入手方法：</span>
+        <button class="filter-btn" data-type="VS"  onclick="toggleType(this,'VS')">NPC対戦</button>
+        <button class="filter-btn" data-type="DU"  onclick="toggleType(this,'DU')">ダンジョン/討滅戦</button>
+        <button class="filter-btn" data-type="FA"  onclick="toggleType(this,'FA')">FATE</button>
+        <button class="filter-btn" data-type="CP"  onclick="toggleType(this,'CP')">カードパック</button>
+        <button class="filter-btn" data-type="TR"  onclick="toggleType(this,'TR')">アイテム交換</button>
+        <button class="filter-btn" data-type="AC"  onclick="toggleType(this,'AC')">アチーブメント</button>
+        <button class="filter-btn" data-type="初"  onclick="toggleType(this,'初')">チュートリアル</button>
+        <button class="filter-btn" data-type="EX"  onclick="toggleType(this,'EX')">その他</button>
+        <div class="help-btn" id="help-btn">📖 マニュアル
+          <div class="help-tip">
+            <strong>📖 使い方</strong><br>
+            ・アイコンクリック → カード詳細ポップアップ<br>
+            ・チェックボックス → 「所持」にステータス変更<br>
+            ・入手方法ボタン → 複数選択でOR絞り込み<br>
+            ・URLをコピー → 所持状態を共有・保存<br>
+            ・URLで復元 → 以前の状態を復元<br>
+            ・所持状況はURLのハッシュ（#以降）に保存されます<br>
+            ・所持状況リセットする場合は「#」以降を除いたURLでアクセスしてください<br>
+              (厳密にはリセットではないですが）<br>
+            <br>
+            <strong>🔧 自分用</strong><br>
+            ・notes.jsonにメモを書くと📝で表示<br>
+            ・TIPSはnotes.jsonのtips1〜5に記入
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /.sticky-wrap -->
+
+<div id="loading">
+  <div class="spinner"></div>
+  <div>カードデータを読み込み中...</div>
+</div>
+<div id="error">
+  <p>データの読み込みに失敗しました。</p>
+  <button class="btn" style="margin-top:16px;" onclick="location.reload()">再読み込み</button>
+</div>
+
+<main id="app"></main>
+<div id="toast"></div>
+
+<!-- ポップアップ -->
+<div id="popup-overlay" onclick="closePopup(event)">
+  <div id="popup-box">
+    <button class="p-close" onclick="closePopup(null)">✕</button>
+    <div class="p-title" id="p-title"></div>
+    <div class="p-body">
+      <div class="p-img"><img id="p-img" src="" alt=""></div>
+      <div class="p-info">
+        <div class="p-type" id="p-type"></div>
+        <div class="p-stats">
+          <div></div><div class="sv" id="p-top"><span class="sv-label">上</span><span id="p-top-v"></span></div><div></div>
+          <div class="sv" id="p-left-box"><span class="sv-label">左</span><span id="p-left-v"></span></div>
+          <div class="sv empty"></div>
+          <div class="sv" id="p-right-box"><span class="sv-label">右</span><span id="p-right-v"></span></div>
+          <div></div><div class="sv" id="p-bot"><span class="sv-label">下</span><span id="p-bot-v"></span></div><div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const TOTAL = 312;
+let allCards = [];
+let notes = {};
+let owned = new Array(TOTAL + 1).fill(false);
+let currentView = 'missing';
+let activeTypes = new Set();
+
+// =====================
+// typeからバッジCSSクラス
+// =====================
+function typeCls(abbr) {
+  if (abbr === 'VS') return 'src-npc';
+  if (abbr === 'DU') return 'src-duty';
+  if (abbr === 'CP') return 'src-gs';
+  if (abbr === 'TR') return 'src-gs';
+  if (abbr === 'AC') return 'src-ach';
+  if (abbr === 'FA' || abbr === 'EX') return 'src-fate';
+  return 'src-other';
+}
+
+// =====================
+// グループ定義（typeフィルター選択時）
+// =====================
+const GROUPS = [
+  { key: 'VS',  label: 'NPC対戦',           color: '#1a6b5a' },
+  { key: 'DU',  label: 'ダンジョン / 討滅戦', color: '#2a4a9a' },
+  { key: 'FA',  label: 'FATE',               color: '#6a3a9a' },
+  { key: 'CP',  label: 'カードパック',         color: '#8a4a10' },
+  { key: 'TR',  label: 'アイテム交換',         color: '#7a5a20' },
+  { key: 'AC',  label: 'アチーブメント',       color: '#4a7a20' },
+  { key: '初',  label: 'チュートリアル',       color: '#5a5048' },
+  { key: 'EX',  label: 'その他',              color: '#5a5048' },
+];
+
+function getGroupKey(card) {
+  const src = (card.tsv_sources || []).find(s => activeTypes.has(s.abbr));
+  if (src) return src.abbr;
+  return (card.tsv_sources[0] || {}).abbr || 'EX';
+}
+
+// =====================
+// Base64 URLハッシュ
+// =====================
+function ownedToHash() {
+  const ownedNums = [], missingNums = [];
+  for (let i = 1; i <= TOTAL; i++) {
+    if (owned[i]) ownedNums.push(i); else missingNums.push(i);
+  }
+  const oStr = 'o' + ownedNums.join(',');
+  const mStr = 'm' + missingNums.join(',');
+  const bytes = new Uint8Array(Math.ceil(TOTAL / 8));
+  for (let i = 1; i <= TOTAL; i++) {
+    if (owned[i]) bytes[Math.floor((i-1)/8)] |= (1 << ((i-1) % 8));
+  }
+  let bin = '';
+  bytes.forEach(b => bin += String.fromCharCode(b));
+  const bStr = 'b' + btoa(bin).replace(/=/g, '');
+  return [oStr, mStr, bStr].sort((a, b) => a.length - b.length)[0];
+}
+
+function loadHash(hash) {
+  owned = new Array(TOTAL + 1).fill(false);
+  if (!hash) return;
+  try {
+    if (hash[0] === 'o') {
+      if (hash.length > 1)
+        hash.slice(1).split(',').forEach(n => { const i = parseInt(n); if (i >= 1 && i <= TOTAL) owned[i] = true; });
+    } else if (hash[0] === 'm') {
+      owned.fill(true); owned[0] = false;
+      if (hash.length > 1)
+        hash.slice(1).split(',').forEach(n => { const i = parseInt(n); if (i >= 1 && i <= TOTAL) owned[i] = false; });
+    } else if (hash[0] === 'b') {
+      const bin = atob(hash.slice(1).replace(/-/g,'+').replace(/_/g,'/'));
+      for (let i = 1; i <= TOTAL; i++) {
+        if (bin.charCodeAt(Math.floor((i-1)/8)) & (1 << ((i-1) % 8))) owned[i] = true;
+      }
+    } else if (/^[01]{312}$/.test(hash)) {
+      for (let i = 0; i < 312; i++) if (hash[i] === '1') owned[i + 1] = true;
+    }
+  } catch(e) {}
+}
+
+function updateUrl() {
+  const hash = ownedToHash();
+  history.replaceState(null, '', '#' + hash);
+  document.getElementById('share-url').textContent = location.href;
+}
+
+function restoreFromInput() {
+  const input = document.getElementById('restore-input').value.trim();
+  const hash = input.includes('#') ? input.split('#')[1] : input;
+  if (!hash) { showToast('URLが正しくありません'); return; }
+  loadHash(hash);
+  updateUrl(); updateStats(); renderCards();
+  showToast('所持状態を復元しました');
+}
+
+// =====================
+// グループヘッダーのtopをJSで動的に設定
+// =====================
+function updateGroupHeaderTop() {
+  const wrap = document.querySelector('.sticky-wrap');
+  if (wrap) {
+    const h = wrap.offsetHeight;
+    document.documentElement.style.setProperty('--sticky-top', h + 'px');
+  }
+}
+
+// =====================
+// データ読み込み
+// =====================
+async function fetchCards() {
+  const [cardsRes, notesRes] = await Promise.all([
+    fetch('./cards.json'),
+    fetch('./notes.json').catch(() => null)
+  ]);
+  if (!cardsRes.ok) throw new Error('cards.json load error');
+  const data = await cardsRes.json();
+  if (notesRes && notesRes.ok) {
+    notes = await notesRes.json();
+  }
+  return data.map(c => ({
+    number:      c.number,
+    name:        c.name,
+    stars:       c.stars,
+    patch:       c.patch,
+    icon:        c.icon,
+    image:       `https://ffxivcollect.com/images/cards/large/${c.image_id || c.number}.png`,
+    sources:     c.sources || [],
+    tsv_sources: c.tsv_sources || [],
+    card_type:   c.card_type || '',
+    stats:       c.stats || {},
+  }));
+}
+
+// =====================
+// フィルター操作
+// =====================
+function setView(btn, val) {
+  currentView = val;
+  document.querySelectorAll('[data-view]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCards();
+}
+
+function toggleType(btn, type) {
+  if (activeTypes.has(type)) {
+    activeTypes.delete(type);
+    btn.classList.remove('active');
+  } else {
+    activeTypes.add(type);
+    btn.classList.add('active');
+  }
+  renderCards();
+}
+
+// =====================
+// 統計更新
+// =====================
+function updateStats() {
+  let cnt = 0;
+  for (let i = 1; i <= TOTAL; i++) if (owned[i]) cnt++;
+  document.getElementById('stat-owned').textContent   = cnt;
+  document.getElementById('stat-missing').textContent = TOTAL - cnt;
+  const pct = Math.floor(cnt / TOTAL * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-left').textContent = TOTAL - cnt;
+}
+
+// =====================
+// カード1行のHTML生成
+// =====================
+function buildCardHtml(card) {
+  const num     = card.number;
+  const isOwned = owned[num];
+  const starsHtml = '★'.repeat(card.stars||1) + '☆'.repeat(Math.max(0,5-(card.stars||1)));
+  const note    = notes[String(num)] || '';
+
+  const tsvHtml = card.tsv_sources.map(s => {
+    const cls = typeCls(s.abbr);
+    return `<span class="src-badge ${cls}"><span class="src-type-label">${escHtml(s.label)}</span>：${escHtml(s.text)}</span>`;
+  }).join('');
+
+  const ctHtml = card.card_type
+    ? `<span class="src-badge src-other" style="font-size:9px;margin-left:2px">${escHtml(card.card_type)}</span>`
+    : '';
+
+  const noteHtml = note
+    ? `<div class="card-note">📝 ${escHtml(note)}</div>`
+    : '';
+
+  return `<div class="card-item${isOwned ? ' checked' : ''}" data-num="${num}">
+    <div class="card-check" onclick="toggleCard(event,${num})"></div>
+    <div class="card-icon-wrap" onclick="openPopup(${num})">
+      <img src="${escHtml(card.icon)}" alt="${escHtml(card.name)}" loading="lazy" onerror="this.style.opacity='0.3'">
+    </div>
+    <div class="card-no-wrap">
+      <div class="card-no">No.${String(num).padStart(3,'0')}</div>
+      <div class="card-stars">${starsHtml}</div>
+    </div>
+    <div class="card-name-wrap">
+      <div class="card-name">
+        <span class="card-no-mobile">No.${String(num).padStart(3,'0')} </span>${escHtml(card.name)}${ctHtml}
+      </div>
+      <div class="card-sources">${tsvHtml}</div>
+      ${noteHtml}
+    </div>
+    <div></div>
+  </div>`;
+}
+
+// =====================
+// カードレンダリング
+// =====================
+function renderCards() {
+  const app    = document.getElementById('app');
+  const search = document.getElementById('search').value.trim().toLowerCase();
+
+  const filtered = allCards.filter(card => {
+    const num = card.number;
+    if (num < 1 || num > TOTAL) return false;
+    if (currentView === 'missing' && owned[num]) return false;
+    if (currentView === 'owned'   && !owned[num]) return false;
+    if (activeTypes.size > 0) {
+      const cardAbbrs = card.tsv_sources.map(s => s.abbr);
+      if (!cardAbbrs.some(a => activeTypes.has(a))) return false;
+    }
+    if (search && !card.name.toLowerCase().includes(search) && !String(num).includes(search)) return false;
+    return true;
+  });
+
+  let html = '';
+
+  if (activeTypes.size === 0) {
+    html += `<div class="list-header">
+      <div style="text-align:center">所持</div>
+      <div></div>
+      <div>No / 難易度</div>
+      <div>カード名 / 入手方法</div>
+      <div style="text-align:right">メモ</div>
+    </div>`;
+    filtered.forEach(card => { html += buildCardHtml(card); });
+  } else {
+    const groupMap = {};
+    GROUPS.forEach(g => groupMap[g.key] = []);
+    filtered.forEach(card => {
+      const key = getGroupKey(card);
+      if (groupMap[key]) groupMap[key].push(card);
+      else groupMap['EX'].push(card);
+    });
+    GROUPS.forEach(g => {
+      const cards = groupMap[g.key];
+      if (!cards || cards.length === 0) return;
+      const ownedCnt = cards.filter(c => owned[c.number]).length;
+      html += `<div class="group">
+        <div class="group-header">
+          <div class="group-dot" style="background:${g.color}"></div>
+          <div class="group-name" style="color:${g.color}">${g.label}</div>
+          <div class="group-owned" style="color:${g.color}">${ownedCnt} / ${cards.length}</div>
+        </div>
+        <div class="card-list">`;
+      html += `<div class="list-header">
+        <div style="text-align:center">所持</div>
+        <div></div>
+        <div>No / 難易度</div>
+        <div>カード名 / 入手方法</div>
+        <div style="text-align:right">メモ</div>
+      </div>`;
+      cards.forEach(card => { html += buildCardHtml(card); });
+      html += `</div></div>`;
+    });
+  }
+
+  if (!html) html = '<div style="text-align:center;padding:60px;color:var(--text3);">該当するカードがありません</div>';
+  app.innerHTML = html;
+}
+
+function escHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// =====================
+// チェック
+// =====================
+function toggleCard(e, num) {
+  e.stopPropagation();
+  owned[num] = !owned[num];
+  updateUrl(); updateStats();
+  const el = document.querySelector(`.card-item[data-num="${num}"]`);
+  if (el) el.classList.toggle('checked', owned[num]);
+  if (currentView === 'missing' && owned[num] && el) el.style.display = 'none';
+  if (currentView === 'owned'   && !owned[num] && el) el.style.display = 'none';
+}
+
+// =====================
+// ポップアップ
+// =====================
+function openPopup(num) {
+  const card = allCards.find(c => c.number === num);
+  if (!card) return;
+  const s   = card.stats || {};
+  const fmt = v => (v === 10 ? 'A' : (v != null ? v : '-'));
+
+  document.getElementById('p-title').textContent =
+    `No.${String(num).padStart(3,'0')} ${card.name}`;
+  document.getElementById('p-img').src = card.image;
+  document.getElementById('p-img').alt = card.name;
+
+  const typeText = [
+    card.card_type ? `タイプ：${card.card_type}` : '',
+    `★${'★'.repeat(card.stars||1)}`,
+    `patch ${card.patch||''}`
+  ].filter(Boolean).join(' / ');
+  document.getElementById('p-type').textContent = typeText;
+
+  document.getElementById('p-top-v').textContent   = fmt(s.top);
+  document.getElementById('p-left-v').textContent  = fmt(s.left);
+  document.getElementById('p-right-v').textContent = fmt(s.right);
+  document.getElementById('p-bot-v').textContent   = fmt(s.bottom);
+
+  document.getElementById('popup-overlay').classList.add('show');
+}
+
+function closePopup(e) {
+  if (e && e.target !== document.getElementById('popup-overlay')) return;
+  document.getElementById('popup-overlay').classList.remove('show');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('popup-overlay').classList.remove('show');
+});
+
+// =====================
+// URLコピー
+// =====================
+function copyUrl() {
+  const url = location.href;
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(() => showToast('URLをコピーしました'));
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = url; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    showToast('URLをコピーしました');
+  }
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+// =====================
+// マニュアル タップ対応
+// =====================
+function initHelpBtn() {
+  const helpBtn = document.getElementById('help-btn');
+  if (!helpBtn) return;
+  helpBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    this.classList.toggle('open');
+  });
+  document.addEventListener('click', function() {
+    helpBtn.classList.remove('open');
+  });
+}
+
+// =====================
+// 初期化
+// =====================
+async function init() {
+  const hash = location.hash.slice(1);
+  if (hash) loadHash(hash);
+
+  try {
+    const cards = await fetchCards();
+    allCards = cards
+      .filter(c => c.number >= 1 && c.number <= TOTAL)
+      .sort((a, b) => a.number - b.number);
+    if (allCards.length === 0) throw new Error('no cards');
+
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+
+    // TIPSをnotes.jsonから表示
+    const tipsEl = document.getElementById('owner-memo-content');
+    const tipsHtml = [1,2,3,4,5]
+      .map(i => notes[`tips${i}`])
+      .filter(t => t)
+      .map(t => `・${escHtml(t)}`)
+      .join('<br>');
+    tipsEl.innerHTML = tipsHtml || '（TIPSはnotes.jsonのtips1〜tips5に記入）';
+
+    updateStats();
+    renderCards();
+    initHelpBtn();
+    updateGroupHeaderTop();
+    window.addEventListener('resize', updateGroupHeaderTop);
+    if (hash) document.getElementById('share-url').textContent = location.href;
+  } catch(e) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'block';
+    console.error(e);
+  }
+}
+
+init();
+</script>
+<footer style="text-align:center;padding:20px;font-size:12px;color:var(--text3);border-top:1px solid var(--border);margin-top:20px;">
+  データ出典：
+  <a href="https://ffxivcollect.com" target="_blank" style="color:var(--gold)">ffxivcollect.com</a>
+  ／
+  <a href="http://ultima-spirits.jp/learning/06_gold_saucer/04_triple_triad/triple_triad_card.html" target="_blank" style="color:var(--gold)">ultima-spirits.jp</a>
+</footer>
+</body>
+</html>
